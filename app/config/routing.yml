@@ -1,0 +1,4 @@
+nae_plateform:
+    resource: "@NAEPlateformBundle/Resources/config/routing.yml"
+    prefix:   /
+

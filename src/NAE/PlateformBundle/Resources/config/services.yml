@@ -1,0 +1,4 @@
+services:
+#    nae_plateform.example:
+#        class: NAE\PlateformBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

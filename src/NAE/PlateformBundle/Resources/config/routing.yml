@@ -1,0 +1,3 @@
+nae_plateform_homepage:
+    path:     /newart/	
+    defaults: { _controller: NAEPlateformBundle:Default:index }

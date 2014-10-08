@@ -1,0 +1,219 @@
+{# src/NAE/PlatformBundle/Resources/views/Default/index.html.twig #}
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		  <title>{% block title %}NewArtExpo{% endblock %}</title>
+
+		  {% block stylesheets %}
+		    {# On charge le CSS de bootstrap depuis le site directement #}
+		    <link rel="stylesheet" href="{{ asset('bundles/NAE/css/bootstrap.min.css') }}">
+		    <link rel="stylesheet" href="{{ asset('bundles/NAE/css/style.css') }}" type="text/css"/>
+		    <link rel="stylesheet" href="{{ asset('bundles/NAE/css/demo.css') }}" type="text/css"/>
+		    <link rel="stylesheet" href="{{ asset('bundles/NAE/css/custom.css') }}" type="text/css"/>
+		  {% endblock %}
+		  <script src="{{ asset('bundles/NAE/js/jquery.js') }}"></script>
+		  <script src="{{ asset('bundles/NAE/js/modernizr.custom.79639.js') }}"></script>
+		  <noscript>
+			<link rel="stylesheet" type="text/css" href="{{ asset('bundles/NAE/css/styleNoJS.css') }}" />
+		</noscript>
+	</head>		
+	<body>
+		<div class="col-md-1 col-xs-1 partie-gauche">
+			<div class="menu">
+				<div id="mynav"><a href="#"><img src="{{ asset('bundles/NAE/images/icons/menu.png') }}"></a></div>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/a-propos.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/recherche.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/profil.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/touslesbooks.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/expovirtuel.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/boutique.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/mail.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/cvg.png') }}"></a>
+				<a href="#"><img src="{{ asset('bundles/NAE/images/icons/share.png') }}"></a>
+
+			</div>
+		</div>
+		<div class="partie-droite col-md-11 col-sm-11 col-xs-11 pull-right">
+			 <div class="demo-2">
+			 	<div class="logo col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-5 col-xs-offset-4">
+					<img class="img-responsive" src="{{ asset('bundles/NAE/images/logo.png') }}">
+				</div>
+	            <div id="slider" class="sl-slider-wrapper">
+
+					<div class="sl-slider">
+					
+						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-1 "></div>
+								<h2>Tomi Slapette</h2>
+								<div class="col-md-1 col-md-offset-5 col-xs-1 col-xs-offset-4">
+									<h4>{{ 'aka monsieur&madame'|upper }}</h4>
+									<button class="btn decartiste"><a href="">{{ 'Découvrir l\' artiste'|upper }}</a></button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-2 "></div>
+								<h2>Jean Dupont</h2>
+								<div class="col-md-1 col-md-offset-5 col-xs-1 col-xs-offset-4">
+									<h4>{{ 'aka monsieur&madame'|upper }}</h4>
+									<button class="btn decartiste"><a href="">{{ 'Découvrir l\' artiste'|upper }}</a></button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-3 "></div>
+								<h2>Fred Graffit</h2>
+								<div class="col-md-1 col-md-offset-5 col-xs-1 col-xs-offset-4">
+									<h4>{{ 'aka monsieur&madame'|upper }}</h4>
+									<button class="btn decartiste"><a href="">{{ 'Découvrir l\' artiste'|upper }}</a></button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-4 "></div>
+								<h2>Pit Somapy</h2>
+								<div class="col-md-1 col-md-offset-5 col-xs-1 col-xs-offset-4">
+									<h4>{{ 'aka monsieur&madame'|upper }}</h4>
+									<button class="btn decartiste"><a href="">{{ 'Découvrir l\' artiste'|upper }}</a></button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+							<div class="sl-slide-inner">
+								<div class="bg-img bg-img-5 "></div>
+								<h2>David Marchand</h2>
+								<div class="col-md-1 col-md-offset-5 col-xs-1 col-xs-offset-4">
+									<h4>{{ 'aka monsieur&madame'|upper }}</h4>
+									<button class="btn decartiste"><a href="">{{ 'Découvrir l\' artiste'|upper }}</a></button>
+								</div>
+							</div>
+						</div>
+					</div><!-- /sl-slider -->
+
+					<nav id="nav-dots" class="nav-dots">
+						<span class="nav-dot-current"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</nav>
+
+				</div><!-- /slider-wrapper -->
+
+	        </div>
+	        <div class="menu2">
+	        	<a href="#">
+	        		<img src="{{ asset('bundles/NAE/images/icons/artiste.png') }}">
+	        		<h4>{{ 'les artistes'|upper }}</h4>
+	        	</a>
+	        </div>
+	        <div class="menu2">
+	        	<a href="#">
+	        		<img src="{{ asset('bundles/NAE/images/icons/boutique.png') }}">
+	        		<h4>{{ 'la boutique'|upper }}</h4>
+	        	</a>
+	        </div>
+	        <div class="menu2">
+	        	<a href="#">
+	        		<img src="{{ asset('bundles/NAE/images/icons/expovirtuel.png') }}">
+	        		<h4>{{ 'expo virtuel'|upper }}</h4>
+	        	</a>
+	        </div>
+	        <div class="menu2">
+	        	<a href="#">
+	        		<img src="{{ asset('bundles/NAE/images/icons/coeur.png') }}">
+	        		<h4>{{ 'coup de coeur'|upper }}</h4>
+	        	</a>
+	        </div>
+        </div>
+     {% block javascripts %}
+    <script type="text/javascript">	
+		$(function() {
+		
+			var Page = (function() {
+
+				var $nav = $( '#nav-dots > span' ),
+					slitslider = $( '#slider' ).slitslider( {
+						onBeforeChange : function( slide, pos ) {
+
+							$nav.removeClass( 'nav-dot-current' );
+							$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+						}
+					} ),
+
+					init = function() {
+
+						initEvents();
+						
+					},
+					initEvents = function() {
+
+						$nav.each( function( i ) {
+						
+							$( this ).on( 'click', function( event ) {
+								
+								var $dot = $( this );
+								
+								if( !slitslider.isActive() ) {
+
+									$nav.removeClass( 'nav-dot-current' );
+									$dot.addClass( 'nav-dot-current' );
+								
+								}
+								
+								slitslider.jump( i + 1 );
+								return false;
+							
+							} );
+							
+						} );
+
+					};
+
+					return { init : init };
+
+			})();
+
+			Page.init();
+
+			/**
+			 * Notes: 
+			 * 
+			 * example how to add items:
+			 */
+
+			/*
+			
+			var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><p>bla bla</p><cite>Margi Clarke</cite></div></div>');
+			
+			// call the plugin's add method
+			ss.add($items);
+
+			*/
+		
+		});
+	</script>
+    {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="{{ asset('bundles/NAE/js/jquery.ba-cond.min.js') }}"></script>
+    <script src="{{ asset('bundles/NAE/js/jquery.slitslider.js') }}"></script>
+  	{% endblock %}
+	</body>
+</html>
+
+
+
