@@ -3,5 +3,5 @@ NewArtExpo
 
 #TODO
 
-	*Revoie le twig;
+	*Revoie le twig
 	*Récuperer les utilisateur
