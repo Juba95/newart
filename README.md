@@ -3,5 +3,5 @@ NewArtExpo
 
 #TODO
 
-	*Revoie le twig
-	*Récuperer les utilisateur
+	*Revoir le twig
+	*Récupérer les utilisateurs de la BDD
