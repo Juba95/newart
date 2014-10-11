@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}NewArtExpo{% endblock %}</title>
+
+    {% block stylesheets %}
+        {# On charge le CSS de bootstrap depuis le site directement #}
+        <link rel="stylesheet" href="{{ asset('bundles/NAE/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/NAE/css/style.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('bundles/NAE/css/demo.css') }}" type="text/css"/>
+        <link rel="stylesheet" href="{{ asset('bundles/NAE/css/custom.css') }}" type="text/css"/>
+    {% endblock %}
+    <script src="{{ asset('bundles/NAE/js/jquery.js') }}"></script>
+    <script src="{{ asset('bundles/NAE/js/modernizr.custom.79639.js') }}"></script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/NAE/css/styleNoJS.css') }}" />
+    </noscript>
+</head>
+<body>

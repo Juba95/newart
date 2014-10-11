@@ -1,3 +1,10 @@
 nae_plateform_homepage:
-    path:     /newart/	
+    path:     /hello/
     defaults: { _controller: NAEPlateformBundle:Default:index }
+
+
+# src/NAE/PlatformBundle/Resources/config/routing.yml
+
+Newart:
+    path:     /
+    defaults: { _controller: NAEPlateformBundle:Expo:index }

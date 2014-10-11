@@ -1,7 +1,5 @@
 {# src/NAE/PlatformBundle/Resources/views/Default/index.html.twig #}
-
-
-
+{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 		<div class="col-md-1 col-xs-1 partie-gauche">
 			<div class="menu">
 				<div id="mynav"><a href="#"><img src="{{ asset('bundles/NAE/images/icons/menu.png') }}"></a></div>
@@ -192,7 +190,4 @@
     <script src="{{ asset('bundles/NAE/js/jquery.slitslider.js') }}"></script>
   	{% endblock %}
 	</body>
-</html>
-
-
-
+{{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
