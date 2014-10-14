@@ -1,242 +1,55 @@
 {# src/NAE/PlatformBundle/Resources/views/Default/index.html.twig #}
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
-<header>
-		<div class="col-md-1 col-xs-1 ">
-			<div class="">
-				<i id="showLeft" class="fa fa-bars  fa-4x"></i>
-				<body class="cbp-spmenu-push">
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-			<h3>Menu</h3>
-			<hr>
-			<a href="#">NAE</a>
-			<a href="#">Recherche</a>
-			<a href="#">Mon Profil</a>
-			<a href="#">Liste des Book</a>
-			<a href="#">La boutique</a>
-			<a href="#">Contact</a>
-			<a href="#">CVG</a>
-			<a href="#">Partager</a>
-		</nav>
-	</header>
-
-			</div>
-		</div>
-		<div class="partie-droite col-md-11 col-sm-11 col-xs-11 pull-right">
-			 <div class="demo-2">
-			 	<div class="logo col-md-5 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-5 col-xs-offset-4">
-					<img class="img-responsive" src="{{ asset('bundles/NAE/images/logo.png') }}">
-				</div>
-	            
-
-	        </div>
-	        <div class="menu2">
-	        	<a href="#">
-	        		<img src="{{ asset('bundles/NAE/images/icons/artiste.png') }}">
-	        		<h4>{{ 'les artistes'|upper }}</h4>
-	        	</a>
-	        </div>
-	        <div class="menu2">
-	        	<a href="#">
-	        		<img src="{{ asset('bundles/NAE/images/icons/boutique.png') }}">
-	        		<h4>{{ 'la boutique'|upper }}</h4>
-	        	</a>
-	        </div>
-	        <div class="menu2">
-	        	<a href="#">
-	        		<img src="{{ asset('bundles/NAE/images/icons/expovirtuel.png') }}">
-	        		<h4>{{ 'expo virtuel'|upper }}</h4>
-	        	</a>
-	        </div>
-	        <div class="menu2">
-	        	<a href="#">
-	        		<img src="{{ asset('bundles/NAE/images/icons/coeur.png') }}">
-	        		<h4>{{ 'coup de coeur'|upper }}</h4>
-	        	</a>
-	        </div>
+    <header class="row monheader">
+        <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
         </div>
-             {% block javascripts %}
-    
+        <div class="col-md-1 col-xs-2 mynav">
 
-		<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-			<script src="js/classie.js"></script>
-			<script>
-				var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-					
-					showLeft = document.getElementById( 'showLeft' ),
-					
-					showLeftPush = document.getElementById( 'showLeftPush' ),
-					
-					body = document.body;
-
-				showLeft.onclick = function() {
-					classie.toggle( this, 'active' );
-					classie.toggle( menuLeft, 'cbp-spmenu-open' );
-					disableOther( 'showLeft' );
-				};
-				
-				
-				
-				showLeftPush.onclick = function() {
-					classie.toggle( this, 'active' );
-					classie.toggle( body, 'cbp-spmenu-push-toright' );
-					classie.toggle( menuLeft, 'cbp-spmenu-open' );
-					disableOther( 'showLeftPush' );
-				};
-				
-
-				function disableOther( button ) {
-					if( button !== 'showLeft' ) {
-						classie.toggle( showLeft, 'disabled' );
-					}
-				
-					if( button !== 'showLeftPush' ) {
-						classie.toggle( showLeftPush, 'disabled' );
-					}
-					
-				}
-			</script>
-
-
-        <!-- What is NAE -->
-        <div class="fond">
-        	<h2 class="text-center contentpres"><span class="titreNAEpres">Qu'est ce que<br></span>Nfff  Art Expo ?</h2>
-        	<hr>
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-md-4 col-md-offset-4">
-			        	<p class="text-center contentpres">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
-			        	<p class="text-center contentpres">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
-			        </div>
-			    </div>
-			</div>
-        	<p class="text-center under_contentpres">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
         </div>
-        <!-- End What is NAE -->
+        <div class="col-md-11 col-xs-10 slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
 
-        <!-- Parallax -->
-        <div class="parallax">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-md-4 col-md-offset-4">
-	        			<p class="text-center"><button type="button" class="btn btn-default btnpara">En savoir +</button></p>
-	        		</div>
-	        	</div>
-        	</div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{{ asset('bundles/NAE/images/image_slider_1.png') }}" alt="image1">
+                        <div class="carousel-caption">
+                            <p>mon image 1</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('bundles/NAE/images/image_slider_2.jpg') }}" alt="image2">
+                        <div class="carousel-caption">
+                            <p>mon image 2</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('bundles/NAE/images/image_slider_3.jpg') }}" alt="image3">
+                        <div class="carousel-caption">
+                            <p>mon image 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End Parallax -->
-
-        <!-- News -->
-        <div class="fond">
-        	<h2 class="text-center contentpres"><span class="titreNAEpres">Nos dernières<br></span>News</h2>
-        	<hr>
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-md-4">
-        				<p class="littledate">28/10/2014</p> <!-- Ici mettre variable twigg de date des articles postés -->
-        				<h3 class="titlenews">New Art Expo et MM6 présente "ETE D'AMOUR", avec James Friedman (Thrones of Blood)</h3>
-        				<p class="text-left contentnews">Nous avons le plaisir de vous invitez à la soirée "Eté d'Amour", ce mardi. Nous seront ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique</p>
-        				<img src="" class="img-responsive block-center">
-        			</div>
-
-        			<div class="col-md-6">
-        				<p class="littledate">28/10/2014</p> <!-- Ici mettre variable twigg de date des articles postés -->
-        				<h4 class="titlenews">New Art Expo et MM6 présente "ETE D'AMOUR", avec James Friedman (Thrones of Blood)</h4>
-        			</div>
-        		</div>
-        	</div>
+        <div class="nav2">
+            <div class="col-md-3 navartiste"></div>
+            <div class="col-md-3 navboutique"></div>
+            <div class="col-md-3 navexpovirtuel"></div>
+            <div class="col-md-2 navcoupcoeur"></div>
         </div>
+    </header>
 
-
-        	<!--<div class="container">
-        		<div class="row">
-        			<div class="col-md-4 col-md-offset-4">
-			        	<p class="text-center contentpres">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
-			        	<p class="text-center contentpres">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
-			        </div>
-			    </div>
-			</div>
-        	<p class="text-center under_contentpres">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
-        </div>-->
-        <!-- End News -->
-
-
-
-
-
-
-   
-    <script type="text/javascript">	
-		$(function() {
-		
-			var Page = (function() {
-
-				var $nav = $( '#nav-dots > span' ),
-					slitslider = $( '#slider' ).slitslider( {
-						onBeforeChange : function( slide, pos ) {
-
-							$nav.removeClass( 'nav-dot-current' );
-							$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-						}
-					} ),
-
-					init = function() {
-
-						initEvents();
-						
-					},
-					initEvents = function() {
-
-						$nav.each( function( i ) {
-						
-							$( this ).on( 'click', function( event ) {
-								
-								var $dot = $( this );
-								
-								if( !slitslider.isActive() ) {
-
-									$nav.removeClass( 'nav-dot-current' );
-									$dot.addClass( 'nav-dot-current' );
-								
-								}
-								
-								slitslider.jump( i + 1 );
-								return false;
-							
-							} );
-							
-						} );
-
-					};
-
-					return { init : init };
-
-			})();
-
-			Page.init();
-
-			/**
-			 * Notes: 
-			 * 
-			 * example how to add items:
-			 */
-
-			/*
-			
-			var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><p>bla bla</p><cite>Margi Clarke</cite></div></div>');
-			
-			// call the plugin's add method
-			ss.add($items);
-
-			*/
-		
-		});
-	</script>
-
-    {# Ajoutez ces lignes JavaScript si vous comptez vous servir des fonctionnalités du bootstrap Twitter #}
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="{{ asset('bundles/NAE/js/jquery.ba-cond.min.js') }}"></script>
-    <script src="{{ asset('bundles/NAE/js/jquery.slitslider.js') }}"></script>
-  	{% endblock %}
-	</body>
+<script type="javascript">
+$('.carousel').carousel({
+  interval: 2000
+})
+</script>
+</body>
 {{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
