@@ -48,16 +48,73 @@
         </div>
     </header>
     {# End Big Header #}
+    {# What is NAE #}
+    <div class="row col-md-11 col-md-offset-1">
+        <h1 class="text-center"><span class="titlestyle">Qu'est ce que</span><br> New Art Expo?</h1>
+        <hr>
+        <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
+        <p class="content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
+        <p class="content undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
+    </div>
+    {# End What is NAE #}
 
-    <div class="row col-md-11 nomdevotrediv">
-        {# c'est dans ces div que vous mettez le contenue vu que que le menu fait un col-md-1 et donc il reste 11 colonnes #}
+    {# Parallax / Bouton #}
+    <div class="row col-md-11 col-md-offset-1 parallax">
+        <a href="#"><button type="button" class="btn btn-default center-block button">En savoir +</button></a>
     </div>
-    <div class="row col-md-11 nomduneautrediv">
-        {# c'est dans ces div que vous mettez le contenue vu que que le menu fait un col-md-1 et donc il reste 11 colonnes #}
+    {# End Parallax / Bouton #}
+
+    {# News #}
+    <div class="row col-md-11 col-md-offset-1 news">
+        <h1 class="text-center newstitle"><span class="titlestyle">Nos dernières</span><br> News</h1>
+
+            <div class="row col-md-5">
+                <p class="datenews">28/10/2014</p>
+                <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
+                <p class="undercontent">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
+                <img src="{{ asset('bundles/NAE/images/4.jpg') }}" alt="Image News 1" class="img-responsive">
+                <p class="newslink"><a href="#">Lire Plus</a></p>
+            </div>
+
+            <div class="row col-md-5 col-md-offset-1 secondarynews">
+                <p class="datenews">28/10/2014</p>
+                <h3>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h3>
+                <p class="undercontent">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
+                <img src="{{ asset('bundles/NAE/images/5.jpg') }}" alt="Image News 2" class="img-responsive">
+                <p class="newslink"><a href="#">Lire Plus</a></p>
+            </div>
+
+            <div class="row col-md-5">
+            </div>
+
+            <div class="row col-md-5 col-md-offset-1 secondarynews">
+                <p class="datenews">11/02/2014</p>
+                <h3>Bientôt ! Un évenement signé NAE</h3>
+                <p class="undercontent">Nous proposons aux visiteurs une traversée à l’intérieur de soi dont l’espace d’exposition serait la métaphore. Cette immense odyssée, tant physique que psychique, invite à traverser deux niveaux du Palais de Tokyo métamorphosé par les artistes.</p>
+                <img src="{{ asset('bundles/NAE/images/2.jpg') }}" alt="Image News 3" class="img-responsive">
+                <p class="newslink"><a href="#">Lire Plus</a></p>
+            </div>
+
+            <div class="row col-md-11 col-md-offset-1 newsbutton">
+                <p class="content"><a href="#"><button type="button" class="btn btn-default">Lire tous les billets</button></a><p>
+            </div>
     </div>
-    <div class="row col-md-11 nomdunediv">
-        {# c'est dans ces div que vous mettez le contenue vu que que le menu fait un col-md-1 et donc il reste 11 colonnes #}
+    {# End News #}
+
+    {# Artiste #}
+    <div class="row col-md-11 col-md-offset-1 artiste">
+        <h1><span class="titlestyle">Artiste</span><br> du jour</h1>
+        <hr>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+
+    <div class="row col-md-5 col-md-offset-1 artistejour">
+        <h3 class="titleartiste">Artiste du jour</h3>
+        <h2 class="nameartiste">Pascal Cherchiario</h2>
+        <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </div>
+    {# End Artiste #}
 
 <script type="javascript">
     $('.carousel').carousel({
