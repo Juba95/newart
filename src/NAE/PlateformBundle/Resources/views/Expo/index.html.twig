@@ -48,10 +48,38 @@
             </div>
         </div>
         <div class="nav2">
-            <div class="col-md-3 navartiste"></div>
-            <div class="col-md-3 navboutique"></div>
-            <div class="col-md-3 navexpovirtuel"></div>
-            <div class="col-md-2 navcoupcoeur"></div>
+            <div class="col-md-3 navartiste">
+                <nav>
+                    <a href="#">
+                        <img src="{{ asset('bundles/naeplateform/images/icons/artiste.png') }}">
+                        <h4>{{ 'les artistes'|upper }}</h4>
+                    </a>
+                </nav>
+            </div>
+            <div class="col-md-3 navboutique">
+            <nav>
+                <a href="#">
+                    <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                    <h4>{{ 'la boutique'|upper }}</h4>
+                </a>
+            </nav>
+            </div>
+            <div class="col-md-3 navexpovirtuel">
+            <nav>
+                <a href="#">
+                    <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
+                    <h4>{{ 'expo virtuel'|upper }}</h4>
+                </a>
+            </nav>
+            </div>
+            <nav>
+            <div class="col-md-2 navcoupcoeur">
+                <a href="#">
+                    <img src="{{ asset('bundles/naeplateform/images/icons/coeur.png') }}">
+                    <h4>{{ 'coup de coeur'|upper }}</h4>
+                </a>
+            </nav>
+            </div>
         </div>
     </div>
     {# End Big Header #}
