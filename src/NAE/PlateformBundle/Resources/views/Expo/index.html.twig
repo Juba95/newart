@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 {# src/NAE/PlatformBundle/Resources/views/Default/index.html.twig #}
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
     {# Big header avec slider #}
-    <header class="row monheader">
+    <div class="row monheader">
         <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
         </div>
         <div class="col-md-1 col-xs-2 mynav">
@@ -47,10 +46,11 @@
             <div class="col-md-3 navexpovirtuel"></div>
             <div class="col-md-2 navcoupcoeur"></div>
         </div>
-    </header>
+    </div>
     {# End Big Header #}
+
     {# What is NAE #}
-    <div class="row col-md-11 col-md-offset-1">
+    <div class="row col-md-10 col-md-offset-1">
         <h1>Qu'est ce que<br><span class="titlestyle"> New Art Expo?</span></h1>
         <hr>
         <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
@@ -60,13 +60,13 @@
     {# End What is NAE #}
 
     {# Parallax / Bouton #}
-    <div class="row col-md-11 col-md-offset-1 parallax">
+    <div class="row col-md-10 col-md-offset-1 parallax">
         <a href="#"><button type="button" class="btn btn-default center-block button">En savoir +</button></a>
     </div>
     {# End Parallax / Bouton #}
 
     {# News #}
-    <div class="row col-md-11 col-md-offset-1 news">
+    <div class="row col-md-10 col-md-offset-1 news">
         <h1>Nos dernières<br><span class="titlestyle"> News</span></h1>
 
             <div class="row col-md-5">
@@ -96,14 +96,14 @@
                 <p class="newslink"><a href="#">Lire Plus</a></p>
             </div>
 
-            <div class="row col-md-11 col-md-offset-1 newsbutton">
+            <div class="row col-md-10 col-md-offset-1 newsbutton">
                 <p class="content"><a href="#"><button type="button" class="btn btn-default">Lire tous les billets</button></a><p>
             </div>
     </div>
     {# End News #}
 
     {# Artiste/Oeuvre du jour #}
-    <div class="row col-md-11 col-md-offset-1 artiste">
+    <div class="row col-md-10 col-md-offset-1 artiste">
         <h1>Artiste<br><span class="titlestyle"> du jour</span></h1>
         <hr>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -124,7 +124,7 @@
     {# End Artiste/Oeuvre #}
 
     {# Recherche #}
-    <div class="row col-md-11 col-md-offset-1 artiste">
+    <div class="row col-md-10 col-md-offset-1 artiste">
         <h1>Rechercher<br><span class="titlestyle"> un article</span></h1>
         <hr>
         <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -156,121 +156,5 @@
 </script>
 </body>
 
-{{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
-=======
-{# src/NAE/PlatformBundle/Resources/views/Default/index.html.twig #}
-{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
-
-    {# Big header avec slider #}
-    <header class="row monheader">
-        <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
-        </div>
-        <div class="col-md-1 col-xs-2 mynav">
-
-        </div>
-        <div class="col-md-11 col-xs-10 slider">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="{{ asset('bundles/NAE/images/image_slider_1.png') }}" alt="image1">
-                        <div class="carousel-caption">
-                            <p>mon image 1</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('bundles/NAE/images/image_slider_2.jpg') }}" alt="image2">
-                        <div class="carousel-caption">
-                            <p>mon image 2</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('bundles/NAE/images/image_slider_3.jpg') }}" alt="image3">
-                        <div class="carousel-caption">
-                            <p>mon image 3</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar-fixed">
-                 <ul class="navbar-fixed">
-                    <div class="col-md-3 navartiste">
-                        <li class="navbar-top">
-                            <a href="">Artistes<img src="{{ asset('bundles/NAE/images/icons/artiste.png' )}}" alt="Artiste" class="ico-bar"></a>
-                        </li>
-                    </div>
-                    <div class="col-md-3 navboutique">
-                        <li class="navbar-top">
-                             <a href="">Boutique<img src="{{ asset('bundles/NAE/images/icons/boutique.png' )}}" alt="Artiste" class="ico-bar"></a>
-                        </li>
-                    </div>
-                    <div class="col-md-3 navexpovirtuel">
-                        <li class="navbar-top">
-                            <a href="">Expo Virtuel<img src="{{ asset('bundles/NAE/images/icons/expovirtuel.png' )}}" alt="Artiste" class="ico-bar"></a>
-                        </li>
-                    </div>
-                    <div class="col-md-2 navcoupcoeur">
-                        <li class="navbar-top">
-                            <a href="">Coup de coeur<img src="{{ asset('bundles/NAE/images/icons/coeur.png' )}}" alt="CoupDeCoeur" class="ico-bar"></a>
-                        </li>
-                    </div>
-                </ul>
-         </div>
-     </header>
-    {# End Big Header #}
-
-    <div class="row col-md-11 col-md-offset-1 nomdevotrediv">
-        <h1 class="text-center"><span class="title">Qu'est ce que</span><br> New Art Expo?</h1>
-        <hr>
-        <p class="text-center content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
-        <p class="text-center content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
-        <p class="text-center content">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
-    </div>
-    <div class="row col-md-11 nomduneautrediv">
-        {# c'est dans ces div que vous mettez le contenue vu que que le menu fait un col-md-1 et donc il reste 11 colonnes #}
-    </div>
-    <div class="row col-md-11 nomdunediv">
-        {# c'est dans ces div que vous mettez le contenue vu que que le menu fait un col-md-1 et donc il reste 11 colonnes #}
-    </div>
-
-<script type="javascript">
-    $('.carousel').carousel({
-        interval: 2000
-    })
-</script>
-
-<footer>
-            <div class="container">
-                <div class="row footer">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h1>-WEBSITE-</h1>
-                        <br>
-                        <img src="{{ asset('bundles/NAE/images/logo.png') }}" alt="Logo">
-                         <br><br>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                            </li>
-                        </ul>
-                        <h6 style="text-align: center; padding-bottom: 20px;">&copy; 2012 New Art Expo. Tous droits réservés.</h6>
-                    </div>
-                </div>
-            </div>
-        </footer>
-</body>
 
 {{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
