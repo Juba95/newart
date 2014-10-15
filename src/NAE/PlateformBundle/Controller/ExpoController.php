@@ -11,7 +11,6 @@ class ExpoController extends Controller
 {
     public function indexAction()
     {
-        $content = $this->get('templating')->render('NAEPlateformBundle:Expo:index.html.twig');
-        return new Response($content);
+         return $this->render('NAEPlateformBundle:Expo:index.html.twig');
     }
 }
