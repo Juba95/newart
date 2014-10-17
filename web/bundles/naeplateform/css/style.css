@@ -194,3 +194,29 @@ hr{
 .search{
 	margin-top: 50px;
 }
+
+.btnsearch{
+	margin-left: 600px;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.inputfields{
+	background-color: #262b2d;
+	border: 1px solid grey;
+	border-radius: 0;
+	color: white;
+}
+
+/* Galerie */
+
+.gallery{
+	margin-top: 200px;
+}
+
+.gallerycontent{
+	background-color: white;
+	color: black;
+	padding-top: 100px;
+}
+
