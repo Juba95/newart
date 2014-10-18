@@ -54,6 +54,7 @@ h1{
 .nav2 {
     height: 76px;
     background-color: #1b2021;
+    text-align: center;
 }
 
 .navartiste, .navboutique, .navexpovirtuel, .navcoupcoeur {
@@ -217,11 +218,50 @@ hr{
 
 .gallery{
 	margin-top: 200px;
+	margin-bottom: 100px;
 }
 
-.gallerycontent{
+.image{
+	padding: 0;
+}
+
+.contenttopleft{
 	background-color: white;
 	color: black;
 	padding-top: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
+.contentbottomleft{
+	background-color: white;
+	color: black;
+	padding-top: 100px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.contenttopright{
+	background-color: white;
+	color: black;
+	padding-top: 100px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+
+/* FOOTER */
+
+.footerwebsite{
+	text-align: center;
+	color: grey;
+	font-family: DubielItalic;
+	font-size: 1.3em;
+}
+
+.grey{
+	color: grey;
+}
