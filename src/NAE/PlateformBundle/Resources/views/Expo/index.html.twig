@@ -84,12 +84,12 @@
     {# End Big Header #}
 
     {# What is NAE #}
-    <div class="row col-md-11">
-        <h1>Qu'est ce que<br><span class="titlestyle"> New Art Expo?</span></h1>
+    <div class="row col-md-11 presnae">
+        <h1>Qu'est ce que<br><span class="titlestyle"> New Art Expo ?</span></h1>
         <hr>
         <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
         <p class="content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
-        <p class="content undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
+        <p class="undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
     </div>
     {# End What is NAE #}
 
@@ -100,13 +100,13 @@
     {# End Parallax / Bouton #}
 
     {# News #}
-    <div class="row col-md-10 col-md-offset-1 news">
+    <div class="row col-md-11 news">
         <h1>Nos dernières<br><span class="titlestyle"> News</span></h1>
-
+            <hr>
             <div class="row col-md-5">
                 <p class="datenews">28/10/2014</p>
                 <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
-                <p class="undercontent">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
+                <p class="undercontentnews">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
                 <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="Image News 1" class="img-responsive">
                 <p class="newslink"><a href="#">Lire Plus</a></p>
             </div>
@@ -114,7 +114,7 @@
             <div class="row col-md-5 col-md-offset-1 secondarynews">
                 <p class="datenews">28/10/2014</p>
                 <h3>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h3>
-                <p class="undercontent">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
+                <p class="undercontentnews">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
                 <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="Image News 2" class="img-responsive">
                 <p class="newslink"><a href="#">Lire Plus</a></p>
             </div>
@@ -125,44 +125,48 @@
             <div class="row col-md-5 col-md-offset-1 secondarynews">
                 <p class="datenews">11/02/2014</p>
                 <h3>Bientôt ! Un évenement signé NAE</h3>
-                <p class="undercontent">Nous proposons aux visiteurs une traversée à l’intérieur de soi dont l’espace d’exposition serait la métaphore. Cette immense odyssée, tant physique que psychique, invite à traverser deux niveaux du Palais de Tokyo métamorphosé par les artistes.</p>
+                <p class="undercontentnews">Nous proposons aux visiteurs une traversée à l’intérieur de soi dont l’espace d’exposition serait la métaphore. Cette immense odyssée, tant physique que psychique, invite à traverser deux niveaux du Palais de Tokyo métamorphosé par les artistes.</p>
                 <img src="{{ asset('bundles/naeplateform/images/2.jpg') }}" alt="Image News 3" class="img-responsive">
                 <p class="newslink"><a href="#">Lire Plus</a></p>
             </div>
 
             <div class="row col-md-10 col-md-offset-1 newsbutton">
-                <p class="content"><a href="#"><button type="button" class="btn btn-default">Lire tous les billets</button></a><p>
+                <p class="content"><a href="#"><button type="button" class="btn btn-default buttonred">Lire tous les billets</button></a><p>
             </div>
     </div>
     {# End News #}
 
     {# Artiste/Oeuvre du jour #}
-    <div class="row col-md-10 col-md-offset-1 artiste">
+    <div class="row col-md-11 artiste">
         <h1>Artiste<br><span class="titlestyle"> du jour</span></h1>
         <hr>
-        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="artistdaycontent">
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
     </div>
 
-    <div class="row col-md-5 artistejour">
-        <h3 class="titleartiste">Artiste du jour</h3>
-        <h2 class="nameartiste">Pascal Cherchiario</h2>
-        <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="row col-md-6 artistejour">
+        <div class="col-md-6 col-md-offset-2">
+            <h3 class="titleartiste">Artiste du jour</h3>
+            <h2 class="nameartiste">Pascal Cherchiario</h2>
+            <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
     </div>
 
-    <div class="row col-md-5 oeuvrejour">
-        <h3 class="titleartiste">Oeuvre du jour</h3>
-        <h2 class="nameartiste">Romuald Merceaux</h2>
-        <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="row col-md-6 oeuvrejour">
+        <div class="col-md-6 col-md-offset-2">
+            <h3 class="titleartiste">Oeuvre du jour</h3>
+            <h2 class="nameartiste">Romuald Merceaux</h2>
+            <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
     </div>
     {# End Artiste/Oeuvre #}
 
     {# Recherche #}
-    <div class="row col-md-10 col-md-offset-1 artiste">
-        <h1>Rechercher<br><span class="titlestyle"> un article</span></h1>
+    <div class="row col-md-11 artiste">
+        <h1>Rechercher<br><span class="titlestyle"> un artiste</span></h1>
         <hr>
-        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
     <div class="col-md-3 col-md-offset-2 search">
@@ -191,10 +195,10 @@
     {# End Recherche #}
 
     {# Oeuvres + Présentation // Galerie#}
-    <div class="row col-md-10 col-md-offset-1 gallery">
+    <div class="row col-md-11 col-md-offset-1 gallery">
         <div class="col-md-4 image">
-            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" class="img-responsive" alt="image galerie" width="100%">
-            <div class="col-md-6 contenttopleft">
+            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" class="img-responsive" alt="image galerie">
+            <div class="col-md-3 contenttopleft">
                 <h3>Cherry Glazer</h3>
                 <p>sed quia non numquam eius modi tempoun</p>
             </div>
@@ -202,7 +206,7 @@
 
         <div class="col-md-4 image">
             <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-6 contentbottomleft">
+            <div class="col-md-3 contentbottomleft">
                 <h3>Cherry Glazer</h3>
                 <p>sed quia non numquam eius modi tempoun</p>
             </div>
@@ -210,7 +214,7 @@
 
         <div class="col-md-4 image">
             <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-6 contenttopright">
+            <div class="col-md-3 contenttopright">
                 <h3>Cherry Glazer</h3>
                 <p>sed quia non numquam eius modi tempoun</p>
             </div>
@@ -218,7 +222,7 @@
 
         <div class="col-md-8 image">
             <img src="{{ asset('bundles/naeplateform/images/nulla_bg_1.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-6 contenttopleft">
+            <div class="col-md-3 contenttopleft">
                 <h3>Cherry Glazer</h3>
                 <p>sed quia non numquam eius modi tempoun</p>
             </div>
@@ -226,7 +230,7 @@
 
         <div class="col-md-4 image">
             <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-6 contentbottomleft">
+            <div class="col-md-3 contentbottomleft">
                 <h3>Cherry Glazer</h3>
                 <p>sed quia non numquam eius modi tempoun</p>
             </div>

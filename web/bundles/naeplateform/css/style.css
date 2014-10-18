@@ -7,11 +7,16 @@ body {
 
 h1, .content{
 	text-align: center;
+	font-size: 3em;
 }
 
 h1{
 	font-family: DubielItalic;
 	color: #c9c4bd;
+}
+
+.content{
+	font-size: 1.4em;
 }
 
 .titlestyle{
@@ -67,25 +72,31 @@ h1{
 
 /* WHAT IS NAE */
 
+.presnae{
+	margin-top: 125px;
+	margin-bottom: 75px;
+}
+
 h2, .content, .undercontent{
 	font-family: Gillsans;
 }
 
 .undercontent{
-	font-size: 0.9em;
-	color: #f1ece6;
+	font-size: 1.2em;
+	color: grey;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	text-align: center;
 }
 
 hr{
-	width: 65px;
+	width: 85px;
 	margin: auto;
 	margin-bottom: 40px;
 	margin-top: 40px;
 }
 
-/* PRALLAX */
+/* PARALLAX */
 
 .parallax{
 	background: url("../images/3.jpg");
@@ -100,16 +111,38 @@ hr{
 }
 
 .button{
-	margin-top: 75px;
-	margin-bottom: 75px;
-
+	margin-top: 125px;
+	margin-bottom: 125px;
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-transform: uppercase;
+	font-family: Gillsans;
+	font-size: 1.2em;
 }
 
 /* NEWS */
 
+h2{
+	font-size: 2.4em;
+}
+
+.news{
+	margin-top: 125px;
+}
+
+.undercontentnews{
+	text-align: left;
+	font-size: 1.2em;
+	color: grey;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: Gillsans;
+}
+
 .datenews{
-	font-size: 0.9em;
-	color: #c9c4bd;
+	font-size: 1.1em;
+	color: grey;
 }
 
 .newstitle{
@@ -121,16 +154,21 @@ hr{
 }
 
 .newslink{
-	margin-top: 25px;
+	margin-top: 35px;
 	font-family: Gillsans;
+	font-size: 1.1em;
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 3px;
 }
 
+.newslink a{
+	color: white;
+}
+
 .newslink a:hover{
 	text-decoration: none;
-	color: white;
+	color: grey;
 }
 
 .newsbutton{
@@ -138,13 +176,23 @@ hr{
 }
 
 .newsbutton button{
-	font-size: 1.3em;
+	font-size: 1.1em;
+	font-family: Gillsans;
+	text-transform: uppercase;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 /* ARTISTE */
 
 .artiste{
 	margin-top: 150px;
+}
+
+.artistdaycontent{
+	color: #a0a2a2;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
 .artistejour{
@@ -162,7 +210,7 @@ hr{
 }
 
 .oeuvrejour{
-	background: url("../images/1.jpg");
+	background: url("../images/2.jpg");
 	background-attachment: fixed; 
     background-repeat: no-repeat;
   	background-size: cover;
@@ -180,6 +228,7 @@ hr{
 	text-transform: uppercase;
 	font-family: Gillsans;
 	font-size: 0.9em;
+	color: #a0a2a2;
 }
 
 .nameartiste{
@@ -193,6 +242,7 @@ hr{
 	text-align: left;
 	font-size: 0.9em;
 	font-family: Gillsans;
+	color: #a0a2a2;
 }
 
 /* RECHERCHE */
@@ -204,13 +254,17 @@ hr{
 .btnsearch{
 	margin-left: 600px;
 	text-transform: uppercase;
+	font-size: 1.1em;
 	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .inputfields{
 	background-color: #262b2d;
 	border: 1px solid grey;
 	border-radius: 0;
+	height: 50px;
 	color: white;
 }
 
@@ -219,6 +273,7 @@ hr{
 .gallery{
 	margin-top: 200px;
 	margin-bottom: 100px;
+	padding: 0;
 }
 
 .image{
