@@ -121,6 +121,10 @@ hr{
 	font-size: 1.2em;
 }
 
+.parallax a:hover{
+	text-decoration: none;
+}
+
 /* NEWS */
 
 h2{
@@ -129,6 +133,10 @@ h2{
 
 .news{
 	margin-top: 125px;
+}
+
+.newsmargin{
+	margin-left: 15px;
 }
 
 .undercontentnews{
@@ -176,11 +184,11 @@ h2{
 }
 
 .newsbutton button{
-	font-size: 1.1em;
-	font-family: Gillsans;
-	text-transform: uppercase;
 	padding-left: 25px;
 	padding-right: 25px;
+	text-transform: uppercase;
+	font-family: Gillsans;
+	font-size: 1.2em;
 }
 
 /* ARTISTE */
@@ -197,7 +205,6 @@ h2{
 
 .artistejour{
 	background: url("../images/3.jpg");
-	background-attachment: fixed; 
     background-repeat: no-repeat;
   	background-size: cover;
   	-webkit-background-size: cover;
@@ -210,8 +217,7 @@ h2{
 }
 
 .oeuvrejour{
-	background: url("../images/2.jpg");
-	background-attachment: fixed; 
+	background: url("../images/2.jpg"); 
     background-repeat: no-repeat;
   	background-size: cover;
   	-webkit-background-size: cover;
@@ -227,20 +233,20 @@ h2{
 	letter-spacing: 3px;
 	text-transform: uppercase;
 	font-family: Gillsans;
-	font-size: 0.9em;
+	font-size: 1.3em;
 	color: #a0a2a2;
 }
 
 .nameartiste{
 	font-family: DubielItalic;
-	font-size: 2.8em;
+	font-size: 3.9em;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
 .contentartiste{
 	text-align: left;
-	font-size: 0.9em;
+	font-size: 1.1em;
 	font-family: Gillsans;
 	color: #a0a2a2;
 }
@@ -253,18 +259,25 @@ h2{
 
 .btnsearch{
 	margin-left: 600px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-transform: uppercase;
-	font-size: 1.1em;
-	padding: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
+	font-family: Gillsans;
+	font-size: 1.4em;
 }
 
 .inputfields{
 	background-color: #262b2d;
 	border: 1px solid grey;
 	border-radius: 0;
-	height: 50px;
+	height: 75px;
+	font-size: 1.3em;
+	font-family: Gillsans;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding-left: 40px;
 	color: white;
 }
 
