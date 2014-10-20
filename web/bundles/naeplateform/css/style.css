@@ -61,7 +61,7 @@ h1{
 
 
 
-
+/* Menu-left */
 .sidebar_btn {
 	cursor:pointer;
 	display:block;
@@ -127,13 +127,12 @@ li {
 }
 .navmenu li a.i8 {background-image:url(../images/i5.png);
 }
-.navmenu li a.i9 {background-image:url(../images/i5.png);
+.navmenu li a.i9	 {background-image:url(../images/i5.png);
 }
 .navmenu ul li a:hover,
 .navmenu ul li.active a {
 	background-position:0 0;
 }
-
 .navmenu ul li a span {
     position:absolute;
 	z-index:300;
