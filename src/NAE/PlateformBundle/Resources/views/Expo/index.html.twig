@@ -5,71 +5,100 @@
         <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
         </div>
         <div class="col-md-1 col-xs-2 mynav">
-        
             <!-- Menu -->
-            <nav class="navmenu">
-                <i class="fa fa-bars fa-2x sidebar_btn "></i>
-                <ul class="navmenu-fixed">
-                    <nav>
-                    <li><a class="" href="#">
-                            <img class="about" src="{{ asset('bundles/naeplateform/images/icons/a-propos.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                            <img class="find" src="{{ asset('bundles/naeplateform/images/icons/recherche.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="profil" src="{{ asset('bundles/naeplateform/images/icons/profil.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="book" src="{{ asset('bundles/naeplateform/images/icons/touslesbooks.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="expo" src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="shop" src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="contact" src="{{ asset('bundles/naeplateform/images/icons/mail.png') }}">
-                        </a>
-                    </nav>
-                    </li>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="cvg" src="{{ asset('bundles/naeplateform/images/icons/cvg.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-                    <nav>
-                    <li><a class="" href="#">
-                        <img class="share" src="{{ asset('bundles/naeplateform/images/icons/share.png') }}">
-                        </a>
-                    </li>
-                    </nav>
-
+            <button class="nav-toggler toggle-slide-left nav-ico fa fa-bars fa-3x btn-left"></button>
+            <nav class="menu slide-menu-left">
+                <ul>
+                        <div class="navmenu-fixed-after">                    
+                            <li><a class="" href="#">
+                                    <img class="about-after" src="{{ asset('bundles/naeplateform/images/icons/a-propos.png') }}">
+                                    <h2>QU'EST CE QUE NAE ?</h2>
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                    <img class="find-after" src="{{ asset('bundles/naeplateform/images/icons/recherche.png') }}">
+                                    <h2>RECHERCHE</h2>
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                <img class="profil-after" src="{{ asset('bundles/naeplateform/images/icons/profil.png') }}">
+                                <h2>PROFIL</h2>
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                <img class="book-after" src="{{ asset('bundles/naeplateform/images/icons/touslesbooks.png') }}">
+                                <h2>LISTE DES BOOKS</h2>
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                <img class="expo-after" src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
+                                <h2>EXPO VIRTUELLE</h2>
+                                </a>
+                            </li>      
+                            <li><a class="" href="#">
+                                <img class="shop-after" src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                                <h2>BOUTIQUE</h2>
+                                </a>
+                            </li>                 
+                            <li><a class="" href="#">
+                                <img class="contact-after" src="{{ asset('bundles/naeplateform/images/icons/mail.png') }}">
+                                <h2>CONTACT</h2>
+                                </a> 
+                            </li> 
+                            <li><a class="" href="#">
+                                <img class="cvg-after" src="{{ asset('bundles/naeplateform/images/icons/cvg.png') }}">
+                                <h2>CVG</h2>
+                                </a>
+                            </li>     
+                            <li><a class="" href="#">
+                                <img class="share-after" src="{{ asset('bundles/naeplateform/images/icons/share.png') }}">
+                                <h2>SHARE</h2>
+                                </a>
+                            </li>
+                        </div>
                 </ul>
-            </nav><!-- //Menu -->
-
-        </section>
-
+            </nav>
+            <button class="close-menu nav-toggler nav-ico fa fa-bars fa-3x btn-left"></button>
+            <div class="navmenu-fixed-before"> 
+                <ul>                   
+                            <li><a class="" href="#">
+                                    <img class="about-before" src="{{ asset('bundles/naeplateform/images/icons/a-propos.png') }}">
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                    <img class="find-before" src="{{ asset('bundles/naeplateform/images/icons/recherche.png') }}">
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                <img class="profil-before" src="{{ asset('bundles/naeplateform/images/icons/profil.png') }}">
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                <img class="book-before" src="{{ asset('bundles/naeplateform/images/icons/touslesbooks.png') }}">
+                                </a>
+                            </li>
+                            <li><a class="" href="#">
+                                <img class="expo-before" src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
+                                </a>
+                            </li>      
+                            <li><a class="" href="#">
+                                <img class="shop-before" src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                                </a>
+                            </li>                 
+                            <li><a class="" href="#">
+                                <img class="contact-before" src="{{ asset('bundles/naeplateform/images/icons/mail.png') }}">
+                                </a> 
+                            </li> 
+                            <li><a class="" href="#">
+                                <img class="cvg-before" src="{{ asset('bundles/naeplateform/images/icons/cvg.png') }}">
+                                </a>
+                            </li>     
+                            <li><a class="" href="#">
+                                <img class="share-before" src="{{ asset('bundles/naeplateform/images/icons/share.png') }}">
+                                </a>
+                            </li>
+                        </div>
+                </ul>   
         </div>
         <div class="col-md-11 col-xs-10 slider">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
