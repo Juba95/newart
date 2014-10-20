@@ -5,17 +5,18 @@ body {
     color: white;
 }
 
-h1{
+h1, .content{
 	text-align: center;
 	font-size: 3em;
+}
+
+h1{
 	font-family: DubielItalic;
 	color: #c9c4bd;
 }
 
 .content{
-	text-align: center;
 	font-size: 1.4em;
-	font-family: Gillsans;
 }
 
 .titlestyle{
@@ -32,7 +33,26 @@ h1{
     height: 52px;
     width: 102px;
     margin-top: 77px;
-    margin-left: 53%;
+    margin-left: 49%;
+}
+.title-ts-aka{
+    position: absolute;
+    z-index: 3;
+    height: 52px;
+    width: 102px;
+    margin-top: 77px;
+    margin-left: 44%;
+    font-family: DubielItalic;
+    font-size: 2em;
+}
+.btn-art{
+	position: absolute;
+    z-index: 3;
+    color: #fff;
+    margin-top: 190px;
+	margin-left: 45%;
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgba(255, 255, 255, 1);
 }
 .monheader {
     margin-left: -40px;
@@ -57,19 +77,6 @@ h1{
     height: 567px;
 
 }
-<<<<<<< HEAD
-.cvg{
-	margin-left: -30px;
-	margin-top: 40px;
-}
-.share{
-	margin-left: -30px;
-	margin-top: 40px;
-}
-=======
-
-
->>>>>>> origin/master
 
 .nav2 {
     height: 76px;
@@ -86,9 +93,8 @@ h1{
 }
 
 .navcoupcoeur {
-    width: 18.7%;
+	width: 27%;
 }
-
 /* WHAT IS NAE */
 
 .presnae{
@@ -96,7 +102,7 @@ h1{
 	margin-bottom: 75px;
 }
 
-h2, .undercontent{
+h2, .content, .undercontent{
 	font-family: Gillsans;
 }
 
@@ -213,36 +219,12 @@ h2{
 
 /* ARTISTE */
 
-.bloccenter{
-	text-align: center;
-}
-.titlesuperposition1{
-	font-family: Gillsans;
-	font-size: 5.5em;
-	color: white;
-}
-
-.titlesuperposition2{
-	font-family: Gillsans;
-	font-size: 9.5em;
-	color: grey;
-	opacity: 0.5;
-}
-
-.superposition1{
-	position: relative;
-	z-index: 2;
-}
-
-.superposition2{
-	position: relative;
-}
-
 .artiste{
 	margin-top: 150px;
 }
 
 .artistdaycontent{
+	color: #a0a2a2;
 	margin-top: 100px;
 	margin-bottom: 50px;
 }
@@ -316,7 +298,7 @@ h2{
 	background-color: #262b2d;
 	border: 1px solid grey;
 	border-radius: 0;
-	height: 65px;
+	height: 75px;
 	font-size: 1.3em;
 	font-family: Gillsans;
 	text-transform: uppercase;
@@ -354,24 +336,6 @@ h2{
     position: relative;
     z-index: 2;
     bottom: 190px;
-}
-
-.contentdescription{
-	position: relative;
-	z-index: 3;
-}
-
-.contentdescription h2{
-	font-size: 1.5em;
-	font-family: Gillsans;
-	color: black;
-	padding-top: 50px;
-}
-
-.contentdescription p{
-	font-size: 1em;
-	font-family: Gillsans;
-	color: grey;
 }
 #description1, #description3 {
     bottom: 420px;
