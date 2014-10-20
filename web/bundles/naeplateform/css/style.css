@@ -58,6 +58,114 @@ h1{
     height: 567px;
 }
 
+
+
+
+
+.sidebar_btn {
+	cursor:pointer;
+	display:block;
+	z-index:2000;
+	position:fixed;
+	top: 59px;
+	left: 25px;
+	width:32px;
+	height:34px;
+
+}
+section#sidebar {overflow:visible;
+}
+#sidebar{
+	position:fixed;
+	z-index:999;
+	bottom:0;
+	left:0;
+	top:0;
+	width: 69px;
+	margin: 0;
+	padding: 0 12px 0 11px;
+	background: #333;
+	background: #1b2021;
+}
+#sidebar .container {position:relative;
+}
+li {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.navmenu{
+	position:absolute;
+	top:50%;
+	left:11px;
+	margin: -172px 0 0;
+}
+.navmenu ul li a {
+	position:relative;
+	display:block;
+	margin: 0;
+	padding:0;
+	width:69px;
+	height:69px;
+	background-position:-69px 0;
+	background-repeat:no-repeat;
+}
+.navmenu li a.i1 {background-image:url("../images/artiste.png");
+}
+.navmenu li a.i2 {background-image:url(../images/i2.png);
+}
+.navmenu li a.i3 {background-image:url(../images/i3.png);
+}
+.navmenu li a.i4 {background-image:url(../images/i4.png);
+}
+.navmenu li a.i5 {background-image:url(../images/i5.png);
+}
+.navmenu li a.i6 {background-image:url(../images/i5.png);
+}
+.navmenu li a.i7 {background-image:url(../images/i5.png);
+}
+.navmenu li a.i8 {background-image:url(../images/i5.png);
+}
+.navmenu li a.i9 {background-image:url(../images/i5.png);
+}
+.navmenu ul li a:hover,
+.navmenu ul li.active a {
+	background-position:0 0;
+}
+
+.navmenu ul li a span {
+    position:absolute;
+	z-index:300;
+	top:0;
+	left:0;
+	display:block;
+	width: 0;
+	margin-left:12px;
+	padding: 25px 5px 24px 40px;
+	text-transform:uppercase;
+	color:#ff0000 !important;
+	background: #313131;
+	background: rgba(0,0,0,0.65);
+	opacity:0;
+	filter: alpha(opacity=0);
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.navmenu ul li a:hover span {
+	left:100%;
+	opacity:1;
+	filter: alpha(opacity=100);
+	width: 121px;
+}
+
+
+
+
+
+
+
+
 .nav2 {
     height: 76px;
     background-color: #1b2021;
