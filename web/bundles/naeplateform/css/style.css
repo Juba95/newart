@@ -40,14 +40,37 @@ h1{
     margin-right: 0px;
     height: auto;
 }
+
+/* mon menu*/
 .mynav {
     background-color: #1b2021;
     height: 6350px;
     border-right: solid 1px #434749;
     position: relative;
-    z-index: 2;
+    z-index: 5;
     width: 6.3%;
 }
+
+.mynav ul{
+    list-style-type: none;
+    padding-left: 10px;
+    position: fixed;
+}
+.mynav nav ul{
+    padding-top: 80px;
+}
+.mynav li {
+    padding: 20px 0px 10px 0px;
+}
+
+ul.icon-menu {
+    padding: 30px 0px 25px 28px;
+    list-style-type: none;
+    border-bottom: solid 1.5px rgba(255,255,255,0.1);
+    width: 84px;
+    margin-left: -15px;
+}
+
 .slider {
     padding-left: 0px;
     padding-right: 0px;
@@ -58,8 +81,6 @@ h1{
     height: 567px;
 
 }
-
-
 
 .nav2 {
     height: 76px;
