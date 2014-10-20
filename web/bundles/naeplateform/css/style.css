@@ -55,61 +55,9 @@ h1{
 .slider .item img {
     width: 100%;
     height: 567px;
-}
-
-
-
-
-/* Menu-left */
-
-ul{
-	list-style-type: none;
-}
-.navmenu-fixed{
-	position: fixed;
-}
-.sidebar_btn {
-	cursor:pointer;
-	display:block;
-	z-index:2000;
-	position:fixed;
-	top: 9px;
-	left: 25px;
-	width:32px;
-	height:34px;
-}
-.about{
-	margin-left: -30px;
-	margin-top: 50px;
 
 }
-.find{
-	margin-left: -30px;
-	margin-top: 40px;
-
-}
-.profil{
-	margin-left: -30px;
-	margin-top: 40px;
-
-}
-.book{
-	margin-left: -30px;
-	margin-top: 40px;
-}
-.expo{
-	margin-left: -30px;
-	margin-top: 40px;
-}
-
-.shop{
-	margin-left: -30px;
-	margin-top: 40px;
-}
-.contact{
-	margin-left: -30px;
-	margin-top: 40px;
-}
+<<<<<<< HEAD
 .cvg{
 	margin-left: -30px;
 	margin-top: 40px;
@@ -118,6 +66,10 @@ ul{
 	margin-left: -30px;
 	margin-top: 40px;
 }
+=======
+
+
+>>>>>>> origin/master
 
 .nav2 {
     height: 76px;
@@ -167,7 +119,7 @@ hr{
 
 .parallax{
 	background: url("../images/3.jpg");
-	background-attachment: fixed; 
+	background-attachment: fixed;
     background-repeat: no-repeat;
   	background-size: cover;
   	-webkit-background-size: cover;
@@ -309,7 +261,7 @@ h2{
 }
 
 .oeuvrejour{
-	background: url("../images/2.jpg"); 
+	background: url("../images/2.jpg");
     background-repeat: no-repeat;
   	background-size: cover;
   	-webkit-background-size: cover;
