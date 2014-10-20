@@ -100,7 +100,7 @@
     {# End Parallax / Bouton #}
 
     {# News #}
-    <div class="row col-md-11 news">
+    <div class="row col-md-10 col-md-offset-1 news">
         <h1>Nos dernières<br><span class="titlestyle"> News</span></h1>
             <hr>
             <div class="newsmargin">
@@ -197,47 +197,45 @@
     {# End Recherche #}
 
     {# Oeuvres + Présentation // Galerie#}
-    <div class="row col-md-11 col-md-offset-1 gallery">
-        <div class="col-md-4 image">
-            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-3 contenttopleft">
-                <h3>Cherry Glazer</h3>
-                <p class="grey">sed quia non numquam eius modi tempoun</p>
+
+    <div class="col-md-11 gallery">
+        <div class="row etage1">
+            <div class="col-md-3 image1">
+                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
+                <div id="description1">
+
+                </div>
+            </div>
+
+            <div class="col-md-4 image2">
+                <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
+                <div id="description2">
+
+                </div>
+            </div>
+
+            <div class="col-md-5 pull-right image3">
+                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
+                <div id="description3">
+
+                </div>
             </div>
         </div>
+        <div class="row etage2">
+            <div class="col-md-7 image4">
+               <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
+                <div id="description4">
 
-        <div class="col-md-4 image">
-            <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-3 contentbottomleft">
-                <h3>Raluca Vulcan</h3>
-                <p class="grey">aka Raluca Vulcan Peintre</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 image5">
+                <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="image galerie">
+                <div id="description5">
+
+                </div>
             </div>
         </div>
-
-        <div class="col-md-4 image">
-            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-3 contenttopright">
-                <h3>Elise Kammerer</h3>
-                <p class="grey">aka EliseKammerer Photographe</p>
-            </div>
-        </div>
-
-        <div class="col-md-8 image">
-            <img src="{{ asset('bundles/naeplateform/images/nulla_bg_1.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-3 contenttopleft">
-                <h3>Cécile Durant</h3>
-                <p class="grey">aka CDMart</p>
-            </div>
-        </div>
-
-        <div class="col-md-4 image">
-            <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" class="img-responsive" alt="image galerie">
-            <div class="col-md-3 contentbottomleft">
-                <h3>Burno Kowalski</h3>
-                <p class="grey">aka kowalski</p>
-            </div>
-        </div>
-
     </div>
 
      <div class="row col-md-10 col-md-offset-1 footerwebsite">
