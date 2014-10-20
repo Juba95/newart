@@ -8,18 +8,62 @@
         
             <!-- Menu -->
             <nav class="navmenu">
-                <i class="fa fa-bars fa-3x sidebar_btn over-btn"></i>
-                <ul>
-                    
-                    <li><a class="" href="#">QU'EST CE QUE NAE ?</a></li>
-                    <li><a class="" href="#">RECHERCHE</a></li>
-                    <li><a class="" href="#">MON PROFIL</a></li>
-                    <li><a class="" href="#">LISTE DES BOOKS</a></li>
-                    <li><a class="" href="#">EXPO VIRTUELLE</a></li>
-                    <li><a class="" href="#">LA BOUTIQUE</a></li>
-                    <li><a class="" href="#">CONTACT</a></li>
-                    <li><a class="" href="#">CVG</a></li>
-                    <li><a class="" href="#">PARTAGER</a></li>
+                <i class="fa fa-bars fa-2x sidebar_btn "></i>
+                <ul class="navmenu-fixed">
+                    <nav>
+                    <li><a class="" href="#">
+                            <img class="about" src="{{ asset('bundles/naeplateform/images/icons/a-propos.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                            <img class="find" src="{{ asset('bundles/naeplateform/images/icons/recherche.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="profil" src="{{ asset('bundles/naeplateform/images/icons/profil.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="book" src="{{ asset('bundles/naeplateform/images/icons/touslesbooks.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="expo" src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="shop" src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="contact" src="{{ asset('bundles/naeplateform/images/icons/mail.png') }}">
+                        </a>
+                    </nav>
+                    </li>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="cvg" src="{{ asset('bundles/naeplateform/images/icons/cvg.png') }}">
+                        </a>
+                    </li>
+                    </nav>
+                    <nav>
+                    <li><a class="" href="#">
+                        <img class="share" src="{{ asset('bundles/naeplateform/images/icons/share.png') }}">
+                        </a>
+                    </li>
+                    </nav>
 
                 </ul>
             </nav><!-- //Menu -->
@@ -270,22 +314,6 @@
     })
 </script>
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-    //Menu Sidebar
-    setTimeout(function() {
-        $('#sidebar').animate({left: '-92px'}, 800);
-    }, 3500);
-    
-    jQuery('.sidebar_btn').click(function(){
-        var sidebar = $('#sidebar');
-        if (sidebar.css('left') === '-92px') {
-            $('#sidebar').animate({left: '0px'});
-        } else {
-            $('#sidebar').animate({left: '-92px'});
-        }       
-    });
-</script>
 
 </body>
 

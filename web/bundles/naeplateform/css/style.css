@@ -62,17 +62,72 @@ h1{
 
 
 /* Menu-left */
+
+ul{
+	list-style-type: none;
+}
+.navmenu-fixed{
+	position: fixed;
+}
 .sidebar_btn {
 	cursor:pointer;
 	display:block;
 	z-index:2000;
 	position:fixed;
-	top: 59px;
+	top: 9px;
 	left: 25px;
 	width:32px;
 	height:34px;
+}
+.about{
+	margin-left: -30px;
+	margin-top: 50px;
 
 }
+.find{
+	margin-left: -30px;
+	margin-top: 40px;
+
+}
+.profil{
+	margin-left: -30px;
+	margin-top: 40px;
+
+}
+.book{
+	margin-left: -30px;
+	margin-top: 40px;
+}
+.expo{
+	margin-left: -30px;
+	margin-top: 40px;
+}
+
+.shop{
+	margin-left: -30px;
+	margin-top: 40px;
+}
+.contact{
+	margin-left: -30px;
+	margin-top: 40px;
+}
+.cvg{
+	margin-left: -30px;
+	margin-top: 40px;
+}
+.share{
+	margin-left: -30px;
+	margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
