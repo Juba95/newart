@@ -4,6 +4,13 @@
     {# Big header avec slider #}
         <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
         </div>
+        <div class="title-ts-aka">
+            <h1>Tomi Slapette</h1>
+            <p>AKA MONSIEUR&MADAME</p>
+        </div>
+        <div class="btn-art">
+            <button type="button" class="btn btn-default btn-art">DECOUVRIR L'ARTISTE</button>
+        </div>
         <div class="col-md-1 col-xs-2 mynav">
             <ul class="icon-menu">
                 <img src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}" alt="iconmenu">
@@ -76,23 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="nav2">
-            <div class="col-md-3 navartiste">
-                <nav>
-                    <a href="#">
-                        <img src="{{ asset('bundles/naeplateform/images/icons/artiste.png') }}">
-                        <h4>{{ 'les artistes'|upper }}</h4>
-                    </a>
-                </nav>
-            </div>
-            <div class="col-md-3 navboutique">
-            <nav>
-                <a href="#">
-                    <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
-                    <h4>{{ 'la boutique'|upper }}</h4>
-                </a>
-            </nav>
-            </div>
+        <div class="nav2"> 
             <div class="col-md-3 navexpovirtuel">
             <nav>
                 <a href="#">
@@ -101,8 +92,15 @@
                 </a>
             </nav>
             </div>
-
-            <div class="col-md-2 navcoupcoeur">
+            <div class="col-md-5 navexpovirtuel">
+            <nav>
+                <a href="#">
+                    <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                    <h4>{{ 'boutique'|upper }}</h4>
+                </a>
+            </nav>
+            </div>
+            <div class="col-md-3 navcoupcoeur">
             <nav>
                 <a href="#">
                     <img src="{{ asset('bundles/naeplateform/images/icons/coeur.png') }}">
@@ -117,9 +115,11 @@
     <div class="row col-md-11 presnae">
         <h1>Qu'est ce que<br><span class="titlestyle"> New Art Expo ?</span></h1>
         <hr>
-        <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
-        <p class="content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
-        <p class="undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
+        <div class="col-md-6 col-md-offset-3">
+            <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
+            <p class="content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
+            <p class="undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
+        </div>
     </div>
     {# End What is NAE #}
 
@@ -170,9 +170,14 @@
 
     {# Artiste/Oeuvre du jour #}
     <div class="row col-md-11 artiste">
-        <h1>Artiste<br><span class="titlestyle"> du jour</span></h1>
-        <hr>
-        <div class="artistdaycontent">
+        <div class="col-md-6 col-md-offset-3 superposition1">
+            <h1 class="titlesuperposition1">Artiste</h1>
+        </div>
+        <div class="col-md-6 col-md-offset-3 superposition2">
+            <h1 class="titlesuperposition2">du jour.</h1>
+        </div>
+        
+        <div class="col-md-6 col-md-offset-3 artistdaycontent">
             <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
@@ -233,21 +238,30 @@
             <div class="col-md-3 image1">
                 <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
                 <div id="description1">
-
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Cherry Glazer</h2>
+                        <p>sed quia non numquam eius modi tempount</p>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4 image2">
                 <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
                 <div id="description2">
-
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Raluca Vulcan</h2>
+                        <p>aka Raluca Vulcan Peintre</p>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-5 pull-right image3">
                 <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
                 <div id="description3">
-
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Elise Kammerer</h2>
+                        <p>aka EliseKammerer Photographe</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -255,20 +269,26 @@
             <div class="col-md-7 image4">
                <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
                 <div id="description4">
-
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Cécile Durant</h2>
+                        <p>aka CDMart</p>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-5 image5">
                 <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="image galerie">
                 <div id="description5">
-
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Burno Kowalski</h2>
+                        <p>aka Kowalski</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-     <div class="row col-md-10 col-md-offset-1 footerwebsite">
+     <div class="row col-md-11 footerwebsite">
         <p>Website</p>
         <p>NewArtExpo</p>
     </div>
