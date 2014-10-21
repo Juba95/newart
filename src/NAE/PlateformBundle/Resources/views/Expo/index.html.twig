@@ -2,282 +2,297 @@
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
     {# Big header avec slider #}
-        <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
-        </div>
-        <div class="col-md-1 col-xs-2 mynav">
+<div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
+</div>
+<div class="col-md-1 col-xs-2 mynav">
+    <ul class="icon-menu">
+        <img src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}" alt="iconmenu">
+    </ul>
+    <nav>
+        <ul>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/a-propos.png') }}" alt="a-propos">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/recherche.png') }}" alt="recherce">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/touslesbooks.png') }}" alt="lesbooks">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}" alt="expo-virtuel">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}" alt="boutique">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/contact.png') }}" alt="contact">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/cvg.png') }}" alt="cvg">
+            </li>
+            <li>
+                <img src="{{ asset('bundles/naeplateform/images/icons/share.png') }}" alt="share">
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="col-md-11 col-xs-10 slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
 
-        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
-            <h3>Menu</h3>
-            <a href="#">QUEST CE QUE NAE ?</a>
-            <a href="#">RECHERCHE</a>
-            <a href="#">MON PROFIL</a>
-            <a href="#">LISTE DES BOOKS</a>
-            <a href="#">EXPO VIRTUELLE</a>
-            <a href="#">LA BOUTIQUE</a>
-            <a href="#">CONTACT</a>
-            <a href="#">CVG</a>
-            <a href="#">PARTAGER</a>
-        </nav>
-                <section>
-                        <img class="toggle-menu menu-left btn-menu" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">   
-                </section>
-        </div>
-        <div class="col-md-11 col-xs-10 slider">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="{{ asset('bundles/naeplateform/images/image_slider_1.png') }}" alt="image1">
-                        <div class="carousel-caption">
-                            <h1>Tomi Slapette</h1>
-                            <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                            <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('bundles/naeplateform/images/image_slider_2.jpg') }}" alt="image2">
-                        <div class="carousel-caption">
-                            <h1>Pierre Pampidou</h1>
-                            <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                            <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('bundles/naeplateform/images/image_slider_3.jpg') }}" alt="image3">
-                        <div class="carousel-caption">
-                            <h1>Tomi Slapette</h1>
-                            <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                            <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="{{ asset('bundles/naeplateform/images/image_slider_2.jpg') }}" alt="image4">
-                        <div class="carousel-caption">
-                            <h1>Tomi Slapette</h1>
-                            <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                            <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
-                        </div>
-                    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{{ asset('bundles/naeplateform/images/image_slider_1.png') }}" alt="image1">
+                <div class="carousel-caption">
+                    <h1>Tomi Slapette</h1>
+                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
+                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/naeplateform/images/image_slider_2.jpg') }}" alt="image2">
+                <div class="carousel-caption">
+                    <h1>Pierre Pampidou</h1>
+                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
+                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/naeplateform/images/image_slider_3.jpg') }}" alt="image3">
+                <div class="carousel-caption">
+                    <h1>Tomi Slapette</h1>
+                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
+                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ asset('bundles/naeplateform/images/image_slider_2.jpg') }}" alt="image4">
+                <div class="carousel-caption">
+                    <h1>Tomi Slapette</h1>
+                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
+                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
                 </div>
             </div>
         </div>
-        <div class="nav2"> 
-            <div class="col-md-3 navexpovirtuel">
-            <nav>
-                <a href="#">
-                    <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
-                    <h4>{{ 'expo virtuel'|upper }}</h4>
-                </a>
-            </nav>
-            </div>
-            <div class="col-md-5 navexpovirtuel">
-            <nav>
-                <a href="#">
-                    <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
-                    <h4>{{ 'boutique'|upper }}</h4>
-                </a>
-            </nav>
-            </div>
-            <div class="col-md-3 navcoupcoeur">
-            <nav>
-                <a href="#">
-                    <img src="{{ asset('bundles/naeplateform/images/icons/coeur.png') }}">
-                    <h4>{{ 'coup de coeur'|upper }}</h4>
-                </a>
-            </nav>
-            </div>
-        </div>
-    {# End Big Header #}
+    </div>
+</div>
+<div class="nav2">
+    <div class="col-md-3 navexpovirtuel">
+        <nav>
+            <a href="#">
+                <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
+                <h4>{{ 'expo virtuel'|upper }}</h4>
+            </a>
+        </nav>
+    </div>
+    <div class="col-md-5 navexpovirtuel">
+        <nav>
+            <a href="#">
+                <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                <h4>{{ 'boutique'|upper }}</h4>
+            </a>
+        </nav>
+    </div>
+    <div class="col-md-3 navcoupcoeur">
+        <nav>
+            <a href="#">
+                <img src="{{ asset('bundles/naeplateform/images/icons/coeur.png') }}">
+                <h4>{{ 'coup de coeur'|upper }}</h4>
+            </a>
+        </nav>
+    </div>
+</div>
+{# End Big Header #}
 
     {# What is NAE #}
-    <div class="row col-md-11 presnae">
-        <h1>Qu'est ce que<br><span class="titlestyle"> New Art Expo ?</span></h1>
-        <hr>
-        <div class="col-md-6 col-md-offset-3">
-            <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
-            <p class="content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
-            <p class="undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
-        </div>
+<div class="row col-md-11 presnae">
+    <h1>Qu'est ce que<br><span class="titlestyle"> New Art Expo ?</span></h1>
+    <hr>
+    <div class="col-md-6 col-md-offset-3">
+        <p class="content">NewArtExpo est un site communautaire d'artistes plasticiens plasiticens, et permet d'exposer l'ensemble de leurs travaux sur leurs propres espaces.</p>
+        <p class="content">NAE permet aux artistes de disposer d'un book performant et gratuit tout en se délestant de la partie de création du site</p>
+        <p class="undercontent">Nous permettons ainsi à nos artistes d'établir un curriculum vitae artistique disponible à tout moment de leurs parcours</p>
     </div>
-    {# End What is NAE #}
+</div>
+{# End What is NAE #}
 
     {# Parallax / Bouton #}
-        <div class="row col-md-11 parallax">
-            <a href="#"><button type="button" class="btn btn-default center-block button">En savoir +</button></a>
-        </div>
-    {# End Parallax / Bouton #}
+<div class="row col-md-11 parallax">
+    <a href="#"><button type="button" class="btn btn-default center-block button">En savoir +</button></a>
+</div>
+{# End Parallax / Bouton #}
 
     {# News #}
-    <div class="row col-md-10 col-md-offset-1 news">
-        <h1>Nos dernières<br><span class="titlestyle"> News</span></h1>
-            <hr>
-            <div class="newsmargin">
-                <div class="row col-md-5">
-                    <p class="datenews">28/10/2014</p>
-                    <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
-                    <p class="undercontentnews">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
-                    <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="Image News 1" class="img-responsive">
-                    <p class="newslink"><a href="#">Lire Plus</a></p>
-                </div>
+<div class="row col-md-10 col-md-offset-1 news">
+    <h1>Nos dernières<br><span class="titlestyle"> News</span></h1>
+    <hr>
+    <div class="newsmargin">
+        <div class="row col-md-5">
+            <p class="datenews">28/10/2014</p>
+            <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
+            <p class="undercontentnews">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
+            <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="Image News 1" class="img-responsive">
+            <p class="newslink"><a href="#">Lire Plus</a></p>
+        </div>
 
-                <div class="row col-md-5 col-md-offset-1 secondarynews">
-                    <p class="datenews">28/10/2014</p>
-                    <h3>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h3>
-                    <p class="undercontentnews">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
-                    <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="Image News 2" class="img-responsive">
-                    <p class="newslink"><a href="#">Lire Plus</a></p>
-                </div>
+        <div class="row col-md-5 col-md-offset-1 secondarynews">
+            <p class="datenews">28/10/2014</p>
+            <h3>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h3>
+            <p class="undercontentnews">Nous avons le plaisir de vous inviter à la soirée “Été d’Amour” ce mardi. Nous serons ravis de vous accueillir afin de vous présenter les nouveaux artistes autour d'un verre et d'une performance artistique unique.</p>
+            <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="Image News 2" class="img-responsive">
+            <p class="newslink"><a href="#">Lire Plus</a></p>
+        </div>
 
-                <div class="row col-md-5">
-                </div>
+        <div class="row col-md-5">
+        </div>
 
-                <div class="row col-md-5 col-md-offset-1 secondarynews">
-                    <p class="datenews">11/02/2014</p>
-                    <h3>Bientôt ! Un évenement signé NAE</h3>
-                    <p class="undercontentnews">Nous proposons aux visiteurs une traversée à l’intérieur de soi dont l’espace d’exposition serait la métaphore. Cette immense odyssée, tant physique que psychique, invite à traverser deux niveaux du Palais de Tokyo métamorphosé par les artistes.</p>
-                    <img src="{{ asset('bundles/naeplateform/images/2.jpg') }}" alt="Image News 3" class="img-responsive">
-                    <p class="newslink"><a href="#">Lire Plus</a></p>
-                </div>
-            </div>
-
-            <div class="row col-md-10 col-md-offset-1 newsbutton">
-                <p class="content"><a href="#"><button type="button" class="btn btn-default buttonred">Lire tous les billets</button></a><p>
-            </div>
+        <div class="row col-md-5 col-md-offset-1 secondarynews">
+            <p class="datenews">11/02/2014</p>
+            <h3>Bientôt ! Un évenement signé NAE</h3>
+            <p class="undercontentnews">Nous proposons aux visiteurs une traversée à l’intérieur de soi dont l’espace d’exposition serait la métaphore. Cette immense odyssée, tant physique que psychique, invite à traverser deux niveaux du Palais de Tokyo métamorphosé par les artistes.</p>
+            <img src="{{ asset('bundles/naeplateform/images/2.jpg') }}" alt="Image News 3" class="img-responsive">
+            <p class="newslink"><a href="#">Lire Plus</a></p>
+        </div>
     </div>
-    {# End News #}
+
+    <div class="row col-md-10 col-md-offset-1 newsbutton">
+        <p class="content"><a href="#"><button type="button" class="btn btn-default buttonred">Lire tous les billets</button></a><p>
+    </div>
+</div>
+{# End News #}
 
     {# Artiste/Oeuvre du jour #}
-    <div class="row col-md-11 artiste">
-        <div class="col-md-6 col-md-offset-3 superposition1">
-            <h1 class="titlesuperposition1">Artiste</h1>
-        </div>
-        <div class="col-md-6 col-md-offset-3 superposition2">
-            <h1 class="titlesuperposition2">du jour.</h1>
-        </div>
-        
-        <div class="col-md-6 col-md-offset-3 artistdaycontent">
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+<div class="row col-md-11 artiste">
+    <div class="col-md-6 col-md-offset-3 superposition1">
+        <h1 class="titlesuperposition1">Artiste</h1>
+    </div>
+    <div class="col-md-6 col-md-offset-3 superposition2">
+        <h1 class="titlesuperposition2">du jour.</h1>
     </div>
 
-    <div class="row col-md-6 artistejour">
-        <div class="col-md-6 col-md-offset-1">
-            <h3 class="titleartiste">Artiste du jour</h3>
-            <h2 class="nameartiste">Pascal Cherchiario</h2>
-            <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div>
+    <div class="col-md-6 col-md-offset-3 artistdaycontent">
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+</div>
 
-    <div class="row col-md-6 oeuvrejour">
-        <div class="col-md-6 col-md-offset-1">
-            <h3 class="titleartiste">Oeuvre du jour</h3>
-            <h2 class="nameartiste">Romuald Merceaux</h2>
-            <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        </div>
+<div class="row col-md-6 artistejour">
+    <div class="col-md-6 col-md-offset-1">
+        <h3 class="titleartiste">Artiste du jour</h3>
+        <h2 class="nameartiste">Pascal Cherchiario</h2>
+        <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     </div>
-    {# End Artiste/Oeuvre #}
+</div>
+
+<div class="row col-md-6 oeuvrejour">
+    <div class="col-md-6 col-md-offset-1">
+        <h3 class="titleartiste">Oeuvre du jour</h3>
+        <h2 class="nameartiste">Romuald Merceaux</h2>
+        <p class="contentartiste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </div>
+</div>
+{# End Artiste/Oeuvre #}
 
     {# Recherche #}
-    <div class="row col-md-11 artiste">
-        <h1>Rechercher<br><span class="titlestyle"> un artiste</span></h1>
-        <hr>
-    </div>
+<div class="row col-md-11 artiste">
+    <h1>Rechercher<br><span class="titlestyle"> un artiste</span></h1>
+    <hr>
+</div>
 
-    <div class="col-md-3 col-md-offset-2 search">
-        <form class="form-horizontal" role="form">
+<div class="col-md-3 col-md-offset-2 search">
+    <form class="form-horizontal" role="form">
         <div class="form-group">
-          <label for="inputName3" class="col-sm-2 control-label"></label>
+            <label for="inputName3" class="col-sm-2 control-label"></label>
             <div class="col-sm-10">
-              <input type="text" class="form-control inputfields" id="" placeholder="">
+                <input type="text" class="form-control inputfields" id="" placeholder="">
             </div>
         </div>
 
         <div class="form-group">
-          <div class="submitright">
-            <p><button type="submit" class="btn btn-default btnsearch">Rechercher</button><p>
-          </div>
+            <div class="submitright">
+                <p><button type="submit" class="btn btn-default btnsearch">Rechercher</button><p>
+            </div>
         </div>
 
         <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label"></label>
+            <label for="inputEmail3" class="col-sm-2 control-label"></label>
             <div class="col-sm-10">
-              <input type="text" class="form-control inputfields" id="" placeholder="Pseudo">
+                <input type="text" class="form-control inputfields" id="" placeholder="Pseudo">
             </div>
         </div>
-        </form>
-    </div>
-    {# End Recherche #}
+    </form>
+</div>
+{# End Recherche #}
 
     {# Oeuvres + Présentation // Galerie#}
 
-    <div class="col-md-11 gallery">
-        <div class="row etage1">
-            <div class="col-md-3 image1">
-                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
-                <div id="description1">
-                    <div class="col-md-11 col-md-offset-1 contentdescription">
-                        <h2>Cherry Glazer</h2>
-                        <p>sed quia non numquam eius modi tempount</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 image2">
-                <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
-                <div id="description2">
-                    <div class="col-md-11 col-md-offset-1 contentdescription">
-                        <h2>Raluca Vulcan</h2>
-                        <p>aka Raluca Vulcan Peintre</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-5 pull-right image3">
-                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
-                <div id="description3">
-                    <div class="col-md-11 col-md-offset-1 contentdescription">
-                        <h2>Elise Kammerer</h2>
-                        <p>aka EliseKammerer Photographe</p>
-                    </div>
+<div class="col-md-11 gallery">
+    <div class="row etage1">
+        <div class="col-md-3 image1">
+            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
+            <div id="description1">
+                <div class="col-md-11 col-md-offset-1 contentdescription">
+                    <h2>Cherry Glazer</h2>
+                    <p>sed quia non numquam eius modi tempount</p>
                 </div>
             </div>
         </div>
-        <div class="row etage2">
-            <div class="col-md-7 image4">
-               <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
-                <div id="description4">
-                    <div class="col-md-11 col-md-offset-1 contentdescription">
-                        <h2>Cécile Durant</h2>
-                        <p>aka CDMart</p>
-                    </div>
+
+        <div class="col-md-4 image2">
+            <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
+            <div id="description2">
+                <div class="col-md-11 col-md-offset-1 contentdescription">
+                    <h2>Raluca Vulcan</h2>
+                    <p>aka Raluca Vulcan Peintre</p>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md-5 image5">
-                <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="image galerie">
-                <div id="description5">
-                    <div class="col-md-11 col-md-offset-1 contentdescription">
-                        <h2>Burno Kowalski</h2>
-                        <p>aka Kowalski</p>
-                    </div>
+        <div class="col-md-5 pull-right image3">
+            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
+            <div id="description3">
+                <div class="col-md-11 col-md-offset-1 contentdescription">
+                    <h2>Elise Kammerer</h2>
+                    <p>aka EliseKammerer Photographe</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row etage2">
+        <div class="col-md-7 image4">
+            <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
+            <div id="description4">
+                <div class="col-md-11 col-md-offset-1 contentdescription">
+                    <h2>Cécile Durant</h2>
+                    <p>aka CDMart</p>
+                </div>
+            </div>
+        </div>
 
-     <div class="row col-md-11 footerwebsite">
-        <p>Website</p>
-        <p>NewArtExpo</p>
+        <div class="col-md-5 image5">
+            <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="image galerie">
+            <div id="description5">
+                <div class="col-md-11 col-md-offset-1 contentdescription">
+                    <h2>Burno Kowalski</h2>
+                    <p>aka Kowalski</p>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="row col-md-11 footerwebsite">
+    <p>Website</p>
+    <p>NewArtExpo</p>
+</div>
 
 
 <script type="javascript">
@@ -285,13 +300,6 @@
         interval: 2000
     })
 </script>
-
-<script>
-        jQuery(document).ready(function($) {
-            $('.toggle-menu').jPushMenu();
-        });
-</script>
-
 </body>
 
 
