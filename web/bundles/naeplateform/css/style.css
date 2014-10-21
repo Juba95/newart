@@ -8,6 +8,25 @@ a{
 	color: #fff;
 }
 
+.titreh1{
+	text-align: center;
+	font-family: DubielItalic;
+	font-size: 3em;
+	color: grey;
+}
+
+.titlestyle{
+	font-family: Gillsans;
+	text-transform: uppercase;
+	color: white;
+}
+
+.content{
+	text-align: center;
+	font-size: 1.4em;
+	font-family: Gillsans;
+}
+
 /* HEADER */
 .logo {
     background: url(../images/logo.png);
@@ -232,12 +251,35 @@ h2{
 
 /* ARTISTE */
 
+
+.titlesuperposition1{
+	font-family: Gillsans;
+	font-size: 5.5em;
+	color: white;
+}
+
+.titlesuperposition2{
+	font-family: Gillsans;
+	font-size: 9.5em;
+	color: grey;
+	opacity: 0.5;
+}
+
+.superposition1{
+	position: relative;
+	z-index: 2;
+}
+
+.superposition2{
+	position: relative;
+}
+
 .artiste{
 	margin-top: 150px;
 }
 
 .artistdaycontent{
-	color: #a0a2a2;
+	color: white;
 	margin-top: 100px;
 	margin-bottom: 50px;
 }
@@ -297,7 +339,7 @@ h2{
 }
 
 .btnsearch{
-	margin-left: 600px;
+	/*margin-left: 600px;*/
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-top: 20px;
@@ -354,6 +396,24 @@ h2{
     bottom: 420px;
 }
 
+.contentdescription{
+	position: relative;
+	z-index: 3;
+}
+
+.contentdescription h2{
+	font-size: 1.5em;
+	font-family: Gillsans;
+	color: black;
+	padding-top: 50px;
+}
+
+.contentdescription p{
+	font-size: 1em;
+	font-family: Gillsans;
+	color: grey;
+}
+
 /* FOOTER */
 
 .footerwebsite{
@@ -365,4 +425,32 @@ h2{
 
 .grey{
 	color: grey;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {	
+.presnae{
+	margin-top: 750px;
+	margin-bottom: 75px;
+}
+
+.mynav{
+	display: none;
+}
+
+}
+
+
+@media screen and (max-width: 486px) {	
+.presnae{
+	margin-top: 200px;
+	margin-bottom: 75px;
+}
+
+.slider{
+	display: none;
+}
+
 }
