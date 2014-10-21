@@ -5,37 +5,22 @@
         <div class="logo col-md-4 col-md-offset-6 col-sm-4 col-sm-offset-6 col-xs-4 col-xs-offset-6">
         </div>
         <div class="col-md-1 col-xs-2 mynav">
-            <ul class="icon-menu">
-                <img src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}" alt="iconmenu">
-            </ul>
-            <nav>
-                <ul>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/a-propos.png') }}" alt="a-propos">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/recherche.png') }}" alt="recherce">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/touslesbooks.png') }}" alt="lesbooks">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}" alt="expo-virtuel">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}" alt="boutique">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/contact.png') }}" alt="contact">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/cvg.png') }}" alt="cvg">
-                    </li>
-                    <li>
-                        <img src="{{ asset('bundles/naeplateform/images/icons/share.png') }}" alt="share">
-                    </li>
-                </ul>
-            </nav>
+
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+            <h3>Menu</h3>
+            <a href="#">QUEST CE QUE NAE ?</a>
+            <a href="#">RECHERCHE</a>
+            <a href="#">MON PROFIL</a>
+            <a href="#">LISTE DES BOOKS</a>
+            <a href="#">EXPO VIRTUELLE</a>
+            <a href="#">LA BOUTIQUE</a>
+            <a href="#">CONTACT</a>
+            <a href="#">CVG</a>
+            <a href="#">PARTAGER</a>
+        </nav>
+                <section>
+                        <img class="toggle-menu menu-left btn-menu" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">   
+                </section>
         </div>
         <div class="col-md-11 col-xs-10 slider">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -300,6 +285,13 @@
         interval: 2000
     })
 </script>
+
+<script>
+        jQuery(document).ready(function($) {
+            $('.toggle-menu').jPushMenu();
+        });
+</script>
+
 </body>
 
 
