@@ -1,0 +1,93 @@
+@import './fonts.css';
+
+/* Full Page */
+
+body {
+    background-color: #262b2d;
+    color: white;
+}
+
+.titlestyle{
+    font-family: Gillsans;
+    text-transform: uppercase;
+    color: white;
+}
+
+.barre{
+    width: 85px;
+    border-top: 1px solid white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* End Full Page */
+
+
+/* Nav / Slider */
+
+/* End Nav / Slider */
+
+
+/* What is NAE */
+
+.presnae{
+    margin-top: 125px;
+    margin-bottom: 75px;
+}
+
+.presnae h1{
+    font-family: DubielItalic;
+    font-size: 4em;
+    color: grey;
+}
+
+.content{
+    font-size: 1.4em;
+    font-family: Gillsans;
+}
+
+.undercontent{
+    color: grey;
+    font-family: Gillsans;
+    font-size: 1em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* End What is NAE */
+
+
+/* Parallax */
+
+/* End Parallax*/
+
+
+/* News */
+
+/* End News */
+
+
+/* Artiste du jour */
+
+/* End Artiste du jour */
+
+
+/* Rechercher un artiste */
+
+/* End Rechercher un artiste */
+
+
+/* Galerie */
+
+/* End Galerie */
+
+
+/* Footer */
+
+/* End Footer */
+
+
+
+/* Responsive */
+
+/* End Responsive */
