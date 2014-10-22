@@ -1,456 +1,91 @@
 @import './fonts.css';
 
+/* Full Page */
+
 body {
     background-color: #262b2d;
     color: white;
 }
-a{
-	color: #fff;
-}
-
-.titreh1{
-	text-align: center;
-	font-family: DubielItalic;
-	font-size: 3em;
-	color: grey;
-}
 
 .titlestyle{
-	font-family: Gillsans;
-	text-transform: uppercase;
-	color: white;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    color: white;
+}
+
+.barre{
+    width: 85px;
+    border-top: 1px solid white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* End Full Page */
+
+
+/* Nav / Slider */
+
+/* End Nav / Slider */
+
+
+/* What is NAE */
+
+.presnae{
+    margin-top: 125px;
+    margin-bottom: 75px;
+}
+
+.presnae h1{
+    font-family: DubielItalic;
+    font-size: 4em;
+    color: grey;
 }
 
 .content{
-	text-align: center;
-	font-size: 1.4em;
-	font-family: Gillsans;
-}
-
-/* HEADER */
-.logo {
-    background: url(../images/logo.png);
-    position: absolute;
-    z-index: 3;
-    height: 52px;
-    width: 102px;
-    margin-top: 77px;
-    margin-left: 49%;
-}
-
-.monheader {
-    margin-left: -40px;
-    margin-right: 0px;
-    height: auto;
-}
-
-/* mon menu*/
-.mynav {
-    background-color: #1b2021;
-    height: 6350px;
-    border-right: solid 1px #434749;
-    position: relative;
-    z-index: 5;
-    width: 6.3%;
-}
-
-.mynav ul{
-    list-style-type: none;
-    padding-left: 10px;
-    position: fixed;
-}
-.mynav nav ul{
-    padding-top: 80px;
-}
-.mynav li {
-    padding: 20px 0px 10px 0px;
-}
-
-ul.icon-menu {
-    padding: 30px 0px 25px 28px;
-    list-style-type: none;
-    border-bottom: solid 1.5px rgba(255,255,255,0.1);
-    width: 84px;
-    margin-left: -15px;
-}
-
-.slider {
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 93.666667%
-}
-
-.slider h1{
-    font-family: 'DubielItalic', helvetica;
-    font-size: 140px;
-    position: relative;
-    bottom: 115px;
-}
-
-.slider h3{
-    font-family: 'gilsans', helvetica;
-    position: relative;
-    bottom: 120px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.slider button {
-    position: relative;
-    bottom: 75px;
-    background-color: transparent;
-    color: #fff;
-    padding: 10px;
-    border-radius: 0px;
-}
-
-.slider .item img {
-    width: 100%;
-    height: 567px;
-
-}
-
-.nav2 {
-    height: 76px;
-    background-color: #1b2021;
-    text-align: center;
-}
-
-.navartiste, .navboutique, .navexpovirtuel, .navcoupcoeur {
-    border-right: solid 1px #434749;
-    border-bottom: solid 1px #434749;
-    min-height: 76px;
-    background-color: #1b2021;
-    padding-top: 10px;
-
-}
-
-.navcoupcoeur {
-	width: 27%;
-}
-/* WHAT IS NAE */
-
-.presnae{
-	margin-top: 125px;
-	margin-bottom: 75px;
-}
-
-h2, .content, .undercontent{
-	font-family: Gillsans;
+    font-size: 1.4em;
+    font-family: Gillsans;
 }
 
 .undercontent{
-	font-size: 1.2em;
-	color: grey;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
+    color: grey;
+    font-family: Gillsans;
+    font-size: 1em;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-hr{
-	width: 85px;
-	margin: auto;
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
-
-/* PARALLAX */
-
-.parallax{
-	background: url("../images/3.jpg");
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 93.7%;
-}
-
-.button{
-	margin-top: 125px;
-	margin-bottom: 125px;
-	padding: 15px;
-	padding-left: 25px;
-	padding-right: 25px;
-	text-transform: uppercase;
-	font-family: Gillsans;
-	font-size: 1.2em;
-}
-
-.parallax a:hover{
-	text-decoration: none;
-}
-
-/* NEWS */
-
-h2{
-	font-size: 2.4em;
-}
-
-.news{
-	margin-top: 125px;
-}
-
-.newsmargin{
-	margin-left: 15px;
-}
-
-.undercontentnews{
-	text-align: left;
-	font-size: 1.2em;
-	color: grey;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-size: Gillsans;
-}
-
-.datenews{
-	font-size: 1.1em;
-	color: grey;
-}
-
-.newstitle{
-	margin-top: 75px;
-}
-
-.secondarynews{
-	margin-top: 125px;
-}
-
-.newslink{
-	margin-top: 35px;
-	font-family: Gillsans;
-	font-size: 1.1em;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 3px;
-}
-
-.newslink a{
-	color: white;
-}
-
-.newslink a:hover{
-	text-decoration: none;
-	color: grey;
-}
-
-.newsbutton{
-	margin-top: 75px;
-}
-
-.newsbutton button{
-	padding-left: 25px;
-	padding-right: 25px;
-	text-transform: uppercase;
-	font-family: Gillsans;
-	font-size: 1.2em;
-}
-
-/* ARTISTE */
+/* End What is NAE */
 
 
-.titlesuperposition1{
-	font-family: Gillsans;
-	font-size: 5.5em;
-	color: white;
-}
+/* Parallax */
 
-.titlesuperposition2{
-	font-family: Gillsans;
-	font-size: 9.5em;
-	color: grey;
-	opacity: 0.5;
-}
+/* End Parallax*/
 
-.superposition1{
-	position: relative;
-	z-index: 2;
-}
 
-.superposition2{
-	position: relative;
-}
+/* News */
 
-.artiste{
-	margin-top: 150px;
-}
+/* End News */
 
-.artistdaycontent{
-	color: white;
-	margin-top: 100px;
-	margin-bottom: 50px;
-}
 
-.artistejour{
-	background: url("../images/3.jpg");
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
-    width: 46.6%;
-    height: 350px;
-    margin-left: -3px;
-}
+/* Artiste du jour */
 
-.oeuvrejour{
-	background: url("../images/2.jpg");
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
-    width: 46.6%;
-    height: 350px;
-    margin-left: -3px;
-}
+/* End Artiste du jour */
 
-.titleartiste{
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	font-family: Gillsans;
-	font-size: 1.3em;
-	color: #a0a2a2;
-}
 
-.nameartiste{
-	font-family: DubielItalic;
-	font-size: 3.9em;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
+/* Rechercher un artiste */
 
-.contentartiste{
-	text-align: left;
-	font-size: 1.1em;
-	font-family: Gillsans;
-	color: #a0a2a2;
-}
+/* End Rechercher un artiste */
 
-/* RECHERCHE */
-
-.search{
-	margin-top: 50px;
-}
-
-.btnsearch{
-	/*margin-left: 600px;*/
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	text-transform: uppercase;
-	font-family: Gillsans;
-	font-size: 1.4em;
-}
-
-.inputfields{
-	background-color: #262b2d;
-	border: 1px solid grey;
-	border-radius: 0;
-	height: 75px;
-	font-size: 1.3em;
-	font-family: Gillsans;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	padding-left: 40px;
-	color: white;
-}
 
 /* Galerie */
 
-.gallery {
-    margin-top: 150px;
-    margin-bottom: 150px;
-    width: 93.7%;
-}
-
-.etage1, .etage2 {
-
-}
-
-.image1, .image2, .image3, .image4, .image5 {
-    height: 420px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.image1 img, .image2 img, .image3 img, .image4 img, .image5 img{
-    max-width: 100%;
-    height: 100%;
-}
-
-#description1, #description2, #description3, #description4, #description5 {
-    background-color: #fff;
-    width:  135px;
-    height: 190px;
-    position: relative;
-    z-index: 2;
-    bottom: 190px;
-}
-#description1, #description3 {
-    bottom: 420px;
-}
-
-.contentdescription{
-	position: relative;
-	z-index: 3;
-}
-
-.contentdescription h2{
-	font-size: 1.5em;
-	font-family: Gillsans;
-	color: black;
-	padding-top: 50px;
-}
-
-.contentdescription p{
-	font-size: 1em;
-	font-family: Gillsans;
-	color: grey;
-}
-
-/* FOOTER */
-
-.footerwebsite{
-	text-align: center;
-	color: grey;
-	font-family: DubielItalic;
-	font-size: 1.3em;
-}
-
-.grey{
-	color: grey;
-}
+/* End Galerie */
 
 
-/* RESPONSIVE */
+/* Footer */
 
-@media screen and (max-width: 992px) {	
-.presnae{
-	margin-top: 750px;
-	margin-bottom: 75px;
-}
-
-.mynav{
-	display: none;
-}
-
-}
+/* End Footer */
 
 
-@media screen and (max-width: 486px) {	
-.presnae{
-	margin-top: 200px;
-	margin-bottom: 75px;
-}
 
-.slider{
-	display: none;
-}
-
-}
+/* Responsive */
