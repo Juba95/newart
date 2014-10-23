@@ -204,6 +204,27 @@ li#back-top a {
 
 
 
-/* Responsive */
+/* Responsive  - @media - " à consommer avec modération :)" */
+
+@media screen and (max-width: 767px) /* Phone */
+{
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) /* Tablet */
+{
+
+}
+
+@media (min-width: 992px) and (max-width: 1169px) /* Desktop */
+{
+
+}
+
+@media (min-width: 1170px) /* Large desktop */
+{
+
+}
+
 
 /* End Responsive */
