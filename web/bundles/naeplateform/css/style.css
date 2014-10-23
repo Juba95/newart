@@ -32,26 +32,24 @@ body {
     bottom: 0px;
     left: 0px;
     background-color: #262b2d;
-    border-right: 1px solid #888888;
+    border-right: 1px solid grey;
     width: 90px;
     overflow: hidden;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 #menu:hover {
     background-color: #262b2d;
     width: 240px;
 }
-
 .box-nav{
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 70px;
     line-height: 90px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid grey;
     color: #000;
     padding: 0px;
     -webkit-transition: opacity 300ms linear 0s;
@@ -60,16 +58,77 @@ body {
     -o-transition: opacity 300ms linear 0s;
 
 }
-
 .ico-nav{
     margin-bottom: 25px;
     margin-left: 30px;
     height: 25px;
 }
+ul.nav-left{
+    list-style-type: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 90px;
+    color: #000;
+    padding: 0px;
+    -webkit-transition: opacity 300ms linear 0s;
+    -moz-transition: opacity 300ms linear 0s;
+    -ms-transition: opacity 300ms linear 0s;
+    -o-transition: opacity 300ms linear 0s;
+
+}
+.ico-nav-left{
+    margin-bottom: 25px;
+    margin-left: 30px;
+    height: 25px;
+
+}
+li a {
+    padding: 0 15px 0 90px;
+    height: 60px;
+    line-height: 90px;
+    font-size: 0.90em;
+    display: block;
+    text-align: left;
+    color: grey;
+    font-family: gilsans;
+    font-weight: 300;
+    width: 240px;
+}
+li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
 
 
 
-
+li#about a {
+    background: url(../images/icons/a-propos.png) no-repeat 30px 25px;
+}
+li#find a {
+    background: url(../images/icons/recherche.png)no-repeat 30px 25px;
+}
+li#profil a {
+    background: url(../images/icons/profil.png)no-repeat 30px 25px;
+}
+li#books a {
+    background: url(../images/icons/touslesbooks.png)no-repeat 30px 25px;
+}
+li#expo a {
+    background: url(../images/icons/expovirtuel.png)no-repeat 30px 25px;
+}
+li#shop a {
+    background: url(../images/icons/boutique.png)no-repeat 30px 25px;
+}
+li#contact a {
+    background: url(../images/icons/contact.png)no-repeat 30px 25px;
+}
+li#cvg a {
+    background: url(../images/icons/cvg.png)no-repeat 30px 25px;
+}
+li#share a {
+    background: url(../images/icons/share.png)no-repeat 30px 25px;
+}
 
 
 
