@@ -226,6 +226,32 @@ li#back-top a {
 
 /* Rechercher un artiste */
 
+.search{
+    margin-top: 150px;
+}
+
+.search input{
+    background-color: #262b2d;
+    border: 1px solid grey;
+    border-radius: 0;
+    height: 75px;
+    font-size: 1.3em;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 40px;
+    color: white;
+}
+
+.search button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Gillsans;
+    font-size: 1.4em;
+}
 /* End Rechercher un artiste */
 
 
