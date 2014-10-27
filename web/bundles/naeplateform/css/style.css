@@ -19,6 +19,9 @@ body {
     margin-bottom: 40px;
     margin-top: 40px;
 }
+a:hover{
+    text-decoration: none;
+}
 
 /* End Full Page */
 
@@ -140,18 +143,36 @@ li#share a {
 li#back-top a {
     background: url(../images/icons/menu.png)no-repeat 30px 25px;
 }
-
-
 .slider {
     padding-left: 0px;
     padding-right: 0px;
-    width: 93.666667%
 }
 .slider .item img {
     width: 100%;
     height: 567px;
+}
+.nav2 {
+    height: 76px;
+    background-color: #262b2d;
+    text-align: center;
+}
+.navboutique, .navexpovirtuel, .navcoupcoeur {
+    border-right: solid 1px #434749;
+    border-bottom: solid 1px #434749;
+    background-color: #262b2d;
+    padding-top: 10px;
+}
+.grey{
+    color: grey;
 
 }
+.grey:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
 
 /* End Nav / Slider */
 
