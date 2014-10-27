@@ -249,6 +249,33 @@ li#back-top a {
     color: grey;
 }
 
+.newsarticle{
+    font-family: Gillsans;
+}
+
+.newsarticle h2{
+    font-size: 2em;
+}
+
+.newsarticle h3{
+    font-size: 1.5em;
+}
+
+.newsarticle p{
+    font-size: 1.2em;
+    color: grey;
+}
+
+.newsarticle a{
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.newsarticle a:hover{
+    text-decoration: none;
+}
+
 /* End News */
 
 
