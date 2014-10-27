@@ -28,7 +28,7 @@ a:hover{
 
 /* Nav / Slider */
 
-#menu{
+.menu{
     position: fixed;
     z-index: 10;
     top: 0px;
@@ -36,13 +36,13 @@ a:hover{
     left: 0px;
     background-color: #262b2d;
     border-right: 1px solid grey;
-    width: 90px;
     overflow: hidden;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+
 }
-#menu:hover {
+.menu:hover {
     background-color: #262b2d;
     width: 280px;
 }
@@ -86,7 +86,7 @@ ul.nav-left{
     height: 25px;
 }
 li a {
-    padding: 0 15px 0 90px;
+    padding: 0 15px 0 100px;
     height: 63px;
     line-height: 90px;
     font-size: 0.90em;
