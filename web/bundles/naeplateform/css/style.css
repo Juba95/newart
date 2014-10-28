@@ -275,6 +275,68 @@ h2.p-slide-t{
 
 
 /* Artiste du jour */
+.artisteoftheday h1{
+    margin-bottom: 100px;
+    margin-top: 150px;
+    font-family: Gillsans;
+    /*left: 15%;
+    position: relative;
+    z-index: 2;*/
+}
+
+.superposition{
+    font-size: 3em;
+    color: grey;
+    /*position: relative;
+    z-index: 1;
+    right: 15%;*/
+}
+
+.artisteoftheday p{
+    color: grey;
+    font-family: Gillsans;
+    font-size: 1.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 75px;
+}
+
+.artiste div{
+    padding: 0;
+}
+
+.imageartiste{
+    position: relative;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+.contentartiste{
+    position: relative;
+    z-index: 2;
+    bottom: 300px;
+    font-family: Gillsans;
+}
+
+.contentartiste h3{
+    color: #ababaa;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    fony-size: 1.3em;
+}
+
+.contentartiste h2{
+    font-size: 3em;
+    font-family: DubielItalic;
+}
+
+.contentartiste p{
+    color: #ababaa;
+    font-size: 1.2em;
+}
+
+
+
 
 /* END Artiste du jour */
 
