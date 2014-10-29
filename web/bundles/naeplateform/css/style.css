@@ -271,10 +271,25 @@ h2.p-slide-t{
     text-decoration: none;
 }
 
+.newsbutton{
+    margin-top: 75px;
+}
+
+.newsbutton button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Gillsans;
+    font-size: 1.4em;
+}
+
 /* END News */
 
 
 /* Artiste du jour */
+
 .artisteoftheday h1{
     margin-bottom: 100px;
     margin-top: 150px;
@@ -295,7 +310,7 @@ h2.p-slide-t{
 .artisteoftheday p{
     color: grey;
     font-family: Gillsans;
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 75px;
@@ -309,31 +324,34 @@ h2.p-slide-t{
     position: relative;
     z-index: 1;
     opacity: 0.75;
+    padding: 0;
 }
 
 .contentartiste{
     position: relative;
     z-index: 2;
-    bottom: 300px;
+    bottom: 400px;
     font-family: Gillsans;
-    text-align: center;
+    text-align: left;
+    padding-right: 15px;
 }
 
 .contentartiste h3{
     color: #ababaa;
     letter-spacing: 2px;
     text-transform: uppercase;
-    fony-size: 1.3em;
+    fony-size: 1.5em;
 }
 
 .contentartiste h2{
-    font-size: 3em;
+    font-size: 3.2em;
     font-family: DubielItalic;
 }
 
 .contentartiste p{
     color: #ababaa;
     font-size: 1.2em;
+    margin-right: 100px;
 }
 
 
@@ -375,6 +393,53 @@ h2.p-slide-t{
 
 /* Galerie */
 
+
+.gallery {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    
+}
+
+
+.image1, .image2, .image3, .image4, .image5 {
+    height: 420px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.image1 img, .image2 img, .image3 img, .image4 img, .image5 img{
+    max-width: 100%;
+    height: 100%;
+}
+
+#description1, #description2, #description3, #description4, #description5 {
+    background-color: #fff;
+    width:  135px;
+    height: 190px;
+    position: relative;
+    z-index: 2;
+    bottom: 190px;
+}
+#description1, #description3 {
+    bottom: 420px;
+}
+
+.contentdescription{
+    position: relative;
+    z-index: 3;
+}
+
+.contentdescription h2{
+    font-size: 1.5em;
+    font-family: Gillsans;
+    color: black;
+    padding-top: 50px;
+}
+
+.contentdescription p{
+    font-size: 1em;
+    font-family: Gillsans;
+    color: grey;
+}
 /* END Galerie */
 
 

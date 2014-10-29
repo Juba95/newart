@@ -214,6 +214,14 @@
     </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 newsbutton">
+            <p class="text-center"><a href="#"><button type="button" class="btn btn-default buttonred">Lire tous les billets</button></a><p>
+        </div>
+    </div>
+</div>
 {# End News #}
 
 
@@ -227,9 +235,12 @@
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
+        </div>
 
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-11 col-md-offset-1">
+            <div>
                 <div class="col-md-6 imageartiste">
                     <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="Image News 1" class="img-responsive">
                 </div>
@@ -239,25 +250,27 @@
                 </div>
             </div>
         </div>
+    </div>
 
+<div class="container-fluid">
         <div class="row">
             <div class="col-md-5 col-md-offset-1 contentartiste">
                 <h3>Artiste du jour</h3>
                 <h2>Pascal Cherchiario</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
             <div class="col-md-5 col-md-offset-1 contentartiste">
                 <h3>Oeuvre du jour</h3>
                 <h2>Romuald Merceaux</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
 
     </div>
-</div>
+
 {# End Artiste / Oeuvre du jour #}
 
 
@@ -308,8 +321,68 @@
     </div>
 </div>
 {# End recherche #}
+
 {# Galerie #}
+<div class="continer-fluid">
+    <div class="row">
+    <div class="col-md-11 col-md-offset-1 gallery">
+        <div class="row etage1">
+            <div class="col-md-3 image1">
+                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
+                <div id="description1">
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Cherry Glazer</h2>
+                        <p>sed quia non numquam eius modi tempount</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 image2">
+                <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
+                <div id="description2">
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Raluca Vulcan</h2>
+                        <p>aka Raluca Vulcan Peintre</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 pull-right image3">
+                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
+                <div id="description3">
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Elise Kammerer</h2>
+                        <p>aka EliseKammerer Photographe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row etage2">
+            <div class="col-md-7 image4">
+                <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
+                <div id="description4">
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Cécile Durant</h2>
+                        <p>aka CDMart</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 image5">
+                <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="image galerie">
+                <div id="description5">
+                    <div class="col-md-11 col-md-offset-1 contentdescription">
+                        <h2>Burno Kowalski</h2>
+                        <p>aka Kowalski</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 {# End Galerie #}
+
 {# Footer Website #}
 {# End Footer Website #}
 </body>
