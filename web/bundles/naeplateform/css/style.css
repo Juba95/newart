@@ -203,6 +203,7 @@ h2.p-slide-t{
     margin-bottom: 40px;
 }
 /* END What is NAE */
+
 /* Parallax */
 .parallax {
     background: url("../images/3.jpg");
@@ -388,11 +389,19 @@ h2.p-slide-t{
     font-family: Gillsans;
     font-size: 1.4em;
 }
+
+.submitrighttablet {
+    display: none;
+}
+
 /* END Rechercher un artiste */
 
 
 /* Galerie */
 
+.galeriemobile{
+    display: none;
+}
 
 .gallery {
     margin-top: 150px;
@@ -451,19 +460,66 @@ h2.p-slide-t{
 
 /* Responsive  - @media - " à consommer avec modération :)" */
 
-@media screen and (max-width: 767px) /* Phone */
+@media screen and (max-width: 769px) /* Phone */
 {
+    .galeriedesktop{
+        display: none;
+    }
+
+    .galeriemobile{
+        display: block;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) /* Point de changement de taille menu horizontale */
+{
+    .presnae{
+        margin-top : 250px;
+    }
+
+    .submitrighttablet {
+        display: block;
+    }
+
+    .submitrightdesktop{
+        display: none;
+    }
 
 }
 
 @media (min-width: 768px) and (max-width: 991px) /* Tablet */
 {
+    .contentartiste1{
+        position: relative;
+        z-index: 2;
+        bottom: 700px;
+        font-family: Gillsans;
+        text-align: left;
+        padding-right: 15px;
+    }
 
+    .contentartiste{
+        position: relative;
+        z-index: 2;
+        font-family: Gillsans;
+        text-align: left;
+        padding-right: 15px;
+        margin-left: 100px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */
 {
 
+    .contentartiste{
+        position: relative;
+        z-index: 2;
+        bottom: 300px;
+        font-family: Gillsans;
+        text-align: left;
+        padding-right: 15px;
+    }
 }
 
 @media (min-width: 1170px) /* Large desktop */
