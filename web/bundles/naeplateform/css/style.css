@@ -1,227 +1,531 @@
-@import 'http://localhost/newart/web/bundles/NAE/css/fonts.css';
-
+@import './fonts.css';
+/* Full Page */
 body {
     background-color: #262b2d;
     color: white;
 }
-
-h1, .content{
-	text-align: center;
-}
-
-h1{
-	font-family: DubielItalic;
-	color: #c9c4bd;
-}
-
 .titlestyle{
-	font-family: Gillsans;
-	text-transform: uppercase;
-	color: white;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    color: white;
 }
-
-
-
-/* HEADER */
-.logo {
-    background: url(../images/logo.png);
-    position: absolute;
-    z-index: 3;
-    height: 52px;
-    width: 102px;
-    margin-top: 77px;
-    margin-left: 53%;
+.barre{
+    width: 85px;
+    border-top: 1px solid white;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
-.monheader {
-    margin-left: -40px;
-    margin-right: 0px;
-    height: auto;
+a:hover{
+    text-decoration: none;
 }
-.mynav {
-    background-color: #1b2021;
-    height: 580px;
-    border-right: solid 1px #434749;
-    position: relative;
-    z-index: 2;
+/* END Full Page */
+/* Nav / Slider */
+/* Nav-Left */
+#menu{
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 90px;
+    background-color: #262b2d;
+    border-right: 1px solid grey;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
-.slider {
+#menu:hover {
+    background-color: #262b2d;
+    width: 280px;
+}
+.box-nav-top{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    line-height: 90px;
+    border-bottom: 1px solid grey;
+    color: #000;
+    padding: 0px;
+}
+.box-nav-bottom{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    line-height: 90px;
+    border-top: 1px solid grey;
+    color: #000;
+    padding: 0px;
+}
+.ico-nav{
+    margin-bottom: 25px;
+    margin-left: 30px;
+    height: 25px;
+}
+ul.nav-left{
+    list-style-type: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 90px;
+    color: #000;
+    padding: 0px;
+}
+.ico-nav-left{
+    margin-bottom: 25px;
+    margin-left: 30px;
+    height: 25px;
+}
+li a {
+    padding: 0 15px 0 100px;
+    height: 63px;
+    line-height: 90px;
+    font-size: 0.90em;
+    display: block;
+    text-align: left;
+    color: grey;
+    font-family: Gillsans;
+    font-weight: 300;
+    width: 240px;
+}
+li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+li#about a {
+    background: url(../images/icons/a-propos.png) no-repeat 30px 25px;
+}
+li#find a {
+    background: url(../images/icons/recherche.png)no-repeat 30px 25px;
+}
+li#profil a {
+    background: url(../images/icons/profil.png)no-repeat 30px 25px;
+}
+li#books a {
+    background: url(../images/icons/touslesbooks.png)no-repeat 30px 25px;
+}
+li#expo a {
+    background: url(../images/icons/expovirtuel.png)no-repeat 30px 25px;
+}
+li#shop a {
+    background: url(../images/icons/boutique.png)no-repeat 30px 25px;
+}
+li#contact a {
+    background: url(../images/icons/contact.png)no-repeat 30px 25px;
+}
+li#cvg a {
+    background: url(../images/icons/cvg.png)no-repeat 30px 25px;
+}
+li#share a {
+    background: url(../images/icons/share.png)no-repeat 30px 25px;
+}
+li#back-top a {
+    background: url(../images/icons/menu.png)no-repeat 30px 25px;
+}
+/* END Nav-Left */
+/* Slider */
+.slider{
     padding-left: 0px;
     padding-right: 0px;
 }
-.slider .item img {
-    width: 100%;
-    height: 567px;
+.item{
+    background: #333;
+    text-align:center;
+    height: 567px !important;
 }
-
-.nav2 {
+.logo-nae{
+    background: url(../images/logo.png) no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-top: 90px;
+    margin-left: 45%;
+}
+h3.p-slide{
+    font-family: gilsans;
+    padding-bottom: 150px;
+}
+h2.p-slide-t{
+    font-family: gilsans;
+    padding-top: 200px;
+    margin: 0;
+    color: #fff;
+    font-size: 52px;
+}
+.btn-art{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 1);
+}
+/* END Slider */
+/* Nav Horizontal */
+.nav-horizontal{
     height: 76px;
-    background-color: #1b2021;
-    margin-top: 567px;
+    background-color: #262b2d;
     text-align: center;
 }
-
-.navartiste, .navboutique, .navexpovirtuel, .navcoupcoeur {
+.navboutique, .navexpovirtuel, .navcoupcoeur {
     border-right: solid 1px #434749;
     border-bottom: solid 1px #434749;
-    min-height: 76px;
-    background-color: #1b2021;
-
+    background-color: #262b2d;
+    padding-top: 10px;
 }
-
-/* WHAT IS NAE */
-
-h2, .content, .undercontent{
-	font-family: Gillsans;
+.grey{
+    color: grey;
 }
-
+.grey:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+/* END Nav Horizontal */
+/* END Nav / Slider */
+/* What is NAE */
+.presnae{
+    margin-top: 125px;
+    margin-bottom: 75px;
+}
+.presnae h1{
+    font-family: DubielItalic;
+    font-size: 4em;
+    color: grey;
+}
+.content{
+    font-size: 1.4em;
+    font-family: Gillsans;
+}
 .undercontent{
-	font-size: 0.9em;
-	color: #f1ece6;
-	margin-top: 40px;
-	margin-bottom: 40px;
+    color: grey;
+    font-family: Gillsans;
+    font-size: 1em;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+/* END What is NAE */
 
-hr{
-	width: 65px;
-	margin: auto;
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
-
-/* PRALLAX */
-
-.parallax{
-	background: url("../images/3.jpg");
-	background-attachment: fixed; 
+/* Parallax */
+.parallax {
+    background: url("../images/3.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bacground-size: cover;
+    -o-background-size: cover;
+    margin-top: 75px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.parallax button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-transform: uppercase;
+    font-family: Gillsans;
+    font-size: 1.2em;
 }
 
-.button{
-	margin-top: 75px;
-	margin-bottom: 75px;
+.parallax a:hover{
+    text-decoration: none;
+}
+/* END Parallax*/
 
+/* News */
+.news{
+    margin-top: 125px;
 }
 
-/* NEWS */
-
-.datenews{
-	font-size: 0.9em;
-	color: #c9c4bd;
+.news h1{
+    font-family: DubielItalic;
+    font-size: 4em;
+    color: grey;
 }
 
-.newstitle{
-	margin-top: 75px;
+.newsarticle{
+    font-family: Gillsans;
 }
 
-.secondarynews{
-	margin-top: 125px;
+.newsarticle h2{
+    font-size: 2em;
 }
 
-.newslink{
-	margin-top: 25px;
-	font-family: Gillsans;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 3px;
+.newsarticle h3{
+    font-size: 1.5em;
 }
 
-.newslink a:hover{
-	text-decoration: none;
-	color: white;
+.newsarticle p{
+    font-size: 1.2em;
+    color: grey;
+}
+
+.newsarticle a{
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.newsarticle a:hover{
+    text-decoration: none;
 }
 
 .newsbutton{
-	margin-top: 75px;
+    margin-top: 75px;
 }
 
 .newsbutton button{
-	font-size: 1.3em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Gillsans;
+    font-size: 1.4em;
 }
 
-/* ARTISTE */
+/* END News */
 
-.artiste{
-	margin-top: 150px;
+
+/* Artiste du jour */
+
+.artisteoftheday h1{
+    margin-bottom: 100px;
+    margin-top: 150px;
+    font-family: Gillsans;
+    /*left: 15%;
+    position: relative;
+    z-index: 2;*/
 }
 
-.artistejour{
-	background: url("../images/3.jpg");
-	background-attachment: fixed; 
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
+.superposition{
+    font-size: 3em;
+    color: grey;
+    /*position: relative;
+    z-index: 1;
+    right: 15%;*/
 }
 
-.oeuvrejour{
-	background: url("../images/1.jpg");
-	background-attachment: fixed; 
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
+.artisteoftheday p{
+    color: grey;
+    font-family: Gillsans;
+    font-size: 1.7em;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 75px;
 }
 
-.titleartiste{
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	font-family: Gillsans;
-	font-size: 0.9em;
+.artiste div{
+    padding: 0;
 }
 
-.nameartiste{
-	font-family: DubielItalic;
-	font-size: 2.8em;
-	margin-top: 30px;
-	margin-bottom: 30px;
+.imageartiste{
+    position: relative;
+    z-index: 1;
+    opacity: 0.75;
+    padding: 0;
 }
 
 .contentartiste{
-	text-align: left;
-	font-size: 0.9em;
-	font-family: Gillsans;
+    position: relative;
+    z-index: 2;
+    bottom: 400px;
+    font-family: Gillsans;
+    text-align: left;
+    padding-right: 15px;
 }
 
-/* RECHERCHE */
+.contentartiste h3{
+    color: #ababaa;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    fony-size: 1.5em;
+}
+
+.contentartiste h2{
+    font-size: 3.2em;
+    font-family: DubielItalic;
+}
+
+.contentartiste p{
+    color: #ababaa;
+    font-size: 1.2em;
+    margin-right: 100px;
+}
+
+
+
+
+/* END Artiste du jour */
+
+
+/* Rechercher un artiste */
 
 .search{
-	margin-top: 50px;
+    margin-top: 150px;
 }
 
-        /*-----------------*/
-        /* CSS Profil Page */
-        /*-----------------*/
-
-
-header.profile {
-    text-align: center;
-    color: #fff;
-    background: url(../images/image_slider_1.png) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    padding-bottom: 50px;
-    padding-top: 90px;
+.search input{
+    background-color: #262b2d;
+    border: 1px solid grey;
+    border-radius: 0;
+    height: 75px;
+    font-size: 1.3em;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 40px;
+    color: white;
 }
 
-.img-circle{
-    width: 140px;
-    height: 140px;
+.search button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: Gillsans;
+    font-size: 1.4em;
 }
 
-.profileMargin{
-    margin-top: 90px;
+.submitrighttablet {
+    display: none;
 }
 
-hr.longer{
-    height: 300;
+/* END Rechercher un artiste */
+
+
+/* Galerie */
+
+.galeriemobile{
+    display: none;
 }
+
+.gallery {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+
+.image1, .image2, .image3, .image4, .image5 {
+    height: 420px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.image1 img, .image2 img, .image3 img, .image4 img, .image5 img{
+    max-width: 100%;
+    height: 100%;
+}
+
+#description1, #description2, #description3, #description4, #description5 {
+    background-color: #fff;
+    width:  135px;
+    height: 190px;
+    position: relative;
+    z-index: 2;
+    bottom: 190px;
+}
+#description1, #description3 {
+    bottom: 420px;
+}
+
+.contentdescription{
+    position: relative;
+    z-index: 3;
+}
+
+.contentdescription h2{
+    font-size: 1.5em;
+    font-family: Gillsans;
+    color: black;
+    padding-top: 50px;
+}
+
+.contentdescription p{
+    font-size: 1em;
+    font-family: Gillsans;
+    color: grey;
+}
+/* END Galerie */
+
+
+/* Footer */
+
+/* END Footer */
+
+
+
+/* Responsive  - @media - " à consommer avec modération :)" */
+
+@media screen and (max-width: 769px) /* Phone */
+{
+    .galeriedesktop{
+        display: none;
+    }
+
+    .galeriemobile{
+        display: block;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) /* Point de changement de taille menu horizontale */
+{
+    .presnae{
+        margin-top : 250px;
+    }
+
+    .submitrighttablet {
+        display: block;
+    }
+
+    .submitrightdesktop{
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) /* Tablet */
+{
+    .contentartiste1{
+        position: relative;
+        z-index: 2;
+        bottom: 700px;
+        font-family: Gillsans;
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    .contentartiste{
+        position: relative;
+        z-index: 2;
+        font-family: Gillsans;
+        text-align: left;
+        padding-right: 15px;
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1169px) /* Desktop */
+{
+
+    .contentartiste{
+        position: relative;
+        z-index: 2;
+        bottom: 300px;
+        font-family: Gillsans;
+        text-align: left;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1170px) /* Large desktop */
+{
+
+}
+
+
+/* END Responsive */
