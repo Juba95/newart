@@ -1,7 +1,72 @@
 {# header #}
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
-{# TODO : - Rajouter le menu de gauche - #}
+
+{# Header : Nav / Slider #}
+{# Nav-Left #}
+<header>
+    <div id="menu">
+        <div class="box-nav-top">
+            <img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">
+        </div>
+        <ul class="nav-left">
+            <li id="about">
+                <a>
+                    QU'EST CE QUE NAE ?
+                </a>
+            </li>
+            <li id="find">
+                <a>
+                    RECHERCHE
+                </a>
+            </li>
+            <li id="profil">
+                <a>
+                    MON PROFIL
+                </a>
+            </li>
+            <li id="books">
+                <a>
+                    LISTE DES BOOKS
+                </a>
+            </li>
+            <li id="expo">
+                <a>
+                    EXPO VIRTUELLE
+                </a>
+            </li>
+            <li id="shop">
+                <a>
+                    LA BOUTIQUE
+                </a>
+            </li>
+            <li id="contact">
+                <a>
+                    CONTACT
+                </a>
+            </li>
+            <li id="cvg">
+                <a>
+                    CVG
+                </a>
+            </li>
+            <li id="share">
+                <a>
+                    PARTAGER
+                </a>
+            </li>
+            <div class="box-nav-bottom">
+                <li id="back-top">
+                    <a>
+                        RETOUR VERS LE HAUT
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</header>
+{# END Nav-Left #}
+
 
 <div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1">
     <header class="profile">
@@ -15,22 +80,22 @@
             <p><span class="fa fa-map-marker"></span> Paris, FRANCE</p>
             {# Mail #}
             <p><span class="fa fa-envelope"></span> CONTACT@ELCOR.COM</p>
-           <div class="row">
-                <div class="row col-md-offset-4 col-lg-offset-5 col-sm-offset-4 col-xs-offset-0">
-                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                        <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
-                        </li>
-                    </ul>
-                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                        <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
-                        </li>
-                    </ul>
-                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                        <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
-                        </li>
-                    </ul>
-                </div>
+
+            <div class="row col-md-offset-4 col-lg-offset-5 col-sm-offset-4 col-xs-offset-0">
+                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                    <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
+                    </li>
+                </ul>
+                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                    <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
+                    </li>
+                </ul>
+                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                    <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
+                    </li>
+                </ul>
             </div>
+
         </section>
     </header>
     <div class="container">
@@ -99,7 +164,7 @@
                 <h2>{{ 'portefolio' | upper }}</h2>
             </div>
             <div class="lineTitle"></div>
-            <ul id="menuPortfolio" class="center-block">
+            <ul class="center-block menuPortfolio">
                 <li><a href="#">Tous</a></li>
                 <li><a href="#">2015</a></li>
                 <li><a href="#">2014</a></li>
@@ -111,4 +176,4 @@
 </div>
 
 {# footer #}
-{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
+{{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
