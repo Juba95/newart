@@ -457,7 +457,82 @@ h2.p-slide-t{
 /* END Footer */
 
 
+/*-----------------*/
+/* CSS Profil Page */
+/*-----------------*/
 
+
+header.profile {
+    text-align: center;
+    color: #fff;
+    background: url(../images/image_slider_1.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 50px;
+    padding-top: 90px;
+}
+
+.img-circle, .img-rounded {
+    width: 140px;
+    height: 140px;
+}
+
+.profileMargin{
+    margin-top: 90px;
+}
+.lineTitle{
+    border-bottom:1px solid rgb(198, 199, 200, 0.5);
+    width : 75px;
+    margin: 50px auto 50px auto;
+}
+.line{
+    border-bottom:1px solid rgb(198, 199, 200, 0.5);
+    width : 960px;
+    margin: 50px auto 50px auto;
+}
+.lineMobile{
+    border-bottom:1px solid rgb(198, 199, 200, 0.5);
+    width : 240px;
+    margin: 50px auto 50px auto;
+}
+.img-padding{
+    padding: 2px 2px 2px 2px ;
+}
+
+.actualityText{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.actualityLien{
+    color : #5e5e5e;
+}
+
+.actualityLien:hover{
+    color : #39b3d7;
+}
+/* Menu Profil */
+#menuPortfolio li{
+    display: inline;
+    margin-right: 15px;
+}
 /* Responsive  - @media - " à consommer avec modération :)" */
 
 @media screen and (max-width: 769px) /* Phone */
