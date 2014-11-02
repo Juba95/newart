@@ -11,8 +11,8 @@ class DefaultController extends Controller
         return $this->render('NAEPlateformBundle:Expo:index.html.twig');
     }
 
-    public function profileAction()
+    public function profilAction()
     {
-        return $this->render('NAEPlateformBundle:Expo:profile.html.twig');
+        return $this->render('NAEPlateformBundle:Expo:profil.html.twig');
     }
 }
