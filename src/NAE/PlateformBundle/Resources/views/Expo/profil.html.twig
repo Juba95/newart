@@ -7,7 +7,7 @@
     <header class="profile">
         <section class="text-center" id="artist">
             {# artist image #}
-            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="{# artist name #}" class="img-circle img-responsive center-block">
+            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
             {# artist name #}
             <h1> André Le Corre </h1>
             <h2>El Core</h2>
@@ -18,11 +18,25 @@
         </section>
     </header>
     <div class="container">
-        <section id="biography">
-            <h2 class="text-center">Biographie</h2>
+        {# Section Biography #}
+        <section id="biography" class="profileMargin">
+            <h1 class="text-center profileTitle">Biographie</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique laoreet. Aliquam eget dui tristique, consequat mauris in, sollicitudin ipsum. Quisque molestie sit amet enim eget euismod. Nulla tortor ipsum, efficitur quis scelerisque ac, condimentum nec tortor. Praesent condimentum rutrum lacus, eget condimentum tortor semper non. In malesuada massa erat, non vestibulum magna congue eget. Praesent maximus lectus massa, quis posuere justo luctus non. Integer nec bibendum diam.
 
+                Praesent porttitor, elit vitae mollis scelerisque, ante elit blandit augue, ut eleifend ante orci sit amet erat. Quisque eget pulvinar justo. Vivamus quis molestie tortor. Praesent pharetra dignissim mi a pulvinar. Proin quis libero nec neque suscipit tincidunt sit amet finibus magna. Proin sodales eros ac magna scelerisque facilisis. Vivamus convallis lectus tempor eros volutpat mattis.
+
+                Aenean quis dictum nisl. Mauris malesuada ornare molestie. Duis et nisi accumsan, rhoncus odio vel, pharetra leo. Quisque dapibus et felis vel vestibulum. Nulla finibus nulla in luctus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mollis metus. Vestibulum ut libero nec metus consectetur ultricies pulvinar in est. Sed at ex ante.
+            </p>
         </section>
-        <section id="portfolio">
+        {# section last work #}
+        <section id="lastwork" class="profileMargin">
+            <h5>Dernière Oeuvre :</h5>
+        </section>
+        <hr class="longer">
+        {# Section portfolio #}
+        <section id="portfolio" class="profileMargin">
 
         </section>
     </div>
