@@ -268,3 +268,8 @@ ul.social-buttons li a {
     color : #39b3d7;
 }
 /* Menu Profil */
+#menuPortfolio li{
+    display: inline;
+    margin-right: 15px;
+}
+#lineTitle
