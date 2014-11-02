@@ -9,5 +9,5 @@ Newart:
     defaults: { _controller: NAEPlateformBundle:Expo:index }
     
 nae_plateform_profil:
-    path:     /profil/
-    defaults: { _controller: NAEPlateformBundle:Default:profil }
+    path:     /profile/
+    defaults: { _controller: NAEPlateformBundle:Default:profile }

@@ -1,0 +1,114 @@
+{# header #}
+{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
+
+{# TODO : - Rajouter le menu de gauche - #}
+
+<div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1">
+    <header class="profile">
+        <section class="text-center" id="artist">
+            {# artist image #}
+            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
+            {# artist name #}
+            <h1> André Le Corre </h1>
+            <h2>El Cor</h2>
+            {# location #}
+            <p><span class="fa fa-map-marker"></span> Paris, FRANCE</p>
+            {# Mail #}
+            <p><span class="fa fa-envelope"></span> CONTACT@ELCOR.COM</p>
+            <div class="row">
+                <div class="row col-md-offset-4 col-lg-offset-5 col-sm-offset-4 col-xs-offset-0">
+                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                        <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                        <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                        <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        {# Section Biography #}
+        <section id="biography" class="profileMargin">
+            <h1 class="text-center profileTitle">Biographie</h1>
+            <div class="lineTitle"></div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique laoreet. Aliquam eget dui tristique, consequat mauris in, sollicitudin ipsum. Quisque molestie sit amet enim eget euismod. Nulla tortor ipsum, efficitur quis scelerisque ac, condimentum nec tortor. Praesent condimentum rutrum lacus, eget condimentum tortor semper non. In malesuada massa erat, non vestibulum magna congue eget. Praesent maximus lectus massa, quis posuere justo luctus non. Integer nec bibendum diam.
+
+                Praesent porttitor, elit vitae mollis scelerisque, ante elit blandit augue, ut eleifend ante orci sit amet erat. Quisque eget pulvinar justo. Vivamus quis molestie tortor. Praesent pharetra dignissim mi a pulvinar. Proin quis libero nec neque suscipit tincidunt sit amet finibus magna. Proin sodales eros ac magna scelerisque facilisis. Vivamus convallis lectus tempor eros volutpat mattis.
+
+                Aenean quis dictum nisl. Mauris malesuada ornare molestie. Duis et nisi accumsan, rhoncus odio vel, pharetra leo. Quisque dapibus et felis vel vestibulum. Nulla finibus nulla in luctus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mollis metus. Vestibulum ut libero nec metus consectetur ultricies pulvinar in est. Sed at ex ante.
+            </p>
+        </section>
+        {# section last work #}
+        <section id="lastwork" class="profileMargin">
+            <h5>{{ 'dernieres oeuvres :' | upper }}</h5>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <img src="{{ asset('bundles/naeplateform/images/2.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3">
+                    <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                </div>
+            </div>
+        </section>
+        {# line #}
+        <div class="line visible-lg visible-md"></div>
+        <div class="lineMobile visible-xs visible-sm"></div>
+        {# Actuality #}
+        <section id="actuality" class="profileMargin">
+            <h5>{{ 'Actualités :' | upper }}</h5>
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <p>10.10.2014</p><br>
+                    <h5>&quot; De l'amour dans la peinture. &quot;</h5>
+                    <p class="actualityText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat leo eget elit eleifend condimentum id sed massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices odio lectus, nec aliquet lorem fermentum non. Nunc mollis ornare lorem, at sagittis ligula vestibulum eu. Etiam fringilla dui nec.
+                    </p>
+                    <a href="#" class="actualityLien">site web</a>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <p>10.10.2014</p><br>
+                    <h5>&quot; De l'amour dans la peinture. &quot;</h5>
+                    <p class="actualityText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat leo eget elit eleifend condimentum id sed massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices odio lectus, nec aliquet lorem fermentum non. Nunc mollis ornare lorem, at sagittis ligula vestibulum eu. Etiam fringilla dui nec.
+                    </p>
+                    <a href="#" class="actualityLien">site web</a>
+                </div>
+            </div>
+        </section>
+        {# line #}
+        <div class="line visible-lg visible-md"></div>
+        <div class="lineMobile visible-xs visible-sm"></div>
+        {# Section portfolio #}
+        <section id="portfolio" class="profileMargin">
+            <div class="text-center">
+                <h3>EL COR</h3>
+                <h2>{{ 'portefolio' | upper }}</h2>
+            </div>
+            <div class="lineTitle"></div>
+            <ul>
+                <li>Tous</li>
+                <li>2015</li>
+                <li>2014</li>
+                <li>2013</li>
+                <li>2012</li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+{# footer #}
+{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
