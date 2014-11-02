@@ -471,9 +471,13 @@ header.profile {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+<<<<<<< HEAD
     padding-bottom: 50px;
     padding-top: 90px;
     width: 100%;
+=======
+    padding: 90px 15px 50px 0px;
+>>>>>>> 0c682df2fe32738ce2fd15ae4a6b6bf393733f60
 }
 
 .img-circle, .img-rounded {
