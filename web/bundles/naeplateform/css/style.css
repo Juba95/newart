@@ -272,4 +272,17 @@ ul.social-buttons li a {
     display: inline;
     margin-right: 15px;
 }
-#lineTitle
+#menuPortfolio li>a{
+    color: #5e5e5e
+}
+#menuPortfolio li:hover{
+    color: #5e5e5e;
+    background-color: #f5f5f5;
+}
+
+#menuPortfolio{
+    margin: 0 ;
+    padding: 0 ;
+    list-style: none ;
+    text-align: center ;
+}
