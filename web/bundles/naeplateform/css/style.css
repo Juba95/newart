@@ -206,7 +206,7 @@ h2.p-slide-t{
 
 /* Parallax */
 .parallax {
-    background: url("../images/3.jpg");
+    background: url("../images/parallax.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
