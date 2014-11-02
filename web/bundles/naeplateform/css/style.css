@@ -473,6 +473,7 @@ header.profile {
     -o-background-size: cover;
     padding-bottom: 50px;
     padding-top: 90px;
+    width: 100%;
 }
 
 .img-circle, .img-rounded {
