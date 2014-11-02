@@ -66,39 +66,39 @@
     </div>
 </header>
 {# END Nav-Left #}
+<div class="row">
+    <div class="container col-md-11 col-md-offset-1">
+        <header class="profile">
+            <section class="text-center" id="artist">
+                {# artist image #}
+                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
+                {# artist name #}
+                <h1> André Le Corre </h1>
+                <h2 class="titleProfile">El Cor</h2>
+                {# location #}
+                <p><span class="fa fa-map-marker"></span> Paris, FRANCE</p>
+                {# Mail #}
+                <p><span class="fa fa-envelope"></span> CONTACT@ELCOR.COM</p>
 
-    <header class="profile">
-        <section class="text-center" id="artist">
-            {# artist image #}
-            <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
-            {# artist name #}
-            <h1> André Le Corre </h1>
-            <h2>El Cor</h2>
-            {# location #}
-            <p><span class="fa fa-map-marker"></span> Paris, FRANCE</p>
-            {# Mail #}
-            <p><span class="fa fa-envelope"></span> CONTACT@ELCOR.COM</p>
+                <div class="row col-md-offset-4 col-lg-offset-5 col-sm-offset-4 col-xs-offset-0">
+                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                        <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                        <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
+                        </li>
+                    </ul>
+                    <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                        <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </header>
 
-            <div class="row col-md-offset-4 col-lg-offset-5 col-sm-offset-4 col-xs-offset-0">
-                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                    <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
-                    </li>
-                </ul>
-                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                    <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
-                    </li>
-                </ul>
-                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                    <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-    </header>
-    <div class="container">
         {# Section Biography #}
-        <section id="biography" class="profileMargin">
+        <section id="biography" class="profileMargin profilPadding">
             <h1 class="text-center profileTitle">Biographie</h1>
             <div class="lineTitle"></div>
             <p>
@@ -110,8 +110,8 @@
             </p>
         </section>
         {# section last work #}
-        <section id="lastwork" class="profileMargin">
-            <h5>{{ 'dernieres oeuvres :' | upper }}</h5>
+        <section id="lastwork" class="profileMargin profilPadding">
+            <h5 class="titleProfile">{{ 'dernieres oeuvres :' | upper }}</h5>
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-3">
                     <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
@@ -131,8 +131,8 @@
         <div class="line visible-lg visible-md"></div>
         <div class="lineMobile visible-xs visible-sm"></div>
         {# Actuality #}
-        <section id="actuality" class="profileMargin">
-            <h5>{{ 'Actualités :' | upper }}</h5>
+        <section id="actuality" class="profileMargin profilPadding">
+            <h5 class="titleProfile">{{ 'Actualités :' | upper }}</h5>
             <div class="row">
                 <div class="col-md-6 col-lg-6">
                     <p>10.10.2014</p><br>
@@ -156,13 +156,20 @@
         <div class="line visible-lg visible-md"></div>
         <div class="lineMobile visible-xs visible-sm"></div>
         {# Section portfolio #}
-        <section id="portfolio" class="profileMargin">
+        <section id="portfolio" class="profileMargin profilPadding">
             <div class="text-center">
                 <h3>EL COR</h3>
                 <h2>{{ 'portefolio' | upper }}</h2>
             </div>
             <div class="lineTitle"></div>
-            <h4>TOUS </h4> <h4> 2015 </h4> <h4> 2014 </h4><h4> 2013 </h4><h4> 2012</h4>
+            <div class="text-center">
+                <h4 class="activeProfile inlineOption"> TOUS </h4>
+                <h4 class="inlineOption"> 2015 </h4 >
+                <h4 class="inlineOption"> 2014 </h4>
+                <h4 class="inlineOption"> 2013 </h4>
+                <h4 class="inlineOption"> 2012</h4>
+                <h4 class="inlineOption"> 2011</h4>
+            </div>
             {#<ul class="center-block menuPortfolio">
                 <li><a href="#">Tous</a></li>
                 <li><a href="#">2015</a></li>
@@ -172,49 +179,25 @@
             </ul>#}
         </section>
     </div>
-    <div class="container-fluid galeriedesktop">
+
+    <div class="container-fluid galeriedesktop ">
         <div class="row">
             <div class="col-md-11 col-md-offset-1 gallery">
                 <div class="row etage1">
                     <div class="col-md-3 image1">
                         <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
-                        <div id="description1">
-                            <div class="row col-md-11 col-md-offset-1 contentdescription">
-                                <h2>Cherry Glazer</h2>
-                                <p>sed quia non numquam eius modi tempount</p>
-                            </div>
-                        </div>
                     </div>
-
                     <div class="col-md-4 image2">
                         <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
-                        <div id="description2">
-                            <div class=" row col-md-11 col-md-offset-1 contentdescription">
-                                <h2>Raluca Vulcan</h2>
-                                <p>aka Raluca Vulcan Peintre</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="col-md-5 pull-right image3">
                         <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
-                        <div id="description3">
-                            <div class="row col-md-11 col-md-offset-1 contentdescription">
-                                <h2>Elise Kammerer</h2>
-                                <p>aka EliseKammerer Photographe</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="row etage2">
                     <div class="col-md-7 image4">
                         <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
-                        <div id="description4">
-                            <div class="row col-md-11 col-md-offset-1 contentdescription">
-                                <h2>Cécile Durant</h2>
-                                <p>aka CDMart</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="col-md-5 image5">
@@ -224,6 +207,15 @@
             </div>
         </div>
     </div>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-offset-1">
+                <div class="parallax">
+                    <a href="#"><button type="button" class="btn btn-default center-block">{{ 'Charger plus d\'oeuvre' | upper }}</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {# footer #}
 {{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
