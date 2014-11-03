@@ -131,6 +131,9 @@ li#back-top a {
     padding-left: 0px;
     padding-right: 0px;
 }
+.slider img {
+    width: 100%;
+}
 .item{
     background: #333;
     text-align:center;
@@ -671,6 +674,10 @@ ul.menuPortfolio>li:hover{
 
 @media (min-width: 1170px) /* Large desktop */
 {
+    .slider {
+        margin-left: 6.333333%;
+        width: 93.666667%;
+    }
 
 }
 
