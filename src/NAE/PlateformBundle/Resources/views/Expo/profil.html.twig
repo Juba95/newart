@@ -68,7 +68,7 @@
         <header class="profile">
             <section class="text-center" id="artist">
                 {# artist    image #}
-                <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
+                <img src="{{ asset('bundles/naeplateform/images/img-profil.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
                 {# artist name #}
                 <h1> André Le Corre </h1>
                 <h2 class="titleProfile">El Cor</h2>
@@ -97,8 +97,7 @@
     <div class="container col-md-11 col-md-offset-1">
         {# Section Biography #}
         <section id="biography">
-            <h1 class="text-center profileTitle">Biographie</h1>
-            <div class="lineTitle"></div>
+            <h1 class="text-center profileTitle">Biographie <span class="line-biographie"></span></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique laoreet. Aliquam eget dui tristique, consequat mauris in, sollicitudin ipsum. Quisque molestie sit amet enim eget euismod. Nulla tortor ipsum, efficitur quis scelerisque ac, condimentum nec tortor. Praesent condimentum rutrum lacus, eget condimentum tortor semper non. In malesuada massa erat, non vestibulum magna congue eget. Praesent maximus lectus massa, quis posuere justo luctus non. Integer nec bibendum diam.
 
@@ -112,16 +111,16 @@
             <h5 class="titleProfile">{{ 'dernieres oeuvres :' | upper }}</h5>
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/2.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
                 </div>
             </div>
         </section>
@@ -149,9 +148,8 @@
         <section id="portfolio">
             <div class="text-center">
                 <h3>EL COR</h3>
-                <h2>{{ 'portefolio' | upper }}</h2>
+                <h2>{{ 'portfolio' | upper }}</h2>
             </div>
-            <div class="lineTitle"></div>
             <div class="text-center">
                 <h4 class="activeProfile inlineOption"> TOUS </h4>
                 <h4 class="inlineOption"> 2015 </h4 >
@@ -169,38 +167,14 @@
             </ul>#}
         </section>
     </div>
-<img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="image galerie">
-<img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="image galerie">
-<img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="image galerie">
-<img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-4.jpg') }}" alt="image galerie">
-<img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-5.jpg') }}" alt="image galerie">
-
+    {# Gallery Portfolio #}
     <div class="container-fluid galeriedesktop ">
-        <div class="row">
-            <div class="col-md-11 col-md-offset-1 gallery">
-                <div class="row etage1">
-                    <div class="col-md-3 image1">
-                        <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
-                    </div>
-                    <div class="col-md-4 image2">
-                        <img src="{{ asset('bundles/naeplateform/images/5.jpg') }}" alt="image galerie">
-                    </div>
+        <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="image galerie">
+        <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="image galerie">
+        <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="image galerie">
+        <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-4.jpg') }}" alt="image galerie">
+        <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-5.jpg') }}" alt="image galerie">
 
-                    <div class="col-md-5 pull-right image3">
-                        <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="image galerie">
-                    </div>
-                </div>
-                <div class="row etage2">
-                    <div class="col-md-7 image4">
-                        <img src="{{ asset('bundles/naeplateform/images/4.jpg') }}" alt="image galerie">
-                    </div>
-
-                    <div class="col-md-5 image5">
-                        <img src="{{ asset('bundles/naeplateform/images/3.jpg') }}" alt="image galerie">
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <div class="container-fluid">
         <div class="row">
