@@ -131,6 +131,9 @@ li#back-top a {
     padding-left: 0px;
     padding-right: 0px;
 }
+.slider img {
+    width: 100%;
+}
 .item{
     background: #333;
     text-align:center;
