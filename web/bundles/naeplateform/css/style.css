@@ -644,6 +644,10 @@ ul.menuPortfolio>li:hover{
 
 @media (min-width: 1170px) /* Large desktop */
 {
+    .slider {
+        margin-left: 6.333333%;
+        width: 93.666667%;
+    }
 
 }
 
