@@ -483,13 +483,6 @@ header.profile {
     height: 140px;
 }
 
-.profileMargin{
-    margin-top: 90px;
-}
-.profilePadding{
-    padding-left: 120px;
-    padding-right: 120px;
-}
 /* line */
 .lineTitle{
     border-bottom:1px solid rgb(198, 199, 200, 0.5);
