@@ -4,7 +4,7 @@
 {# Header : Nav / Slider #}
 {# Nav-Left #}
 <header>
-    <div id="menu">
+    <div class="menu">
         <div class="box-nav-top">
             <img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">
         </div>
@@ -65,10 +65,9 @@
     </div>
 </header>
 {# END Nav-Left #}
-
         <header class="profile">
             <section class="text-center" id="artist">
-                {# artist image #}
+                {# artist    image #}
                 <img src="{{ asset('bundles/naeplateform/images/1.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
                 {# artist name #}
                 <h1> André Le Corre </h1>
@@ -97,7 +96,7 @@
 
     <div class="container col-md-11 col-md-offset-1">
         {# Section Biography #}
-        <section id="biography" class="profileMargin profilPadding">
+        <section id="biography">
             <h1 class="text-center profileTitle">Biographie</h1>
             <div class="lineTitle"></div>
             <p>
@@ -109,7 +108,7 @@
             </p>
         </section>
         {# section last work #}
-        <section id="lastwork" class="profileMargin profilPadding">
+        <section id="lastwork">
             <h5 class="titleProfile">{{ 'dernieres oeuvres :' | upper }}</h5>
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-3">
@@ -126,11 +125,8 @@
                 </div>
             </div>
         </section>
-        {# line #}
-        <div class="line visible-lg visible-md"></div>
-        <div class="lineMobile visible-xs visible-sm"></div>
         {# Actuality #}
-        <section id="actuality" class="profileMargin profilPadding">
+        <section id="actuality">
             <h5 class="titleProfile">{{ 'Actualités :' | upper }}</h5>
             <div class="row">
                 <div class="col-md-6 col-lg-6">
@@ -149,11 +145,8 @@
                 </div>
             </div>
         </section>
-        {# line #}
-        <div class="line visible-lg visible-md"></div>
-        <div class="lineMobile visible-xs visible-sm"></div>
         {# Section portfolio #}
-        <section id="portfolio" class="profileMargin profilePadding">
+        <section id="portfolio">
             <div class="text-center">
                 <h3>EL COR</h3>
                 <h2>{{ 'portefolio' | upper }}</h2>
