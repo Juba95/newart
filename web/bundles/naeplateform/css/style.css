@@ -603,6 +603,54 @@ ul.menuPortfolio>li:hover{
 /*---- Fin profil -- */
 /*-------------------*/
 
+
+
+/*---------------------*/
+/*--- PAGE BOOKS ------*/
+/*---------------------*/
+
+/* Partie haute */
+.books{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.books h1{
+    font-family: DubielItalic;
+    font-size: 3.8em;
+    color: grey;
+}
+
+.searchbooks{
+    border-bottom: 1px solid grey;
+    margin-bottom: 50px;
+}
+
+.searchbooks p{
+    font-family: DubielItalic;
+    font-size: 2em;
+    color: white;
+}
+
+.iconloupe{
+    padding-left: 0;
+}
+
+.loupe{
+    color: white;
+}
+/* End Partie haute */
+
+/* Filtres + photos */
+.filtre p{
+    font-family: Gillsans;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+/* End Filtres + photos */
+
 /* Responsive  - @media - " à consommer avec modération :)" */
 
 @media screen and (max-width: 769px) /* Phone */
