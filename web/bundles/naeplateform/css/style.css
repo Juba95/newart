@@ -482,10 +482,9 @@ header.profile {
 .profileMargin{
     margin-top: 90px;
 }
-
-.profilPadding{
-    padding-left: 90px;
-    padding-right: 90px;
+.profilePadding{
+    padding-left: 120px;
+    padding-right: 120px;
 }
 /* line */
 .lineTitle{
@@ -535,14 +534,19 @@ ul.social-buttons>li>a {
     color : #39b3d7;
 }
 /* Font */
-.titleProfile{
-    font-family: "Miriade Pro";
+.subtitleTextActuality{
+    font-style: italic;
+    font-weight: bold;
 }
-
+.subtitleProfile{
+    font-size: 16px;
+}
+.titleItalicProfile{
+    font-style: italic;
+}
 /* Menu Profil */
 ul.menuPortfolio>li{
     display: inline;
-    margin-right: 7px;
 }
 ul.menuPortfolio>li>a{
     color: #5e5e5e
@@ -559,6 +563,32 @@ ul.menuPortfolio>li:hover{
     text-align: center ;
 }
 
+/* Paralaxe Profile */
+.parallaxP {
+    background: url("../images/parallax.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bacground-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.parallaxP button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    text-transform: uppercase;
+    font-family: Gillsans;
+    font-size: 1.2em;
+}
+
+.parallaxP a:hover{
+    text-decoration: none;
+}
 /*-- en Attendant la màj sur les balises "li" et "a" --*/
 .activeProfile{
     padding: 4px 4px 4px 4px;
