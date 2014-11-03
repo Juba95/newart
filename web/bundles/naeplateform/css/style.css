@@ -493,7 +493,7 @@ header.profile {
 .lineTitle{
     border-bottom:1px solid rgb(198, 199, 200, 0.5);
     width : 75px;
-    margin: 50px auto 50px auto;
+    margin: 30px auto 45px auto;
 }
 .line{
     border-bottom:1px solid rgb(198, 199, 200, 0.5);
@@ -537,6 +537,7 @@ ul.social-buttons>li>a {
     color : #39b3d7;
 }
 /* Font */
+
 .subtitleTextActuality{
     font-style: italic;
     font-weight: bold;
