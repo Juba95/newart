@@ -10,4 +10,8 @@ Newart:
     
 nae_plateform_profil:
     path:     /profil/
-    defaults: { _controller: NAEPlateformBundle:Default:profil }
+    defaults: { _controller: NAEPlateformBundle:Expo:profil }
+
+nae_plateform_books:
+    path:     /books/
+    defaults: { _controller: NAEPlateformBundle:Expo:books }

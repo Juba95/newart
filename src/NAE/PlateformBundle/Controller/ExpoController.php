@@ -18,4 +18,9 @@ class ExpoController extends Controller
     {
         return $this->render('NAEPlateformBundle:Expo:profil.html.twig');
     }
+
+    public function booksAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:books.html.twig');
+    }
 }
