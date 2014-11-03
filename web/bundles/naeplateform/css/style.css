@@ -21,9 +21,9 @@ a:hover{
 /* END Full Page */
 /* Nav / Slider */
 /* Nav-Left */
-#menu{
+.menu{
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -35,11 +35,8 @@ a:hover{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-#menu:hover {
-    background-color: #262b2d;
-    width: 280px;
-}
-.box-nav-top{
+
+.menu .box-nav-top{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,7 +46,7 @@ a:hover{
     color: #000;
     padding: 0px;
 }
-.box-nav-bottom{
+.menu .box-nav-bottom{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -59,12 +56,12 @@ a:hover{
     color: #000;
     padding: 0px;
 }
-.ico-nav{
+.menu .ico-nav{
     margin-bottom: 25px;
     margin-left: 30px;
     height: 25px;
 }
-ul.nav-left{
+.menu ul.nav-left{
     list-style-type: none;
     display: block;
     margin-left: auto;
@@ -73,13 +70,13 @@ ul.nav-left{
     color: #000;
     padding: 0px;
 }
-.ico-nav-left{
+.menu .ico-nav-left{
     margin-bottom: 25px;
     margin-left: 30px;
     height: 25px;
 }
 
-li a {
+.menu li a {
     padding: 0 15px 0 100px;
     height: 63px;
     line-height: 90px;
@@ -91,38 +88,38 @@ li a {
     font-weight: 300;
     width: 260px;
 }
-li a:hover{
+.menu li a:hover{
     color: #fff;
     text-decoration: none;
 }
-li#about a {
+.menu li#about a {
     background: url(../images/icons/a-propos.png) no-repeat 30px 25px;
 }
-li#find a {
+.menu li#find a {
     background: url(../images/icons/recherche.png)no-repeat 30px 25px;
 }
-li#profil a {
+.menu li#profil a {
     background: url(../images/icons/profil.png)no-repeat 30px 25px;
 }
-li#books a {
+.menu li#books a {
     background: url(../images/icons/touslesbooks.png)no-repeat 30px 25px;
 }
-li#expo a {
+.menu li#expo a {
     background: url(../images/icons/expovirtuel.png)no-repeat 30px 25px;
 }
-li#shop a {
+.menu li#shop a {
     background: url(../images/icons/boutique.png)no-repeat 30px 25px;
 }
-li#contact a {
+.menu li#contact a {
     background: url(../images/icons/contact.png)no-repeat 30px 25px;
 }
-li#cvg a {
+.menu li#cvg a {
     background: url(../images/icons/cvg.png)no-repeat 30px 25px;
 }
-li#share a {
+.menu li#share a {
     background: url(../images/icons/share.png)no-repeat 30px 25px;
 }
-li#back-top a {
+.menu li#back-top a {
     background: url(../images/icons/menu.png)no-repeat 30px 25px;
 }
 /* END Nav-Left */
@@ -130,9 +127,11 @@ li#back-top a {
 .slider{
     padding-left: 0px;
     padding-right: 0px;
+    height: 100%;
 }
 .slider img {
     width: 100%;
+    height: 100% !important;
 }
 .item{
     background: #333;
@@ -169,6 +168,8 @@ h2.p-slide-t{
     height: 76px;
     background-color: #262b2d;
     text-align: center;
+    margin-right: 0px;
+    margin-left: -25px;
 }
 .navboutique, .navexpovirtuel, .navcoupcoeur {
     border-right: solid 1px #434749;
@@ -612,6 +613,83 @@ ul.menuPortfolio>li:hover{
 
 @media screen and (max-width: 769px) /* Phone */
 {
+    /* Menu */
+    .menu{
+        position: relative;
+        width: 100%;
+        background-color: #262b2d;
+        border-right: none;
+        border-bottom: 1px solid grey;
+        overflow: hidden;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+
+    .menu .box-nav-top{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70px;
+        line-height: 90px;
+        color: #000;
+        padding: 0px;
+    }
+    .menu .box-nav-bottom{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 70px;
+        line-height: 90px;
+        border-top: 1px solid grey;
+        color: #000;
+        padding: 0px;
+    }
+    .menu .ico-nav{
+        margin-bottom: 25px;
+        margin-left: 30px;
+        height: 25px;
+    }
+    .menu ul.nav-left{
+        list-style-type: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        line-height: 90px;
+        color: #000;
+        padding: 0px;
+    }
+    .menu .ico-nav-left{
+        margin-bottom: 25px;
+        margin-left: 30px;
+        height: 15px;
+    }
+
+    .menu ul li {
+        border-bottom: 1px solid grey;
+        padding-bottom: 20px !important;
+        margin-bottom: 0px;
+    }
+    .menu li a {
+        padding: 0 15px 20px 100px;
+        line-height: 90px;
+        font-size: 0.90em;
+        display: block;
+        text-align: left;
+        color: grey;
+        font-family: Gillsans;
+        font-weight: 300;
+        width: 260px;
+    }
+    .menu li a:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .box-nav-bottom {
+        display: none !important;
+    }
     .galeriedesktop{
         display: none;
     }
@@ -640,6 +718,12 @@ ul.menuPortfolio>li:hover{
 
 @media (min-width: 768px) and (max-width: 991px) /* Tablet */
 {
+    /* Menu */
+    .menu:hover {
+        background-color: #262b2d;
+        width: 280px;
+    }
+
     .contentartiste1{
         position: relative;
         z-index: 2;
@@ -657,10 +741,16 @@ ul.menuPortfolio>li:hover{
         padding-right: 15px;
         margin-left: 100px;
     }
+
 }
 
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */
 {
+    /* Menu */
+    .menu:hover {
+        background-color: #262b2d;
+        width: 280px;
+    }
 
     .contentartiste{
         position: relative;
@@ -674,6 +764,12 @@ ul.menuPortfolio>li:hover{
 
 @media (min-width: 1170px) /* Large desktop */
 {
+    /* Menu */
+    .menu:hover {
+        background-color: #262b2d;
+        width: 280px;
+    }
+
     .slider {
         margin-left: 6.333333%;
         width: 93.666667%;
