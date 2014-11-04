@@ -15,3 +15,7 @@ nae_plateform_profil:
 nae_plateform_books:
     path:     /books/
     defaults: { _controller: NAEPlateformBundle:Expo:books }
+
+nae_plateform_expo:
+    path:     /expo/
+    defaults: { _controller: NAEPlateformBundle:Expo:expo }
