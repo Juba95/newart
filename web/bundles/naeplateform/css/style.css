@@ -470,12 +470,13 @@ h2.p-slide-t{
 header.profile {
     text-align: center;
     color: #fff;
-    background: url(../images/image_slider_1.png) no-repeat;
+    background: url(../images/backgrounds/bg-header-profil.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    padding: 90px 15px 50px 0px;
+    padding-bottom: 23px;
+    padding-top: 35px;
 }
 
 .img-circle, .img-rounded {
@@ -484,7 +485,7 @@ header.profile {
 }
 
 /* line */
-span.lineTitle{
+.lineTitle{
     border-bottom:1px solid rgb(198, 199, 200, 0.5);
     width : 75px;
     margin: 30px auto 45px auto;
@@ -499,6 +500,19 @@ span.lineTitle{
     width : 240px;
     margin: 50px auto 50px auto;
 }
+.verticalLine{
+    width:9%;
+    border-right:1px solid rgb(198, 199, 200, 0.9);
+    height:70px;
+}
+/*-- end line --*/
+
+/* Container-Profile */
+.containerProfile{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+/* End Container-Profile */
 .img-padding{
     padding: 2px 2px 2px 2px ;
 }
@@ -516,8 +530,9 @@ ul.social-buttons>li>a {
     font-size: 20px;
     line-height: 40px;
     outline: 0;
-    color: #fff;
-    background-color: #222;
+    color: #5d5F5F;
+    font-size: 28px;
+    background-color: #fff;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -532,15 +547,25 @@ ul.social-buttons>li>a {
 }
 /* Font */
 
-.subtitleTextActuality{
-    font-style: italic;
-    font-weight: bold;
+.name{
+    font-family: DubielItalic;
+    font-size: 45px;
+    color : #5d5F5F;
 }
-.subtitleProfile{
-    font-size: 16px;
+.surname{
+    font-size: gillsans;
+    font-size: 46px;
+    margin-top: 1px;
 }
-.titleItalicProfile{
-    font-style: italic;
+.contactProfile{
+    letter-spacing: 0.01em;
+    color: rgba(255,255,255, 0.63);
+    line-height: 0;
+    padding-bottom: 15px;
+    font-size: 10px;
+}
+.profileTitle{
+    padding-top: 60px;
 }
 /* Menu Profil */
 ul.menuPortfolio>li{
@@ -561,32 +586,6 @@ ul.menuPortfolio>li:hover{
     text-align: center ;
 }
 
-/* Paralaxe Profile */
-.parallaxP {
-    background: url("../images/parallax.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-bacground-size: cover;
-    -o-background-size: cover;
-    margin-bottom: 150px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.parallaxP button{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-    text-transform: uppercase;
-    font-family: Gillsans;
-    font-size: 1.2em;
-}
-
-.parallaxP a:hover{
-    text-decoration: none;
-}
 /*-- en Attendant la màj sur les balises "li" et "a" --*/
 .activeProfile{
     padding: 4px 4px 4px 4px;
