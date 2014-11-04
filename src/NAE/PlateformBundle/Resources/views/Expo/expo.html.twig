@@ -1,0 +1,24 @@
+{# Include #}
+{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
+
+<body>
+<div id="slides">
+    <div class="slides-container">
+        <img src="{{ asset('bundles/naeplateform/images/slider/image1.png') }}" width="1024" height="682" alt="image_slider_1">
+        <img src="{{ asset('bundles/naeplateform/images/slider/image2.jpg') }}" width="1024" height="682" alt="image_slider_2">
+        <img src="{{ asset('bundles/naeplateform/images/slider/image3.jpg') }}" width="1024" height="682" alt="image_slider_3">
+        <img src="{{ asset('bundles/naeplateform/images/slider/image2.jpg') }}" width="1024" height="682" alt="image_slider_2">
+    </div>
+
+    <nav class="slides-navigation">
+        <a href="#" class="next">Next</a>
+        <a href="#" class="prev">Previous</a>
+    </nav>
+</div>
+
+<script>
+    $('#slides').superslides({
+        animation: 'fade'
+    });
+</script>
+</body>

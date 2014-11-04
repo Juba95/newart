@@ -70,13 +70,14 @@
                 {# artist    image #}
                 <img src="{{ asset('bundles/naeplateform/images/img-profil.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
                 {# artist name #}
-                <h1> André Le Corre </h1>
-                <h2 class="titleProfile">El Cor</h2>
-                {# location #}
-                <p><span class="fa fa-map-marker"></span> Paris, FRANCE</p>
-                {# Mail #}
-                <p><span class="fa fa-envelope"></span> CONTACT@ELCOR.COM</p>
-
+                <h1 class="name"> André Le Corre </h1>
+                <h2 class="surname">El Cor</h2>
+                <div class="contactProfile">
+                    {# location #}
+                    <p><span class="fa fa-map-marker"></span> PARIS, FRANCE</p>
+                    {# Mail #}
+                    <p><span class="fa fa-envelope"></span> CONTACT@ELCOR.COM</p>
+                </div>
                 <div class="row col-md-offset-4 col-lg-offset-5 col-sm-offset-4 col-xs-offset-0">
                     <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
                         <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
@@ -96,8 +97,9 @@
 
     <div class="container col-md-11 col-md-offset-1">
         {# Section Biography #}
-        <section id="biography">
-            <h1 class="text-center profileTitle">Biographie <span class="line-biographie"></span></h1>
+        <section id="biography" class="containerProfile">
+
+            <div class="lineTitle"><h1 class="text-center profileTitle">Biographie</h1></div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique laoreet. Aliquam eget dui tristique, consequat mauris in, sollicitudin ipsum. Quisque molestie sit amet enim eget euismod. Nulla tortor ipsum, efficitur quis scelerisque ac, condimentum nec tortor. Praesent condimentum rutrum lacus, eget condimentum tortor semper non. In malesuada massa erat, non vestibulum magna congue eget. Praesent maximus lectus massa, quis posuere justo luctus non. Integer nec bibendum diam.
 
@@ -107,7 +109,7 @@
             </p>
         </section>
         {# section last work #}
-        <section id="lastwork">
+        <section id="lastwork" class="containerProfile">
             <h5 class="titleProfile">{{ 'dernieres oeuvres :' | upper }}</h5>
             <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-3">
@@ -123,9 +125,7 @@
                     <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
                 </div>
             </div>
-        </section>
-        {# Actuality #}
-        <section id="actuality">
+            {# Actuality #}
             <h5 class="titleProfile">{{ 'Actualités :' | upper }}</h5>
             <div class="row">
                 <div class="col-md-6 col-lg-6">
@@ -147,8 +147,8 @@
         {# Section portfolio #}
         <section id="portfolio">
             <div class="text-center">
-                <h3>EL COR</h3>
-                <h2>{{ 'portfolio' | upper }}</h2>
+                <h2 class="name">EL COR</h2>
+                <h2 class="profileTitle">{{ 'portfolio' | upper }}</h2>
             </div>
             <div class="text-center">
                 <h4 class="activeProfile inlineOption"> TOUS </h4>
@@ -176,6 +176,7 @@
         <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-5.jpg') }}" alt="image galerie">
 
     </div>
+    <div class="verticalLine center-block text-center"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-offset-1">
