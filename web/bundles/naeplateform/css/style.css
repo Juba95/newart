@@ -679,6 +679,34 @@ ul.menuPortfolio>li:hover{
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
+        /* Hover Image */
+/*.zoom {
+    display:block;
+    position:relative;
+    overflow:hidden;
+}
+*/
+
+.zoomOverlay {
+    position:absolute;
+    top:50px; bottom:50px;
+    left:78px; right:50px;
+    display:none;
+    background-image:url(../images/icons/loupe.png);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.zoom2 {
+    opacity: 1;
+}
+
+.zoom2:hover {
+    opacity: 0.5;
+}
+        /* End Hover Image
+
 /* End Filtres + photos */
 
 /* Responsive  - @media - " à consommer avec modération :)" */
