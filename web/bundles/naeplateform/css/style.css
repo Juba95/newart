@@ -4,6 +4,10 @@ body {
     background-color: #262b2d;
     color: white;
 }
+p{
+    font-family: gilsans;
+    font-size: 15px;
+}
 .titlestyle{
     font-family: Gillsans;
     text-transform: uppercase;
@@ -479,7 +483,7 @@ header.profile {
     padding-top: 35px;
 }
 
-.img-circle, .img-rounded {
+.img-circle{
     width: 140px;
     height: 140px;
 }
@@ -509,8 +513,11 @@ header.profile {
 
 /* Container-Profile */
 .containerProfile{
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+div.container-social{
+    margin: 0 auto;
 }
 /* End Container-Profile */
 .img-padding{
@@ -521,7 +528,10 @@ header.profile {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-
+.dateProfile{
+    font-size: 12px;
+    color: #5d5F5F;
+}
 ul.social-buttons>li>a {
     display: block;
     width: 40px;
@@ -537,9 +547,11 @@ ul.social-buttons>li>a {
     -moz-transition: all .3s;
     transition: all .3s;
 }
+/* image */
 
+/* end image */
 .actualityLien{
-    color : #5e5e5e;
+    color : #5d5F5F;
 }
 
 .actualityLien:hover{
@@ -565,7 +577,21 @@ ul.social-buttons>li>a {
     font-size: 10px;
 }
 .profileTitle{
-    padding-top: 60px;
+    font-family: DUBIEL;
+    font-size: 40px;
+}
+.profileTitleActuality{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+.profileTitleOeuvre{
+    margin-bottom: 5%;
+    margin-top: 10%;
+    font-size: 18px;
+}
+.subtitleTextActuality{
+    font-weight: bold;
 }
 /* Menu Profil */
 ul.menuPortfolio>li{
@@ -598,10 +624,15 @@ ul.menuPortfolio>li:hover{
     padding-left: 20px;
     padding-right: 20px;
 }
+.spacingTopProfile{
+    margin-top: 20px;
+}
+.spacingBottomProfile{
+    margin-bottom: 7%;
+}
 /*-------------------*/
 /*---- Fin profil -- */
 /*-------------------*/
-
 
 
 /*---------------------*/
@@ -739,6 +770,7 @@ ul.menuPortfolio>li:hover{
         display: block;
         margin-left: 100px;
     }
+
 }
 
 @media screen and (max-width: 992px) /* Point de changement de taille menu horizontale */
@@ -756,7 +788,15 @@ ul.menuPortfolio>li:hover{
     }
 
 }
-
+@media (min-width: 480px) and (max-width: 767px)/* mobile */
+{
+    /* image profile */
+    .img-recent{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 15%;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px) /* Tablet */
 {
     /* Menu */
@@ -782,7 +822,12 @@ ul.menuPortfolio>li:hover{
         padding-right: 15px;
         margin-left: 100px;
     }
-
+    /* image profile */
+    .img-recent{
+        height: 160px;
+        width: 100%;
+        margin-bottom: 15%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */
@@ -801,6 +846,12 @@ ul.menuPortfolio>li:hover{
         text-align: left;
         padding-right: 15px;
     }
+    /* image profile */
+    .img-recent{
+        height: 130px;
+        width: 100%;
+        margin-bottom: 15%;
+    }
 }
 
 @media (min-width: 1170px) /* Large desktop */
@@ -815,7 +866,12 @@ ul.menuPortfolio>li:hover{
         margin-left: 6.333333%;
         width: 93.666667%;
     }
-
+    /* image profile */
+    .img-recent{
+        height: 130px;
+        width: 100%;
+        margin-bottom: 15%;
+    }
 }
 
 

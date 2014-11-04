@@ -99,47 +99,55 @@
         {# Section Biography #}
         <section id="biography" class="containerProfile">
 
-            <div class="lineTitle"><h1 class="text-center profileTitle">Biographie</h1></div>
+            <h1 class="text-center profileTitle">Biographie</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis tristique laoreet. Aliquam eget dui tristique, consequat mauris in, sollicitudin ipsum. Quisque molestie sit amet enim eget euismod. Nulla tortor ipsum, efficitur quis scelerisque ac, condimentum nec tortor. Praesent condimentum rutrum lacus, eget condimentum tortor semper non. In malesuada massa erat, non vestibulum magna congue eget. Praesent maximus lectus massa, quis posuere justo luctus non. Integer nec bibendum diam.
-
-                Praesent porttitor, elit vitae mollis scelerisque, ante elit blandit augue, ut eleifend ante orci sit amet erat. Quisque eget pulvinar justo. Vivamus quis molestie tortor. Praesent pharetra dignissim mi a pulvinar. Proin quis libero nec neque suscipit tincidunt sit amet finibus magna. Proin sodales eros ac magna scelerisque facilisis. Vivamus convallis lectus tempor eros volutpat mattis.
-
-                Aenean quis dictum nisl. Mauris malesuada ornare molestie. Duis et nisi accumsan, rhoncus odio vel, pharetra leo. Quisque dapibus et felis vel vestibulum. Nulla finibus nulla in luctus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis quis mollis metus. Vestibulum ut libero nec metus consectetur ultricies pulvinar in est. Sed at ex ante.
+                Création et imaginaire nourrissent sa création depuis l’enfance. Dessin, peinture puis photographie lui permette de la cultiver. Un temps tenté par les beaux arts, il choisit une formation universitaire naturaliste puis débutera sa vie professionnelle comme photographe. Il reprendra fin des années 90 des études d’art plastique universitaires qui orienteront sa pratique.<br>
+                En 1983, ses premières grandes exposition le plonge au coté de grands noms au journée internationales de la photographie et de l’audiovisuel de Montpellier en tant que plasticien photographe mélangeant les médiums.<br>
+                Peinture, photographie , mélange des deux : trois pratiques qui animeront ses toutes ses expositions.<br>
+                Sa série CORPUS 2013 emprunté au latin corpus (« corps »corpus /k??.pys/ masculin Recueil de pièces,de documents concernant une même matière) lui permet de rassembler ses diverses écritures au sein d'une même peinture et d'en explorer l'essence pour en donner une vie organique et onirique .Ce qui relie le corps au monde dans tous les cycles du vivant pour des propositions aux multiples portes d'entrée, propices à des visions au confins de l'être.
+                <br><br>
+                Il reprends le mélange des médiums avec numérique, photographie et peinture dans les derniers travaux.
             </p>
         </section>
         {# section last work #}
         <section id="lastwork" class="containerProfile">
-            <h5 class="titleProfile">{{ 'dernieres oeuvres :' | upper }}</h5>
+            <h5 class="profileTitleOeuvre">{{ 'dernieres oeuvres :' | upper }}</h5>
+
             <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="img-rounded img-responsive img-recent"/>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="img-rounded img-responsive img-recent"/>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="" class="img-rounded img-responsive img-recent"/>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-3">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="img-rounded img-responsive img-padding"/>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-4.jpg') }}" alt="" class="img-rounded img-responsive img-recent"/>
                 </div>
             </div>
+
+
+
+
             {# Actuality #}
             <h5 class="titleProfile">{{ 'Actualités :' | upper }}</h5>
             <div class="row">
                 <div class="col-md-6 col-lg-6">
-                    <p class="actualityText">10.10.2014</p>
-                    <h5 class="subtitleTextActuality ">&quot; De l'amour dans la peinture. &quot;</h5>
+                    <p class="actualityText dateProfile">10.10.2013</p>
+                    <h5 class="subtitleTextActuality">&quot; De l'amour dans la peinture. &quot;</h5>
                     <p class="actualityText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat leo eget elit eleifend condimentum id sed massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices odio lectus, nec aliquet lorem fermentum non. Nunc mollis ornare lorem, at sagittis ligula vestibulum eu. Etiam fringilla dui nec.
+                        Participe à" De l’Amour dans la Peinture" — Les Quatre Saisons de l’Art - Automne 2013 Du lundi 23 septembre au lundi 21 octobre 2013 Vernissage samedi 21 septembre 2013 à 17h30
                     </p>
-                    <a href="#" class="actualityLien">site web</a>
+                    <a href="#" class="actualityLien">ttp://www.artcontemporain-languedocroussillon.fr/evenement-258.html</a>
                 </div>
                 <div class="col-md-6 col-lg-6">
-                    <p class="actualityText">10.10.2014</p>
+                    <p class="actualityText dateProfile">13.03.2013</p>
+                    <h5 class="subtitleTextActuality">Démarche artistique</h5>
                     <p class="actualityText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat leo eget elit eleifend condimentum id sed massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices odio lectus, nec aliquet lorem fermentum non. Nunc mollis ornare lorem, at sagittis ligula vestibulum eu. Etiam fringilla dui nec.
+                        Créateur d'images où s'entremêlent mes visions photographiques, picturales dans toutes les possibilités qu'offre la digitalisation, je laisse dans ma pratique de la peinture la libre contrainte de sa seule
+                        occurrence.
                     </p>
                 </div>
             </div>
@@ -147,15 +155,15 @@
         {# Section portfolio #}
         <section id="portfolio">
             <div class="text-center">
-                <h2 class="name">EL COR</h2>
-                <h2 class="profileTitle">{{ 'portfolio' | upper }}</h2>
+                <h2 class="name spacingTopProfile">EL COR</h2>
+                <h2 class="profileTitle spacingTopProfile">{{ 'portfolio' | upper }}</h2>
             </div>
-            <div class="text-center">
+            <div class="text-center spacingBottomProfile spacingTopProfile">
                 <h4 class="activeProfile inlineOption"> TOUS </h4>
                 <h4 class="inlineOption"> 2015 </h4 >
                 <h4 class="inlineOption"> 2014 </h4>
                 <h4 class="inlineOption"> 2013 </h4>
-            <h4 class="inlineOption"> 2012</h4>
+                <h4 class="inlineOption"> 2012</h4>
                 <h4 class="inlineOption"> 2011</h4>
             </div>
             {#<ul class="center-block menuPortfolio">
