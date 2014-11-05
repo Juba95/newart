@@ -688,23 +688,59 @@ ul.menuPortfolio>li:hover{
 }
 
 .searchbooks{
+    padding-bottom: 15px;
     border-bottom: 1px solid grey;
     margin-bottom: 50px;
 }
 
-.searchbooks p{
+.searchbooks input{
     font-family: DubielItalic;
     font-size: 2em;
     color: white;
+    background-color: #262b2d;
+    border: none;
 }
 
 .iconloupe{
     padding-left: 0;
 }
 
-.loupe{
+.dropdown button{
+    background-color: #1b2021;
+    border: 1px solid grey;
+    border-radius: inherit;
+    color: white;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown .dropdown-menu{
+    background-color: #1b2021;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dropdown2 button{
+    border: inherit;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    background-color: #262b2d
+}
+
+.white{
     color: white;
 }
+
+.white:hover{
+    color: black;
+}
+
 /* End Partie haute */
 
 /* Filtres + photos */

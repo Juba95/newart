@@ -79,11 +79,15 @@
     <div class="row">
         <div class="col-md-7 col-md-offset-1">
             <div class="searchbooks">
-                <p>Effectuer une recherche</p>
+                <form>
+                    <input type="text" placeholder="Effectuer une recherche" required>
+                </form>
             </div>
         </div>
         <div class="col-md-1 iconloupe">
-            <img src="{{ asset('bundles/naeplateform/images/icons/loupe.png') }}" alt="Logo loupe recherche">
+            <form>
+                <input type="image" src="{{ asset('bundles/naeplateform/images/icons/loupe.png') }}" alt="Submit">
+            </form>
         </div>
         <div class="col-md-3">
             <div class="dropdown">
@@ -92,10 +96,9 @@
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Trier par : les + partagés</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Trier par : les + récents</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Trier par : les + anciens</span></a></li>
                 </ul>
             </div>
         </div>
@@ -109,29 +112,29 @@
         <div class="col-md-3 col-md-offset-1 filtre">
             <p class="text-center">Filtrer par</p>
 
-            <div class="dropdown">
+            <div class="dropdown dropdown2">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     Catégories
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Street Art</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Toile</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Dessin</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">OKLM</span></a></li>
                 </ul>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown dropdown2">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     Pays
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">France</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Pays-Bas</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Allemagne</span></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Belgique</span></a></li>
                 </ul>
             </div>
         </div>
@@ -203,27 +206,4 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-            <div class="row">
-
-                <div class="col-md-3">
-                    <a class="zoom transparent" href=""><img src="{{ asset('bundles/naeplateform/images/books/1.jpg') }}"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="zoom transparent" href=""><img src="{{ asset('bundles/naeplateform/images/books/2.jpg') }}"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="zoom transparent" href=""><img src="{{ asset('bundles/naeplateform/images/books/3.jpg') }}"></a>
-                </div>
-                <div class="col-md-3">
-                    <a class="zoom transparent" href=""><img src="{{ asset('bundles/naeplateform/images/books/4.jpg') }}"></a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
         {# End Filtres latéral #}
