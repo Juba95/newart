@@ -547,8 +547,35 @@ ul.social-buttons>li>a {
     -moz-transition: all .3s;
     transition: all .3s;
 }
+/* btn */
+.btn-space{
+    margin-bottom: 25%;
+}
 /* image */
-
+.image-size{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.image-1{
+    height: 370px;
+    width: 20%;
+}
+.image-2{
+    height: 370px;
+    width: 40%;
+}
+.image-3{
+    height: 370px;
+    width: 39%;
+}
+.image-4{
+    height: 300px;
+    width: 70%;
+}
+.image-5{
+    height: 300px;
+    width: 29%;
+}
 /* end image */
 .actualityLien{
     color : #5d5F5F;
