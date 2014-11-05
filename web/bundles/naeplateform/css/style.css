@@ -132,10 +132,13 @@ a:hover{
     padding-left: 0px;
     padding-right: 0px;
     height: 100%;
+    width: 100%;
+    margin-left: 0px;
 }
 .slider img {
     width: 100%;
     height: 100% !important;
+    margin-left: 80px;
 }
 .item{
     background: #333;
@@ -173,7 +176,11 @@ h2.p-slide-t{
     background-color: #262b2d;
     text-align: center;
     margin-right: 0px;
-    margin-left: -25px;
+    margin-left: 70px;
+}
+
+.nav-horizontal h4 {
+    font-size: 14px;
 }
 .navboutique, .navexpovirtuel, .navcoupcoeur {
     border-right: solid 1px #434749;
@@ -214,6 +221,13 @@ h2.p-slide-t{
 /* END What is NAE */
 
 /* Parallax */
+
+.savoirplus {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 6.333333%;
+    width: 93.666667%;
+}
 .parallax {
     background: url("../images/parallax.jpg");
     background-attachment: fixed;
@@ -817,6 +831,11 @@ ul.menuPortfolio>li:hover{
     .box-nav-bottom {
         display: none !important;
     }
+
+    /* slider */
+    .item img {
+        margin-left: 0px;
+    }
     .galeriedesktop{
         display: none;
     }
@@ -824,6 +843,11 @@ ul.menuPortfolio>li:hover{
     .galeriemobile{
         display: block;
         margin-left: 100px;
+    }
+
+    /* nav horizontal*/
+    .nav-horizontal {
+      margin-left: 0px;
     }
 
 }
@@ -917,10 +941,6 @@ ul.menuPortfolio>li:hover{
         width: 280px;
     }
 
-    .slider {
-        margin-left: 6.333333%;
-        width: 93.666667%;
-    }
     /* image profile */
     .img-recent{
         height: 130px;
