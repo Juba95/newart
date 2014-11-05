@@ -727,10 +727,44 @@ ul.menuPortfolio>li:hover{
 }
 
 .dropdown2 button{
+    width:250px;
+    text-align: left;
     border: inherit;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
-    background-color: #262b2d
+    background-color: #262b2d;
+    font-size: 1.5em;
+}
+
+.dropdown3 button{
+    width: 250px;
+    text-align: left;
+    border: inherit;
+    border-bottom: 1px solid grey;
+    background-color: #262b2d;
+    font-size: 1.5em;
+}
+
+/*.contentbooks{
+    height: 0;
+}
+.contentbooks div{
+    bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.contentbooks:hover{
+    display: none;
+}*/
+
+.imagebooks div{ /* Enlève le padding auto du Bootstrap + réduit opacité */
+    padding: 1px;
+    opacity: 0.75;
+}
+
+.imagebooks div:hover{
+    opacity: 1;
 }
 
 .white{
@@ -746,7 +780,7 @@ ul.menuPortfolio>li:hover{
 /* Filtres + photos */
 .filtre p{
     font-family: Gillsans;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 15px;
     letter-spacing: 3px;
     text-transform: uppercase;
