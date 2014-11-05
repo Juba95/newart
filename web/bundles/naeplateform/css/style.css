@@ -729,7 +729,7 @@ ul.menuPortfolio>li:hover{
     top:50px; bottom:50px;
     left:78px; right:50px;
     display:none;
-    background-image:url(../images/icons/loupe.png);
+    background-image:url(../images/icons/eye.png);
     background-repeat:no-repeat;
     background-position:center;
 }
