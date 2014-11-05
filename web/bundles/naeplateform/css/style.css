@@ -326,9 +326,6 @@ h2.p-slide-t{
 .superposition{
     font-size: 3em;
     color: grey;
-    /*position: relative;
-    z-index: 1;
-    right: 15%;*/
 }
 
 .artisteoftheday p{
@@ -377,9 +374,6 @@ h2.p-slide-t{
     font-size: 1.2em;
     margin-right: 100px;
 }
-
-
-
 
 /* END Artiste du jour */
 
@@ -502,28 +496,6 @@ header.profile {
     height: 140px;
 }
 
-/* line */
-.lineTitle{
-    border-bottom:1px solid rgb(198, 199, 200, 0.5);
-    width : 75px;
-    margin: 30px auto 45px auto;
-}
-.line{
-    border-bottom:1px solid rgb(198, 199, 200, 0.5);
-    width : 960px;
-    margin: 50px auto 50px auto;
-}
-.lineMobile{
-    border-bottom:1px solid rgb(198, 199, 200, 0.5);
-    width : 240px;
-    margin: 50px auto 50px auto;
-}
-.verticalLine{
-    width:9%;
-    border-right:1px solid rgb(198, 199, 200, 0.9);
-    height:70px;
-}
-/*-- end line --*/
 
 /* Container-Profile */
 .containerProfile{
@@ -620,6 +592,8 @@ ul.social-buttons>li>a {
 .profileTitle{
     font-family: DUBIEL;
     font-size: 40px;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 31px;
 }
 .profileTitleActuality{
     margin-bottom: 5%;
