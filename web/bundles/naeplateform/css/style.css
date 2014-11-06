@@ -333,67 +333,23 @@ a:hover{
 /* END News */
 
 
-/* Artiste du jour */
+/* Artiste du jour /oeuvre du jour */
 
-.artisteoftheday h1{
-    margin-bottom: 100px;
-    margin-top: 150px;
-    font-family: Gillsans;
-    /*left: 15%;
-    position: relative;
-    z-index: 2;*/
+.artisteandoeuvre{
+    margin-left: 75px;
 }
+.artiste {
+    background: url("../images/backgrounds/artiste-du-jour.jpg");
+    background-size: cover;
+    height: 310px;
 
-.superposition{
-    font-size: 3em;
-    color: grey;
+
 }
+.oeuvredujour {
+    background: url("../images/backgrounds/oeuvre-du-jour.jpg");
+    background-size: cover;
+    height: 310px;
 
-.artisteoftheday p{
-    color: grey;
-    font-family: Gillsans;
-    font-size: 1.7em;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 75px;
-}
-
-.artiste div{
-    padding: 0;
-}
-
-.imageartiste{
-    position: relative;
-    z-index: 1;
-    opacity: 0.75;
-    padding: 0;
-}
-
-.contentartiste{
-    position: relative;
-    z-index: 2;
-    bottom: 400px;
-    font-family: Gillsans;
-    text-align: left;
-    padding-right: 15px;
-}
-
-.contentartiste h3{
-    color: #ababaa;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    fony-size: 1.5em;
-}
-
-.contentartiste h2{
-    font-size: 3.2em;
-    font-family: DubielItalic;
-}
-
-.contentartiste p{
-    color: #ababaa;
-    font-size: 1.2em;
-    margin-right: 100px;
 }
 
 /* END Artiste du jour */
@@ -435,59 +391,6 @@ a:hover{
 /* END Rechercher un artiste */
 
 
-/* Galerie */
-
-.galeriemobile{
-    display: none;
-}
-
-.gallery {
-    margin-top: 150px;
-    margin-bottom: 150px;
-
-}
-
-
-.image1, .image2, .image3, .image4, .image5 {
-    height: 420px;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.image1 img, .image2 img, .image3 img, .image4 img, .image5 img{
-    max-width: 100%;
-    height: 100%;
-}
-
-#description1, #description2, #description3, #description4, #description5 {
-    background-color: #fff;
-    width:  135px;
-    height: 190px;
-    position: relative;
-    z-index: 2;
-    bottom: 190px;
-}
-#description1, #description3 {
-    bottom: 420px;
-}
-
-.contentdescription{
-    position: relative;
-    z-index: 3;
-}
-
-.contentdescription h2{
-    font-size: 1.5em;
-    font-family: Gillsans;
-    color: black;
-    padding-top: 50px;
-}
-
-.contentdescription p{
-    font-size: 1em;
-    font-family: Gillsans;
-    color: grey;
-}
-/* END Galerie */
 
 
 /* Footer */
@@ -830,6 +733,7 @@ ul.menuPortfolio>li:hover{
         -webkit-transition: none;
         -moz-transition: none;
         transition: none;
+        z-index: 15;
     }
 
     .menu .box-nav-top{
@@ -857,14 +761,15 @@ ul.menuPortfolio>li:hover{
         height: 25px;
     }
     .menu ul.nav-left{
-        list-style-type: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0px;
-        line-height: 90px;
-        color: #000;
-        padding: 0px;
+        /*list-style-type: none;*/
+        /*display: block;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*margin-bottom: 0px;*/
+        /*line-height: 90px;*/
+        /*color: #000;*/
+        /*padding: 0px;*/
+        display: none;
     }
     .menu .ico-nav-left{
         margin-bottom: 25px;
@@ -930,6 +835,11 @@ ul.menuPortfolio>li:hover{
       margin-left: 0px;
     }
 
+    /*artiste/oeuvredujour*/
+    .artisteandoeuvre {
+        margin-top: 20px;
+        margin-left: -15px;
+    }
 
     /* image profile */
     .img-recent{
