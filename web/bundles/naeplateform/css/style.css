@@ -768,18 +768,17 @@ nav a.next {
     font-size: 1.5em;
 }
 
-/*.contentbooks{
-    height: 0;
-}
-.contentbooks div{
-    bottom: 100px;
-    position: relative;
-    z-index: 1;
-}
-
-.contentbooks:hover{
+/*.contentbooks1:hover{
     display: none;
 }*/
+
+.imagebooks{
+    display: block;
+}
+
+.imagebooksnohover{
+    display: none;
+}
 
 .imagebooks div{ /* Enlève le padding auto du Bootstrap + réduit opacité */
     padding: 1px;
@@ -810,17 +809,10 @@ nav a.next {
 }
 
         /* Hover Image */
-/*.zoom {
-    display:block;
-    position:relative;
-    overflow:hidden;
-}
-*/
-
 .zoomOverlay {
     position:absolute;
     top:50px; bottom:50px;
-    left:78px; right:50px;
+    left:76px; right:50px;
     display:none;
     background-image:url(../images/icons/eye.png);
     background-repeat:no-repeat;
@@ -1044,6 +1036,19 @@ nav a.next {
         height: 160px;
         width: 100%;
         margin-bottom: 15%;
+    }
+
+    /* PAGE BOOKS */
+    .imagebooks{
+        display: none;
+    }
+
+    .imagebooksnohover{
+        display: block;
+    }
+
+    .imagebooksnohover div{
+        padding: 1px;
     }
 }
 
