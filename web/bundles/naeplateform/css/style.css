@@ -1072,9 +1072,18 @@ nav a.next {
         font-size: 1.3em;
     }
 
-    .iconloupe{
+    .dropdown3 button{
         text-align: center;
-        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .dropdown-menu{
+        margin-left: 35%;
+    }
+
+    .iconloupe{
+        float: right;
+        bottom: 100px;
     }
 
     .dropdown{
