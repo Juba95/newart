@@ -809,7 +809,7 @@ nav a.next {
 }
 
         /* Hover Image */
-.zoomOverlay {
+/*.zoomOverlay {
     position:absolute;
     top:50px; bottom:50px;
     left:76px; right:50px;
@@ -825,7 +825,7 @@ nav a.next {
 
 .zoom2:hover {
     opacity: 0.5;
-}
+}*/
         /* End Hover Image
 
 /* End Filtres + photos */
@@ -986,9 +986,10 @@ nav a.next {
         display: none;
     }
 
+
 }
 
-@media (min-width: 768px) and (max-width: 991px) /* Tablet */
+@media (min-width: 768px) and (max-width: 1000px) /* Tablet */
 {
     /* Menu */
     .menu:hover {
@@ -1060,6 +1061,27 @@ nav a.next {
     .imagebooksnohover div{
         padding: 1px;
     }
+
+    .dropdown2 button{
+        width: 200px;
+        text-align: left;
+        border: inherit;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        background-color: #262b2d;
+        font-size: 1.3em;
+    }
+
+    .iconloupe{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .dropdown{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */

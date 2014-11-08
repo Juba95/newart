@@ -80,7 +80,7 @@
         <div class="col-md-7 col-md-offset-1">
             <div class="searchbooks">
                 <form>
-                    <input type="text" placeholder="Effectuer une recherche" required>
+                    <input id="recherche" type="text" placeholder="Effectuer une recherche" required>
                 </form>
             </div>
         </div>
@@ -319,3 +319,9 @@
     {# End Images étage 3 sans le hover (responsive) #}
 
         {# End Filtres latéral #}
+
+<script>
+    $('#recherche').click(function(){
+        $(this).css('border','none');
+    });
+</script>
