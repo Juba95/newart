@@ -1,21 +1,32 @@
 @font-face {
     font-family: 'DUBIEL';
-    src: url('http://localhost/newart/web/bundles/NAE/css/fonts/DUBIEL.eot');
-    src: url('http://localhost/newart/web/bundles/NAE/css/fonts/DUBIEL.eot?#iefix') format('embedded-opentype'),
-         url('http://localhost/newart/web/bundles/NAE/css/fonts/DUBIEL.woff') format('woff'),
-         url('http://localhost/newart/web/bundles/NAE/css/fonts/DUBIEL.ttf') format('truetype'),
-         url('http://localhost/newart/web/bundles/NAE/css/fonts/DUBIEL.svg#caviar_dreamsregular') format('svg');
+    src: url('../css/fonts/DUBIEL.eot');
+    src: url('../css/fonts/DUBIEL.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/DUBIEL.woff') format('woff'),
+         url('../css/fonts/DUBIEL.ttf') format('truetype'),
+         url('../css/fonts/DUBIEL.svg#caviar_dreamsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gillsans';
-    src: url('http://localhost/newart/web/bundles/NAE/css/fonts/gillsans.eot');
-    src: url('http://localhost/newart/web/bundles/NAE/css/fonts/gillsans.eot?#iefix') format('embedded-opentype'),
-         url('http://localhost/newart/web/bundles/NAE/css/fonts/gillsans.woff') format('woff'),
-         url('http://localhost/newart/web/bundles/NAE/css/fonts/gillsans.ttf') format('truetype'),
-         url('http://localhost/newart/web/bundles/NAE/css/fonts/gillsans.svg#caviar_dreamsregular') format('svg');
+    src: url('../css/fonts/gillsans.eot');
+    src: url('../css/fonts/gillsans.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/gillsans.woff') format('woff'),
+         url('../css/fonts/gillsans.ttf') format('truetype'),
+         url('../css/fonts/gillsans.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gill-sans-light';
+    src: url('../css/fonts/gill-sans-light.eot');
+    src: url('../css/fonts/gill-sans-light.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/gill-sans-light.woff') format('woff'),
+    url('../css/fonts/gill-sans-light.ttf') format('truetype'),
+    url('../css/fonts/gill-sans-light.svg#caviar_dreamsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -6,57 +6,50 @@
     <div class="menu">
         <div class="box-nav-top">
             <img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">
+            <img class="ico-nav nav-logo" src="{{ asset('bundles/naeplateform/images/logo.png') }}">
         </div>
         <ul class="nav-left">
-            <li id="about">
-                <a>
-                    QU'EST CE QUE NAE ?
-                </a>
-            </li>
-            <li id="find">
-                <a>
-                    RECHERCHE
-                </a>
-            </li>
-            <li id="profil">
-                <a>
-                    MON PROFIL
-                </a>
-            </li>
-            <li id="books">
-                <a>
-                    LISTE DES BOOKS
-                </a>
-            </li>
-            <li id="expo">
-                <a>
-                    EXPO VIRTUELLE
-                </a>
-            </li>
-            <li id="shop">
-                <a>
-                    LA BOUTIQUE
-                </a>
-            </li>
-            <li id="contact">
-                <a>
-                    CONTACT
-                </a>
-            </li>
-            <li id="cvg">
-                <a>
-                    CVG
-                </a>
-            </li>
-            <li id="share">
-                <a>
-                    PARTAGER
-                </a>
-            </li>
-            <div class="box-nav-bottom">
-                <li id="back-top">
+            <div id="box-nav">
+                <li id="about">
                     <a>
-                        RETOUR VERS LE HAUT
+                        QU'EST CE QUE NAE ?
+                    </a>
+                </li>
+                <li id="find">
+                    <a>
+                        RECHERCHE
+                    </a>
+                </li>
+                <li id="profil">
+                    <a>
+                        MON PROFIL
+                    </a>
+                </li>
+                <li id="books">
+                    <a>
+                        LISTE DES BOOKS
+                    </a>
+                </li>
+                <li id="expo">
+                    <a>
+                        EXPO VIRTUELLE
+                    </a>
+                </li>
+                <li id="shop">
+                    <a>
+                        LA BOUTIQUE
+                    </a>
+                </li>
+                <li id="contact">
+                    <a>
+                        CONTACT
+                    </a>
+                </li>
+            </div>
+            <div id="box-nav-bottom">
+                <li id="share">
+                    <a>
+                        PARTAGER
                     </a>
                 </li>
             </div>
@@ -73,61 +66,56 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-            <div class="active item item-1">
-                <img src="{{ asset('bundles/naeplateform/images/slider/image1.png') }}" alt="image_slider_1">
-                <div class="carousel-caption">
-                    <h1>Tomi Slapette</h1>
-                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+
+            <div class="carousel-inner">
+                <div class="active item item-1">
+                    <div class="motif"></div>
+                    <img src="{{ asset('bundles/naeplateform/images/slider/image1.png') }}" alt="image_slider_1">
+                    <div class="carousel-caption">
+                        <h1>Tomi Slapette</h1>
+                        <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                    </div>
                 </div>
-            </div>
-            <div class="item item-2">
-                <img src="{{ asset('bundles/naeplateform/images/slider/image2.jpg') }}" alt="image_slider_2">
-                <div class="carousel-caption">
-                    <h1>Tomi Slapette</h1>
-                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                <div class="item item-2">
+                    <div class="motif"></div>
+                    <img src="{{ asset('bundles/naeplateform/images/slider/image2.jpg') }}" alt="image_slider_2">
+                    <div class="carousel-caption">
+                        <h1>Tomi Slapette</h1>
+                        <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                    </div>
                 </div>
-            </div>
-            <div class="item item-3">
-                <img src="{{ asset('bundles/naeplateform/images/slider/image3.jpg') }}" alt="image_slider_3">
-                <div class="carousel-caption">
-                    <h1>Tomi Slapette</h1>
-                    <h3>{{ 'aka \n monsieur&madame'|upper |nl2br }}</h3>
-                    <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                <div class="item item-3">
+                    <div class="motif"></div>
+                    <img src="{{ asset('bundles/naeplateform/images/slider/image3.jpg') }}" alt="image_slider_3">
+                    <div class="carousel-caption">
+                        <h1>Tomi Slapette</h1>
+                        <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
 {# END Slider #}
 {# Nav-Horizontal#}
 <div class="row nav-horizontal">
-    <div class="col-md-4 col-sm-4 col-xs-4 navexpovirtuel">
-        <nav>
+        <div class="col-md-4 col-sm-4 col-xs-4 navexpovirtuel">
             <a href="#">
-                <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuel.png') }}">
+                <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuelle.png') }}">
                 <h4 class="grey">{{ 'expo virtuel'|upper }}</h4>
             </a>
-        </nav>
     </div>
     <div class="col-md-4 col-sm-4 col-xs-4 navboutique">
-        <nav>
             <a href="#">
-                <img src="{{ asset('bundles/naeplateform/images/icons/boutique.png') }}">
+                <img src="{{ asset('bundles/naeplateform/images/icons/laboutique.png') }}">
                 <h4 class="grey">{{ 'boutique'|upper }}</h4>
             </a>
-        </nav>
     </div>
     <div class="col-md-4 col-sm-4 col-xs-4 navcoupcoeur">
-        <nav>
             <a href="#">
                 <img src="{{ asset('bundles/naeplateform/images/icons/coeur.png') }}">
                 <h4 class="grey">{{ 'coup de coeur'|upper }}</h4>
             </a>
-        </nav>
     </div>
 </div>
 {# END Nav-Horizontal #}
@@ -138,7 +126,7 @@
     <div class="row">
         <div class="col-md-11 col-md-offset-1">
             <div class="presnae">
-                <h1 class="text-center">{{ 'Qu\'est ce que\n'|nl2br }}<span class="titlestyle"> New Art Expo ?</span></h1>
+                <h1 class="text-center">{{ 'Qu\'est ce que\n'|nl2br }}<span class="titlestyle"> {{ 'new art expo'|upper }}</span></h1>
                 <div class="row col-md-6 col-md-offset-3">
                     <div class="barre center-block"></div>
                 </div>
@@ -153,10 +141,8 @@
 </div>
 {# End What is NAE #}
 {# Parallax #}
-<div class="col-md-11 col-md-offset-1 savoirplus row">
-    <div class="parallax">
+<div class="col-md-12 savoirplus parallax row">
         <a href="#"><button type="button" class="btn btn-default center-block">En savoir +</button></a>
-    </div>
 </div>
 {# End Parallax #}
 {# News #}
