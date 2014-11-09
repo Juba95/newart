@@ -834,6 +834,47 @@ nav a.next {
     color: grey;
 }
 
+/* PAGE CONTACT */
+
+.topcontact {
+    margin-top: 100px;
+}
+
+.contact p{
+    font-family: Gillsans;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.formcontact input{
+    background-color: #1b2021;
+    border: 1px solid grey;
+    border-radius: 0;
+    height: 75px;
+    font-size: 1em;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-left: 40px;
+    color: white;
+}
+
+.contactmessage{
+    background-color: #1b2021;
+    border: 1px solid grey;
+    border-radius: 0;
+    font-size: 1em;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    padding-left: 40px;
+    padding-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
 /* Responsive  - @media - " à consommer avec modération :)" */
 
 @media screen and (max-width: 769px) /* Phone */

@@ -1,0 +1,147 @@
+{# Include #}
+{{ include("NAEPlateformBundle:Expo:header.html.twig") }}
+
+
+{# Header #}
+<header>
+    <div class="menu">
+        <div class="box-nav-top">
+            <img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">
+        </div>
+        <ul class="nav-left">
+            <li id="about">
+                <a>
+                    QU'EST CE QUE NAE ?
+                </a>
+            </li>
+            <li id="find">
+                <a>
+                    RECHERCHE
+                </a>
+            </li>
+            <li id="profil">
+                <a>
+                    MON PROFIL
+                </a>
+            </li>
+            <li id="books">
+                <a>
+                    LISTE DES BOOKS
+                </a>
+            </li>
+            <li id="expo">
+                <a>
+                    EXPO VIRTUELLE
+                </a>
+            </li>
+            <li id="shop">
+                <a>
+                    LA BOUTIQUE
+                </a>
+            </li>
+            <li id="contact">
+                <a>
+                    CONTACT
+                </a>
+            </li>
+            <li id="cvg">
+                <a>
+                    CVG
+                </a>
+            </li>
+            <li id="share">
+                <a>
+                    PARTAGER
+                </a>
+            </li>
+            <div class="box-nav-bottom">
+                <li id="back-top">
+                    <a>
+                        RETOUR VERS LE HAUT
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</header>
+{# End Header #}
+
+{# Title & Search fields#}
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 topcontact">
+            <h1 class="text-center"><span class="titlestyle"> Contact</span></h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+            <div class="barre center-block"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 contact">
+
+            <p class="text-center">Tantum autem cuique tribuendum, primum quantum ipse efficere possis,
+                deinde etiam quantum ille quem diligas atque adiuves, sustinere. Non enim neque tu possis,
+                quamvis excellas, omnes tuos ad honores.
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 formcontact">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputName3" class="col-sm-2 control-label"></label>
+                        <div>
+                            <input type="text" class="form-control" id="" placeholder="NOM, PRENOM">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                        <div>
+                            <input type="text" class="form-control" id="" placeholder="Mail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-11 col-md-offset-1">
+            <div class="center-block"><textarea class="form-control contactmessage" rows="12" placeholder="Message"></textarea></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 col-md-offset-1 newsbutton">
+            <p class="text-center"><a href="#"><button type="button" class="btn btn-default buttonred">Envoyer</button></a><p>
+        </div>
+    </div>
+</div>
+
+
+
+{{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
