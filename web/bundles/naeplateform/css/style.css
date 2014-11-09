@@ -808,27 +808,31 @@ nav a.next {
     text-transform: uppercase;
 }
 
-        /* Hover Image */
-/*.zoomOverlay {
-    position:absolute;
-    top:50px; bottom:50px;
-    left:76px; right:50px;
-    display:none;
-    background-image:url(../images/icons/eye.png);
-    background-repeat:no-repeat;
-    background-position:center;
+/* PAGE WHAT IS NAE */
+
+.nae p{
+    font-family: Gillsans;
+    font-size: 1.5em;
 }
 
-.zoom2 {
-    opacity: 1;
+.nae h2{
+    font-family: Gillsans;
+    font-size: 3.2em;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: grey;
 }
 
-.zoom2:hover {
-    opacity: 0.5;
-}*/
-        /* End Hover Image
+.topnae{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
 
-/* End Filtres + photos */
+.topnae h1{
+    font-family: DubielItalic;
+    font-size: 3.8em;
+    color: grey;
+}
 
 /* Responsive  - @media - " à consommer avec modération :)" */
 
