@@ -18,7 +18,7 @@ p{
     border-top: 1px solid #4e5254;
     margin-bottom: 40px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 35px;
 }
 a:hover{
     text-decoration: none;
@@ -88,9 +88,7 @@ a:hover{
     margin-left: 30px;
     height: 25px;
 }
-.menu .nav-left li{
 
-}
 .menu li a {
     padding: 0 15px 0 79px;
     height: 63px;
@@ -98,7 +96,7 @@ a:hover{
     font-size: 1.14em;
     display: block;
     text-align: left;
-    color: grey;
+    color: #666;
     font-family: 'gill-sans-light';
     font-weight: 300;
     width: 261px;
@@ -265,28 +263,30 @@ a:hover{
 .nav-horizontal h4 {
     font-size: 12px;
     letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.5);
 }
 .navboutique, .navexpovirtuel, .navcoupcoeur {
     border-right: solid 1px #434749;
     border-bottom: solid 1px #434749;
     background-color: #1b2021;
     padding-top: 10px;
-}
-.navexpovirtuel a,.navboutique a, .navcoupcoeur a{
-    opacity: 0.17;
+    color: #666666;
 }
 
-.navexpovirtuel a:hover, .navboutique a:hover, .navcoupcoeur a:hover {
+.navboutique :hover, .navexpovirtuel :hover, .navcoupcoeur :hover{
+    color: #ffffff;
+}
+
+.navboutique a, .navexpovirtuel a, .navcoupcoeur a{
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    -o-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.navboutique a:hover, .navexpovirtuel a:hover, .navcoupcoeur a:hover{
     opacity: 1;
 }
-.grey{
-    color: grey;
-}
-.grey:hover{
-    color: #FFF;
-    text-decoration: none;
-}
-
 .carousel-inner {
     border-bottom: 1px solid #2b3031;
 }
@@ -311,11 +311,11 @@ a:hover{
 .presnae h1{
     font-family: DubielItalic;
     font-size: 36px;
-    color: grey;
+    color: #666666;
 }
 
 .undercontent{
-    color: grey;
+    color: #666666;
     font-size: 16px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -352,22 +352,43 @@ a:hover{
 /* END Parallax*/
 
 /* News */
+
+/* date-separator*/
+.date-separator {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.date-separator h4 {
+    border: solid 1px #666;
+    padding: 47px 0px 40px 0px;
+    border-radius: 100px;
+    background-color: #1c2122;
+    font-size: 15px;
+    color: #666;
+}
+
 .news{
-    margin-top: 125px;
+    margin-top: 93px;
 }
 
 .news h1{
     font-family: DubielItalic;
-    font-size: 4em;
-    color: grey;
+    font-size: 2.5em;
+    color: #666666;
+    line-height: 50px;
 }
 
 .newsarticle{
-    font-family: Gillsans;
+    font-family: "gill-sans-light";
+    margin: 64px 20px 0px -15px;
 }
 
+.newsarticle img {
+    width: 100%;
+}
 .newsarticle h2{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .newsarticle h3{
@@ -376,7 +397,7 @@ a:hover{
 
 .newsarticle p{
     font-size: 1.2em;
-    color: grey;
+    color: #666666;
 }
 
 .newsarticle a{
@@ -389,18 +410,34 @@ a:hover{
     text-decoration: none;
 }
 
+.trait-separator {
+    background: url("../images/trait-separator.png") no-repeat;
+    height: 939px;
+    width: 30px;
+    position: absolute;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: -10px;
+}
+.article-suite {
+    margin-top: 120px;
+}
+
+.last-article-news {
+    margin-top: 80px;
+}
 .newsbutton{
-    margin-top: 75px;
+    margin-top: 165px;
 }
 
 .newsbutton button{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
-    font-family: Gillsans;
-    font-size: 1.4em;
+    font-family: "gill-sans-light";
+    font-size: 1.2em;
 }
 
 /* END News */
@@ -408,60 +445,114 @@ a:hover{
 
 /* Artiste du jour /oeuvre du jour */
 
+
 .artisteandoeuvre{
     margin-left: 75px;
+    margin-right: 0px;
+}
+
+
+.artisteandoeuvre h1{
+    position: relative;
+    z-index: 1;
+    font-family: 'Georgia';
+    font-size: 100px;
+    color: #333;
+    margin-left: 170px;
+    margin-top: 150px;
+}
+
+.artisteandoeuvre h1 span{
+    position: relative;
+    z-index: 3;
+    font-family: 'gill-sans-light';
+    font-size: 36px;
+    color: #ffffff;
+    right: 250px;
+    bottom: 10px;
+    font-size: 40px;
+}
+
+.artisteandoeuvre .intro-artisteandoeuvre {
+    color: rgba(255,255,255,0.8);
+    font-family: gill-sans-light;
+    margin: 50px 260px 30px 260px;
+    margin-top: 50px;
+    margin-left: 260px;
+    margin-right: 260px;
+    font-size: 17px;
 }
 .artiste {
     background: url("../images/backgrounds/artiste-du-jour.jpg");
     background-size: cover;
     height: 310px;
-
-
+    padding: 40px;
 }
 .oeuvredujour {
     background: url("../images/backgrounds/oeuvre-du-jour.jpg");
     background-size: cover;
     height: 310px;
-
+    padding: 40px;
 }
 
+.artiste h4, .oeuvredujour h4 {
+    font-family: 'gill-sans-light';
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2.5px;
+    font-size: 18px;
+}
+
+.artiste h2, .oeuvredujour h2 {
+    font-family: 'DubielItalic';
+    color: rgba(255,255,255,0.95);
+    font-size: 65px;
+}
+
+.artiste p, .oeuvredujour p {
+    font-family: 'gillsans';
+    color: #666666;
+    font-size: 14px;
+    padding-right: 60px;
+}
 /* END Artiste du jour */
 
 
-/* Rechercher un artiste */
-
-.search{
-    margin-top: 150px;
+/* newsletter */
+.newsletter {
+    color: rgba(255,255,255,0.8);
+    font-family: gill-sans-light;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.search input{
-    background-color: #262b2d;
-    border: 1px solid grey;
-    border-radius: 0;
-    height: 75px;
-    font-size: 1.3em;
-    font-family: Gillsans;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-left: 40px;
-    color: white;
+.newsletter p{
+   padding-bottom: 40px;
+    margin-left: 370px;
+    margin-right: 260px;
+    font-size: 17px;
 }
 
-.search button{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-family: Gillsans;
-    font-size: 1.4em;
+.newsletter input{
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: #1b2021;
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
-.submitrighttablet {
-    display: none;
+.newsletterbutton {
+    font-family: 'gillsans';
+    position: relative;
+    bottom: 46px;
+    right: 98px;
 }
 
-/* END Rechercher un artiste */
+.newsletterbutton button {
+    padding: 11px;
+    padding-right: 20px; padding-left: 20px;
+}
+/* END newsletter */
 
 
 
@@ -569,16 +660,6 @@ ul.social-buttons>li>a {
 }
 /* Font */
 
-.name{
-    font-family: DubielItalic;
-    font-size: 45px;
-    color : #5d5F5F;
-}
-.surname{
-    font-size: gillsans;
-    font-size: 46px;
-    margin-top: 1px;
-}
 .contactProfile{
     letter-spacing: 0.01em;
     color: rgba(255,255,255, 0.63);
@@ -780,12 +861,12 @@ nav a.next {
 .books h1{
     font-family: DubielItalic;
     font-size: 3.8em;
-    color: grey;
+    color: #666666;
 }
 
 .searchbooks{
     padding-bottom: 15px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #666666;
     margin-bottom: 50px;
 }
 
@@ -803,7 +884,7 @@ nav a.next {
 
 .dropdown button{
     background-color: #1b2021;
-    border: 1px solid grey;
+    border: 1px solid #666666;
     border-radius: inherit;
     color: white;
     font-family: Gillsans;
@@ -826,8 +907,8 @@ nav a.next {
     width:250px;
     text-align: left;
     border: inherit;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid #666666;
+    border-top: 1px solid #666666;
     background-color: #262b2d;
     font-size: 1.5em;
 }
@@ -836,7 +917,7 @@ nav a.next {
     width: 250px;
     text-align: left;
     border: inherit;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #666666;
     background-color: #262b2d;
     font-size: 1.5em;
 }
@@ -893,7 +974,7 @@ nav a.next {
     font-size: 3.2em;
     margin-bottom: 40px;
     margin-top: 40px;
-    color: grey;
+    color: #666666;
 }
 
 .topnae{
@@ -904,7 +985,7 @@ nav a.next {
 .topnae h1{
     font-family: DubielItalic;
     font-size: 3.8em;
-    color: grey;
+    color: #666666;
 }
 
 .barrenae{
@@ -926,7 +1007,7 @@ nav a.next {
 
 .formcontact input{
     background-color: #1b2021;
-    border: 1px solid grey;
+    border: 1px solid #666666;
     border-radius: 0;
     height: 75px;
     font-size: 1em;
@@ -939,7 +1020,7 @@ nav a.next {
 
 .contactmessage{
     background-color: #1b2021;
-    border: 1px solid grey;
+    border: 1px solid #666666;
     border-radius: 0;
     font-size: 1em;
     font-family: GillsansLight;
@@ -957,13 +1038,16 @@ nav a.next {
 
 @media screen and (max-width: 769px) /* Phone */
 {
+    .titlestyle {
+        font-size: 30px;
+    }
     /* Menu */
     .menu{
         position: relative;
         width: 100%;
         background-color: #262b2d;
         border-right: none;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid #666666;
         overflow: hidden;
         -webkit-transition: none;
         -moz-transition: none;
@@ -996,7 +1080,7 @@ nav a.next {
     }
 
     .menu ul li {
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid #666666;
         padding-bottom: 20px !important;
         margin-bottom: 0px;
     }
@@ -1006,7 +1090,7 @@ nav a.next {
         font-size: 0.90em;
         display: block;
         text-align: left;
-        color: grey;
+        color: #666666;
         font-family: Gillsans;
         font-weight: 300;
         width: 260px;
@@ -1060,11 +1144,85 @@ nav a.next {
         padding: 100px 0px 100px 20px;
         margin-top: -70px;
     }
+
+    /* news */
+    .newsarticle {
+        margin: 90px 20px 0px 15px;
+    }
+
+    .news h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .trait-separator {
+        display: none;
+    }
+
+    .date-separator {
+        margin: -75px 80px 0px 80px;
+    }
+
+    .date-separator h4 {
+       padding: 37px 0px 37px 0px;
+    }
+
+    .article-news-3, .article-suite, .last-article-news {
+        margin-top: 45px;
+    }
+
+    .newsbutton {
+        margin-top: 100px;
+    }
+
+    .newsbutton button {
+        font-size: 0.8em;
+        margin-left: -15px;
+    }
+
     /*artiste/oeuvredujour*/
     .artisteandoeuvre {
         margin-top: 20px;
         margin-left: -15px;
+
     }
+
+    .artisteandoeuvre h1 {
+        font-size: 54px;
+        margin-left: 58px;
+        margin-top: 50px;
+    }
+
+    .artisteandoeuvre span {
+        right: 140px !important;
+        bottom: 5px !important;
+        font-size: 20px !important;
+    }
+
+    .artisteandoeuvre .intro-artisteandoeuvre {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .artiste h4, .oeuvredujour h4 {
+        font-size: 13px;
+    }
+
+    .artiste h2, .oeuvredujour h2 {
+        font-size: 30px;
+    }
+
+    .artiste p, .oeuvredujour p {
+        padding-right: 18px;
+        text-align: justify;
+    }
+
+    /* newsletter */
+
+    /**
+    Page profile
+    **/
 
     /* image profile */
     .img-recent{
@@ -1085,6 +1243,7 @@ nav a.next {
     .navboutique {
         height: 87px;
     }
+
 
 }
 
@@ -1107,6 +1266,10 @@ nav a.next {
 
 @media (min-width: 768px) and (max-width: 1000px) /* Tablet */
 {
+
+    .titlestyle {
+        font-size: 32px;
+    }
     /* Menu */
     .menu:hover {
         background-color: #262b2d;
@@ -1155,14 +1318,75 @@ nav a.next {
     .slider button {
         bottom: 90px;
     }
+
+    /* NAE home */
+
+    .pres-NAE-Home {
+        padding-left: 100px;
+        padding-right: 50px;
+    }
+     /* news */
+    .news {
+        margin-left: 90px;
+    }
+    .news h1 {
+        font-size: 2em;
+        line-height: 40px;
+    }
+    .newsarticle {
+        margin: 64px 20px 0px 25px;
+    }
+
+    .trait-separator {
+        margin-left: 17px;
+        margin-right: 17px;
+        height: 785px;
+    }
+    .date-separator h4 {
+        width: 105px !important;
+        margin-left: -20px;
+    }
+    .newsbutton {
+        margin-top: 131px;
+        margin-left: 90px;
+    }
+    /* oeuvre/artiste du jour*/
+    .artisteandoeuvre .intro-artisteandoeuvre {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 15px;
+    }
+
+    .artisteandoeuvre h1{
+        margin-top: 90px;
+    }
+    .artiste h4, .oeuvredujour h4 {
+        font-size: 15px;
+    }
+
+    .artiste h2, .oeuvredujour h2 {
+        font-size: 42px;
+    }
+
+    .artiste p, .oeuvredujour p {
+        padding-left: 20px;
+    }
+
+    /* newsletter */
+
+    /** PROFILE
+    **/
+
     /* image profile */
     .img-recent{
         height: 160px;
         width: 100%;
         margin-bottom: 15%;
     }
+    /**
+     PAGE BOOKS
+    **/
 
-    /* PAGE BOOKS */
     .imagebooks{
         display: none;
     }
@@ -1179,8 +1403,8 @@ nav a.next {
         width: 200px;
         text-align: left;
         border: inherit;
-        border-bottom: 1px solid grey;
-        border-top: 1px solid grey;
+        border-bottom: 1px solid #666666;
+        border-top: 1px solid #666666;
         background-color: #262b2d;
         font-size: 1.3em;
     }
@@ -1247,6 +1471,31 @@ nav a.next {
     .slider button {
         bottom: 90px;
     }
+    /* news */
+    .newsarticle {
+        margin: 64px 20px 0px 16px;
+    }
+    .trait-separator {
+        margin-left: 38px;
+        margin-right: 38px;
+        height: 785px;
+    }
+    .date-separator h4 {
+        width: 110px;
+    }
+    .newsbutton {
+        margin-top: 131px;
+    }
+
+    .artisteandoeuvre .intro-artisteandoeuvre {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /**
+    Page profile
+    **/
+
     /* image profile */
     .img-recent{
         height: 130px;
@@ -1259,7 +1508,6 @@ nav a.next {
 {
     /* Menu */
     .menu:hover {
-        background-color: #262b2d;
         width: 280px;
     }
 
@@ -1271,6 +1519,12 @@ nav a.next {
     }
 }
 
+@media (min-width: 1400px) /* Extra-Large desktop */
+{
+    .trait-separator {
+        margin-left: 70px;
+    }
+}
 
 /* END Responsive */
 
