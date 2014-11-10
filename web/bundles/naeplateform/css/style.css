@@ -884,12 +884,12 @@ nav a.next {
 /* PAGE WHAT IS NAE */
 
 .nae p{
-    font-family: Gillsans;
+    font-family: GillsansLight;
     font-size: 1.5em;
 }
 
 .nae h2{
-    font-family: Gillsans;
+    font-family: GillsansLight;
     font-size: 3.2em;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -907,6 +907,11 @@ nav a.next {
     color: grey;
 }
 
+.barrenae{
+    border-bottom: 1px solid grey;
+    margin-top: 125px;
+}
+
 /* PAGE CONTACT */
 
 .topcontact {
@@ -914,7 +919,7 @@ nav a.next {
 }
 
 .contact p{
-    font-family: Gillsans;
+    font-family: GillsansLight;
     font-size: 1.5em;
     margin-bottom: 50px;
 }
@@ -925,7 +930,7 @@ nav a.next {
     border-radius: 0;
     height: 75px;
     font-size: 1em;
-    font-family: Gillsans;
+    font-family: GillsansLight;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-left: 40px;
@@ -937,7 +942,7 @@ nav a.next {
     border: 1px solid grey;
     border-radius: 0;
     font-size: 1em;
-    font-family: Gillsans;
+    font-family: GillsansLight;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: white;
