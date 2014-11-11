@@ -42,7 +42,6 @@ a:hover{
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-
 .menu .box-nav-top{
     display: block;
     margin-left: auto;
@@ -53,14 +52,12 @@ a:hover{
     color: #000;
     padding: 0px;
 }
-
 .menu .nav-logo{
     top: 24px;
     position: absolute;
     left: 164px;
     opacity: 0.5;
 }
-
 .menu #box-nav {
     padding-bottom: 56px;
 }
@@ -88,7 +85,6 @@ a:hover{
     margin-left: 30px;
     height: 25px;
 }
-
 .menu li a {
     padding: 0 15px 0 79px;
     height: 63px;
@@ -109,15 +105,12 @@ a:hover{
     background: url(../images/icons/a-propos.png) no-repeat 22px 25px;
     cursor:pointer;
 }
-
-
 .menu li#about :hover {
     background: url(../images/icons/icon-hover/a-propos.png) no-repeat 22px 25px;
 }
 .menu li#find a {
     background: url(../images/icons/recherche.png)no-repeat 22px 25px;
 }
-
 .menu li#find a:hover {
     background: url(../images/icons/icon-hover/loupe.png) no-repeat 22px 25px;
     cursor:pointer;
@@ -125,56 +118,46 @@ a:hover{
 .menu li#profil a {
     background: url(../images/icons/profil.png)no-repeat 22px 25px;
 }
-
 .menu li#profil a:hover {
     background: url(../images/icons/icon-hover/profil.png) no-repeat 22px 25px;
     cursor:pointer;
 }
-
 .menu li#books a {
     background: url(../images/icons/touslesbooks.png)no-repeat 22px 25px;
 }
-
 .menu li#books a:hover {
     background: url(../images/icons/icon-hover/touslesbooks.png) no-repeat 22px 25px;
     cursor:pointer;
 }
-
 .menu li#expo a {
     background: url(../images/icons/expovirtuel.png)no-repeat 22px 25px;
 }
-
 .menu li#expo a:hover {
     background: url(../images/icons/icon-hover//expovirtuelle.png)no-repeat 22px 25px;
     cursor:pointer;
 }
-
 .menu li#shop a {
     background: url(../images/icons/boutique.png)no-repeat 22px 25px;
 }
-
 .menu li#shop a:hover {
     background: url(../images/icons/icon-hover//laboutique.png)no-repeat 22px 25px;
     cursor:pointer;
 }
-
 .menu li#contact a {
     background: url(../images/icons/contact.png)no-repeat 22px 25px;
 }
-
 .menu li#contact a:hover {
     background: url(../images/icons/icon-hover//mail.png)no-repeat 22px 25px;
     cursor:pointer;
 }
-
 .menu li#share a {
     background: url(../images/icons/share.png)no-repeat 22px 25px;
 }
-
 .menu li#share a:hover {
     background: url(../images/icons/icon-hover//share.png)no-repeat 22px 25px;
     cursor:pointer;
 }
+
 /* END Nav-Left */
 .logo {
     background: url(../images/logo.png);
@@ -185,6 +168,7 @@ a:hover{
     margin-top: 77px;
     margin-left: 48%;
 }
+
 /* Slider */
 .slider{
     padding-left: 0px;
@@ -197,7 +181,6 @@ a:hover{
     height: 100% !important;
     margin-left: 80px;
 }
-
 .motif{
     background: url(../images/backgrounds/motif.png) repeat;
     width: 3px; height: 3px;
@@ -207,7 +190,6 @@ a:hover{
     height: 100%;
     opacity: 0.5;
 }
-
 .item{
     background: #333;
     text-align:center;
@@ -229,8 +211,6 @@ a:hover{
     text-shadow: none;
     text-shadow: none;
 }
-
-
 .slider button {
     position: relative;
     bottom: 75px;
@@ -240,7 +220,6 @@ a:hover{
     border-radius: 0px;
     font-family: 'gillsans', helvetica;
 }
-
 .slider button:hover {
     color: #666;
 }
@@ -249,7 +228,7 @@ a:hover{
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 1);
 }
-/* END Slider */
+
 /* Nav Horizontal */
 .nav-horizontal{
     height: 76px;
@@ -259,7 +238,6 @@ a:hover{
     margin-left: 70px;
     border-top: 1px solid #4c5153;
 }
-
 .nav-horizontal h4 {
     font-size: 12px;
     letter-spacing: 1.5px;
@@ -272,37 +250,31 @@ a:hover{
     padding-top: 10px;
     color: #666666;
 }
-
 .navboutique :hover, .navexpovirtuel :hover, .navcoupcoeur :hover{
     color: #ffffff;
 }
-
 .navboutique a, .navexpovirtuel a, .navcoupcoeur a{
     -webkit-opacity: 0.5;
     -moz-opacity: 0.5;
     -o-opacity: 0.5;
     opacity: 0.5;
 }
-
 .navboutique a:hover, .navexpovirtuel a:hover, .navcoupcoeur a:hover{
     opacity: 1;
 }
 .carousel-inner {
     border-bottom: 1px solid #2b3031;
 }
-
 .carousel-indicators li{
     border: none;
     background-color: rgba(255,255,255,0.4);
     width: 8px; height: 8px;
     margin: 0px;
 }
-
 .carousel-indicators .active {
     width: 8px; height: 8px;
 }
-/* END Nav Horizontal */
-/* END Nav / Slider */
+
 /* What is NAE */
 .presnae{
     margin-top: 92px;
@@ -313,18 +285,14 @@ a:hover{
     font-size: 36px;
     color: #666666;
 }
-
 .undercontent{
     color: #666666;
     font-size: 16px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-/* END What is NAE */
 
 /* Parallax */
-
-
 .parallax {
     background: url("../images/parallax.jpg");
     background-attachment: fixed;
@@ -345,11 +313,9 @@ a:hover{
     font-family: Gillsans;
     font-size: 1.2em;
 }
-
 .parallax a:hover{
     text-decoration: none;
 }
-/* END Parallax*/
 
 /* News */
 
@@ -358,7 +324,6 @@ a:hover{
     padding-right: 5px;
     padding-left: 5px;
 }
-
 .date-separator h4 {
     border: solid 1px #666;
     padding: 47px 0px 40px 0px;
@@ -367,49 +332,40 @@ a:hover{
     font-size: 15px;
     color: #666;
 }
-
 .news{
     margin-top: 93px;
 }
-
 .news h1{
     font-family: DubielItalic;
     font-size: 2.5em;
     color: #666666;
     line-height: 50px;
 }
-
 .newsarticle{
     font-family: "gill-sans-light";
     margin: 64px 20px 0px -15px;
 }
-
 .newsarticle img {
     width: 100%;
 }
 .newsarticle h2{
     font-size: 1.8em;
 }
-
 .newsarticle h3{
     font-size: 1.5em;
 }
-
 .newsarticle p{
     font-size: 1.2em;
     color: #666666;
 }
-
 .newsarticle a{
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 .newsarticle a:hover{
     text-decoration: none;
 }
-
 .trait-separator {
     background: url("../images/trait-separator.png") no-repeat;
     height: 939px;
@@ -422,14 +378,12 @@ a:hover{
 .article-suite {
     margin-top: 120px;
 }
-
 .last-article-news {
     margin-top: 80px;
 }
 .newsbutton{
     margin-top: 165px;
 }
-
 .newsbutton button{
     padding-left: 15px;
     padding-right: 15px;
@@ -440,39 +394,18 @@ a:hover{
     font-size: 1.2em;
 }
 
-/* END News */
-
-
 /* Artiste du jour /oeuvre du jour */
-
-
 .artisteandoeuvre{
     margin-left: 75px;
     margin-right: 0px;
 }
-
-
 .artisteandoeuvre h1{
-    position: relative;
-    z-index: 1;
-    font-family: 'Georgia';
-    font-size: 100px;
-    color: #333;
-    margin-left: 170px;
     margin-top: 150px;
-}
-
-.artisteandoeuvre h1 span{
-    position: relative;
-    z-index: 3;
     font-family: 'gill-sans-light';
     font-size: 36px;
     color: #ffffff;
-    right: 250px;
-    bottom: 10px;
     font-size: 40px;
 }
-
 .artisteandoeuvre .intro-artisteandoeuvre {
     color: rgba(255,255,255,0.8);
     font-family: gill-sans-light;
@@ -494,28 +427,23 @@ a:hover{
     height: 310px;
     padding: 40px;
 }
-
 .artiste h4, .oeuvredujour h4 {
     font-family: 'gill-sans-light';
     color: rgba(255,255,255,0.8);
     letter-spacing: 2.5px;
     font-size: 18px;
 }
-
 .artiste h2, .oeuvredujour h2 {
     font-family: 'DubielItalic';
     color: rgba(255,255,255,0.95);
     font-size: 65px;
 }
-
 .artiste p, .oeuvredujour p {
     font-family: 'gillsans';
     color: #666666;
     font-size: 14px;
     padding-right: 60px;
 }
-/* END Artiste du jour */
-
 
 /* newsletter */
 .newsletter {
@@ -525,47 +453,31 @@ a:hover{
     margin-left: 0px;
     margin-right: 0px;
 }
-
-.newsletter p{
-   padding-bottom: 40px;
-    margin-left: 370px;
-    margin-right: 260px;
-    font-size: 17px;
-}
-
 .newsletter input{
-    margin-top: 10px;
-    margin-left: 80px;
     background-color: #1b2021;
     padding: 12px;
     border: 1px solid rgba(255,255,255,0.2);
 }
-
 .newsletterbutton {
     font-family: 'gillsans';
-    position: relative;
-    bottom: 46px;
-    right: 98px;
+    padding: 12px;
+    margin-left: 12px;
 }
-
-.newsletterbutton button {
-    padding: 11px;
-    padding-right: 20px; padding-left: 20px;
+.newsletter p {
+    font-family: 'gill-sans-light';
+    color: rgba(255,255,255,0.4);
+    font-size: 18px;
 }
-/* END newsletter */
-
-
 
 
 /* Footer */
-
-/* END Footer */
-
+.footer {
+    margin: 150px 0px 15px 0px;
+}
 
 /*-----------------*/
 /* CSS Profil Page */
 /*-----------------*/
-
 
 header.profile {
     text-align: center;
@@ -578,12 +490,10 @@ header.profile {
     padding-bottom: 23px;
     padding-top: 35px;
 }
-
 .img-circle{
     width: 140px;
     height: 140px;
 }
-
 
 /* Container-Profile */
 .containerProfile{
@@ -593,6 +503,7 @@ header.profile {
 div.container-social{
     margin: 0 auto;
 }
+
 /* End Container-Profile */
 .img-padding{
     padding: 2px 2px 2px 2px ;
@@ -650,6 +561,7 @@ ul.social-buttons>li>a {
     height: 300px;
     width: 29%;
 }
+
 /* end image */
 .actualityLien{
     color : #5d5F5F;
@@ -658,8 +570,8 @@ ul.social-buttons>li>a {
 .actualityLien:hover{
     color : #39b3d7;
 }
-/* Font */
 
+/* Font */
 .contactProfile{
     letter-spacing: 0.01em;
     color: rgba(255,255,255, 0.63);
@@ -686,6 +598,7 @@ ul.social-buttons>li>a {
 .subtitleTextActuality{
     font-weight: bold;
 }
+
 /* Menu Profil */
 ul.menuPortfolio>li{
     display: inline;
@@ -697,7 +610,6 @@ ul.menuPortfolio>li:hover{
     color: #5e5e5e;
     background-color: #f5f5f5;
 }
-
 .menuPortfolio{
     margin: 0 ;
     padding: 0 ;
@@ -820,7 +732,7 @@ nav a.next {
     display: none;
 }
 #slides .scrollable {
-    *zoom: 1;
+    zoom: 1;
     position: relative;
     top: 0;
     left: 0;
@@ -849,6 +761,8 @@ nav a.next {
 /*-----------------*/
 /*--- FIN CSS EXPO---*/
 /*-----------------*/
+
+
 /*---------------------*/
 /*--- PAGE BOOKS ------*/
 /*---------------------*/
@@ -857,19 +771,16 @@ nav a.next {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 .books h1{
     font-family: DubielItalic;
     font-size: 3.8em;
     color: #666666;
 }
-
 .searchbooks{
     padding-bottom: 15px;
     border-bottom: 1px solid #666666;
     margin-bottom: 50px;
 }
-
 .searchbooks input{
     font-family: DubielItalic;
     font-size: 2em;
@@ -877,11 +788,9 @@ nav a.next {
     background-color: #262b2d;
     border: none;
 }
-
 .iconloupe{
     padding-left: 0;
 }
-
 .dropdown button{
     background-color: #1b2021;
     border: 1px solid #666666;
@@ -895,14 +804,12 @@ nav a.next {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 .dropdown .dropdown-menu{
     background-color: #1b2021;
     font-family: Gillsans;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .dropdown2 button{
     width:250px;
     text-align: left;
@@ -912,7 +819,6 @@ nav a.next {
     background-color: #262b2d;
     font-size: 1.5em;
 }
-
 .dropdown3 button{
     width: 250px;
     text-align: left;
@@ -921,37 +827,26 @@ nav a.next {
     background-color: #262b2d;
     font-size: 1.5em;
 }
-
-/*.contentbooks1:hover{
-    display: none;
-}*/
-
 .imagebooks{
     display: block;
 }
-
 .imagebooksnohover{
     display: none;
 }
-
 .imagebooks div{ /* Enlève le padding auto du Bootstrap + réduit opacité */
     padding: 1px;
     opacity: 0.75;
 }
-
 .imagebooks div:hover{
     opacity: 1;
 }
-
 .white{
     color: white;
 }
-
 .white:hover{
     color: black;
 }
 
-/* End Partie haute */
 
 /* Filtres + photos */
 .filtre p{
@@ -961,14 +856,18 @@ nav a.next {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+/*-----------------*/
+/* FIN page Books */
+/*-----------------*/
 
+
+/*-----------------*/
 /* PAGE WHAT IS NAE */
-
+/*-----------------*/
 .nae p{
     font-family: GillsansLight;
     font-size: 1.5em;
 }
-
 .nae h2{
     font-family: GillsansLight;
     font-size: 3.2em;
@@ -976,35 +875,29 @@ nav a.next {
     margin-top: 40px;
     color: #666666;
 }
-
 .topnae{
     margin-top: 100px;
     margin-bottom: 50px;
 }
-
 .topnae h1{
     font-family: DubielItalic;
     font-size: 3.8em;
     color: #666666;
 }
-
 .barrenae{
     border-bottom: 1px solid grey;
     margin-top: 125px;
 }
 
 /* PAGE CONTACT */
-
 .topcontact {
     margin-top: 100px;
 }
-
 .contact p{
     font-family: GillsansLight;
     font-size: 1.5em;
     margin-bottom: 50px;
 }
-
 .formcontact input{
     background-color: #1b2021;
     border: 1px solid #666666;
@@ -1017,7 +910,6 @@ nav a.next {
     padding-left: 40px;
     color: white;
 }
-
 .contactmessage{
     background-color: #1b2021;
     border: 1px solid #666666;
@@ -1032,15 +924,25 @@ nav a.next {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+/*-----------------*/
+/* FIN - PAGE WHAT IS NAE */
+/*-----------------*/
 
 
 /* Responsive  - @media - " à consommer avec modération :)" */
 
 @media screen and (max-width: 769px) /* Phone */
 {
+    h1 {
+        font-size: 2em !important;
+    }
     .titlestyle {
         font-size: 30px;
     }
+    /*-----------------*/
+    /* HOMEPAGE */
+    /*-----------------*/
+
     /* Menu */
     .menu{
         position: relative;
@@ -1054,7 +956,6 @@ nav a.next {
         transition: none;
         z-index: 15;
     }
-
     .menu .box-nav-top{
         display: block;
         margin-left: auto;
@@ -1064,7 +965,6 @@ nav a.next {
         color: #000;
         padding: 0px;
     }
-
     .menu .ico-nav{
         margin-bottom: 25px;
         margin-left: 30px;
@@ -1100,11 +1000,11 @@ nav a.next {
         text-decoration: none;
     }
 
-
     /* logo */
     .logo {
         margin-left: 43%;
     }
+
     /* slider */
     .item img {
         margin-left: 0px;
@@ -1112,18 +1012,15 @@ nav a.next {
     .galeriedesktop{
         display: none;
     }
-
     .galeriemobile{
         display: block;
         margin-left: 100px;
     }
-
     .slider h1 {
         font-size: 70px;
         bottom: 164px;
         line-height: 50px;
     }
-
     .slider button {
         bottom: 90px;
     }
@@ -1132,6 +1029,7 @@ nav a.next {
     .nav-horizontal {
       margin-left: 0px;
     }
+
     /* NAE */
     .presnae {
         margin-top: 50px !important;
@@ -1149,32 +1047,25 @@ nav a.next {
     .newsarticle {
         margin: 90px 20px 0px 15px;
     }
-
     .news h1 {
         font-size: 2em;
         line-height: 40px;
     }
-
     .trait-separator {
         display: none;
     }
-
     .date-separator {
         margin: -75px 80px 0px 80px;
     }
-
     .date-separator h4 {
        padding: 37px 0px 37px 0px;
     }
-
     .article-news-3, .article-suite, .last-article-news {
         margin-top: 45px;
     }
-
     .newsbutton {
         margin-top: 100px;
     }
-
     .newsbutton button {
         font-size: 0.8em;
         margin-left: -15px;
@@ -1186,19 +1077,6 @@ nav a.next {
         margin-left: -15px;
 
     }
-
-    .artisteandoeuvre h1 {
-        font-size: 54px;
-        margin-left: 58px;
-        margin-top: 50px;
-    }
-
-    .artisteandoeuvre span {
-        right: 140px !important;
-        bottom: 5px !important;
-        font-size: 20px !important;
-    }
-
     .artisteandoeuvre .intro-artisteandoeuvre {
         margin-left: 20px;
         margin-right: 20px;
@@ -1219,10 +1097,17 @@ nav a.next {
     }
 
     /* newsletter */
+    .newsletter p{
+        margin-bottom: 50px;
+    }
+    /*-----------------*/
+    /* FIN Homepage */
+    /*-----------------*/
 
-    /**
-    Page profile
-    **/
+
+    /*-----------------*/
+    /* PAGE PROFILE */
+    /*-----------------*/
 
     /* image profile */
     .img-recent{
@@ -1243,7 +1128,9 @@ nav a.next {
     .navboutique {
         height: 87px;
     }
-
+    /*-----------------*/
+    /* FIN PAGE PROFILE */
+    /*-----------------*/
 
 }
 
@@ -1252,11 +1139,9 @@ nav a.next {
     .presnae{
         margin-top : 250px;
     }
-
     .submitrighttablet {
         display: block;
     }
-
     .submitrightdesktop{
         display: none;
     }
@@ -1270,12 +1155,15 @@ nav a.next {
     .titlestyle {
         font-size: 32px;
     }
+    /*-----------------*/
+    /* HOMEPAGE */
+    /*-----------------*/
+
     /* Menu */
     .menu:hover {
         background-color: #262b2d;
         width: 280px;
     }
-
     .contentartiste1{
         position: relative;
         z-index: 2;
@@ -1284,7 +1172,6 @@ nav a.next {
         text-align: left;
         padding-right: 15px;
     }
-
     .contentartiste{
         position: relative;
         z-index: 2;
@@ -1293,10 +1180,12 @@ nav a.next {
         padding-right: 15px;
         margin-left: 100px;
     }
+
     /* logo */
     .logo {
         margin-left: 43%;
     }
+
     /* slider */
     .item img {
         margin-left: 0px;
@@ -1304,27 +1193,24 @@ nav a.next {
     .galeriedesktop{
         display: none;
     }
-
     .galeriemobile{
         display: block;
         margin-left: 100px;
     }
-
     .slider h1 {
         font-size: 74px;
         bottom: 160px;
     }
-
     .slider button {
         bottom: 90px;
     }
 
     /* NAE home */
-
     .pres-NAE-Home {
         padding-left: 100px;
         padding-right: 50px;
     }
+
      /* news */
     .news {
         margin-left: 90px;
@@ -1336,7 +1222,6 @@ nav a.next {
     .newsarticle {
         margin: 64px 20px 0px 25px;
     }
-
     .trait-separator {
         margin-left: 17px;
         margin-right: 17px;
@@ -1350,32 +1235,37 @@ nav a.next {
         margin-top: 131px;
         margin-left: 90px;
     }
+
     /* oeuvre/artiste du jour*/
     .artisteandoeuvre .intro-artisteandoeuvre {
         margin-left: 50px;
         margin-right: 50px;
         font-size: 15px;
     }
-
     .artisteandoeuvre h1{
         margin-top: 90px;
     }
     .artiste h4, .oeuvredujour h4 {
         font-size: 15px;
     }
-
     .artiste h2, .oeuvredujour h2 {
         font-size: 42px;
     }
-
     .artiste p, .oeuvredujour p {
         padding-left: 20px;
     }
 
-    /* newsletter */
+    /*newsletter*/
+    .newsletter p{
+        margin-left: 100px;margin-right: 50px;margin-bottom: 50px;
+    }
+    /*-----------------*/
+    /* FIN HOMEPAGE */
+    /*-----------------*/
 
-    /** PROFILE
-    **/
+    /*-----------------*/
+    /* PAGE PROFIL */
+    /*-----------------*/
 
     /* image profile */
     .img-recent{
@@ -1383,9 +1273,13 @@ nav a.next {
         width: 100%;
         margin-bottom: 15%;
     }
-    /**
-     PAGE BOOKS
-    **/
+    /*-----------------*/
+    /* FIN PAGE PROFIL */
+    /*-----------------*/
+
+    /*-----------------*/
+    /* PAGE BOOKS*/
+    /*-----------------*/
 
     .imagebooks{
         display: none;
@@ -1427,17 +1321,22 @@ nav a.next {
         text-align: center;
         margin-bottom: 20px;
     }
-
+    /*-----------------*/
+    /* FIN PAGE BOOKS*/
+    /*-----------------*/
 }
 
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */
 {
+    /*-----------------*/
+    /* HOMEPAGE */
+    /*-----------------*/
+
     /* Menu */
     .menu:hover {
         background-color: #262b2d;
         width: 280px;
     }
-
     .contentartiste{
         position: relative;
         z-index: 2;
@@ -1446,10 +1345,12 @@ nav a.next {
         text-align: left;
         padding-right: 15px;
     }
+
     /* logo */
     .logo {
         margin-left: 43%;
     }
+
     /* slider */
     .item img {
         margin-left: 0px;
@@ -1457,20 +1358,18 @@ nav a.next {
     .galeriedesktop{
         display: none;
     }
-
     .galeriemobile{
         display: block;
         margin-left: 100px;
     }
-
     .slider h1 {
         font-size: 118px;
         bottom: 160px;
     }
-
     .slider button {
         bottom: 90px;
     }
+
     /* news */
     .newsarticle {
         margin: 64px 20px 0px 16px;
@@ -1486,15 +1385,17 @@ nav a.next {
     .newsbutton {
         margin-top: 131px;
     }
-
     .artisteandoeuvre .intro-artisteandoeuvre {
         margin-left: 100px;
         margin-right: 100px;
     }
+    /*-----------------*/
+    /* FIN HOMEPAGE*/
+    /*-----------------*/
 
-    /**
-    Page profile
-    **/
+    /*-----------------*/
+    /* PAGE PROFILE*/
+    /*-----------------*/
 
     /* image profile */
     .img-recent{
@@ -1502,21 +1403,51 @@ nav a.next {
         width: 100%;
         margin-bottom: 15%;
     }
+    /*-----------------*/
+    /* FIN PAGE PROFILE*/
+    /*-----------------*/
 }
 
 @media (min-width: 1170px) /* Large desktop */
 {
+    /*-----------------*/
+    /* HOMEPAGE */
+    /*-----------------*/
+
     /* Menu */
     .menu:hover {
         width: 280px;
     }
 
+    /* news */
+    .news h1 {
+        margin-left: -30px;
+    }
+
+    .barre-newsl {
+        margin-left: 236px !important;
+    }
+    /*newsletter*/
+    .newsletter p{
+        margin: 0px 260px 50px 355px;
+    }
+    /*-----------------*/
+    /* FIN HOMEPAGE */
+    /*-----------------*/
+
+    /*-----------------*/
+    /* PAGE PROFILE */
+    /*-----------------*/
+
     /* image profile */
     .img-recent{
         height: 130px;
         width: 100%;
         margin-bottom: 15%;
     }
+    /*-----------------*/
+    /* FIN PAGE PROFILE */
+    /*-----------------*/
 }
 
 @media (min-width: 1400px) /* Extra-Large desktop */
