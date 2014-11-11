@@ -479,8 +479,7 @@ a:hover{
 /* CSS Profil Page */
 /*-----------------*/
 
-header.profile {
-    text-align: center;
+.profile {
     color: #fff;
     background: url(../images/backgrounds/bg-header-profil.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -495,11 +494,26 @@ header.profile {
     height: 140px;
 }
 
+.borderactus{
+    margin-bottom: 75px;
+    margin-top: 75px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
 /* Container-Profile */
 .containerProfile{
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.containerProfile h1{
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
 div.container-social{
     margin: 0 auto;
 }
@@ -512,10 +526,14 @@ div.container-social{
 .actualityText{
     margin-top: 15px;
     margin-bottom: 10px;
+    font-size: 1.4em;
+    font-family: Gillsans;
+    color: #5f6061;
 }
 .dateProfile{
-    font-size: 12px;
-    color: #5d5F5F;
+    font-size: 1.2em;
+    font-family: Gillsans;
+    color: #6f6f6f;
 }
 ul.social-buttons>li>a {
     display: block;
@@ -532,6 +550,13 @@ ul.social-buttons>li>a {
     -moz-transition: all .3s;
     transition: all .3s;
 }
+
+.portofolio h1{
+    font-family: DubielItalic;
+    font-size: 3em;
+    color: #919799;
+}
+
 /* btn */
 .btn-space{
     margin-bottom: 25%;
@@ -564,7 +589,9 @@ ul.social-buttons>li>a {
 
 /* end image */
 .actualityLien{
-    color : #5d5F5F;
+    font-family: Gillsans;
+    font-size: 1.2em;
+    color : #8a8b8b;
 }
 
 .actualityLien:hover{
@@ -580,7 +607,7 @@ ul.social-buttons>li>a {
     font-size: 10px;
 }
 .profileTitle{
-    font-family: DUBIEL;
+    font-family: Gillsans;
     font-size: 40px;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 31px;
@@ -591,39 +618,67 @@ ul.social-buttons>li>a {
     font-size: 18px;
 }
 .profileTitleOeuvre{
-    margin-bottom: 5%;
-    margin-top: 10%;
-    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 275px;
+    font-size: 1.5em;
+    font-family: Gillsans;
+    color: #a3a5a5;
+}
+
+.actusTitle{
+    font-size: 1.5em;
+    font-family: Gillsans;
+    color: #a3a5a5;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 .subtitleTextActuality{
+    font-size: 1.5em;
+    font-family: Gillsans;
     font-weight: bold;
 }
 
-/* Menu Profil */
-ul.menuPortfolio>li{
-    display: inline;
+.datesPortofolio{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-ul.menuPortfolio>li>a{
-    color: #5e5e5e
-}
-ul.menuPortfolio>li:hover{
-    color: #5e5e5e;
-    background-color: #f5f5f5;
-}
-.menuPortfolio{
-    margin: 0 ;
-    padding: 0 ;
-    list-style: none ;
-    text-align: center ;
+.datesPortofolio li{
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-/*-- en Attendant la màj sur les balises "li" et "a" --*/
-.activeProfile{
+.datesPortofolio h4{
+    font-size: 1.2em;
+    font-family: Gillsans;
+    color: #919799;
+}
+
+.activeDate{
     padding: 4px 4px 4px 4px;
     background-color: #f5f5f5;
     border-radius: 3px;
-    color: #262B2D;
+    font-size: Gillsans;
+    text-transform: uppercase;
 }
+.activeDate h4{
+    color: black;
+}
+
+.image-portofolio{
+    width: 100%;
+    height: 450px;
+}
+
+.grilleportofolio{
+    padding-left: 79px;
+}
+.portofolio div{
+    padding: 1px;
+}
+
+/*-- en Attendant la màj sur les balises "li" et "a" --*/
+
 .inlineOption{
     display: inline-block;
     padding-left: 20px;
@@ -1109,24 +1164,8 @@ nav a.next {
     /* PAGE PROFILE */
     /*-----------------*/
 
-    /* image profile */
-    .img-recent{
-        height: 300px;
-        width: 100%;
-        margin-bottom: 15%;
-    }
-
-    .iconloupe{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .dropdown{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .navboutique {
-        height: 87px;
+    .grilleportofolio{
+        padding-left: 0;
     }
     /*-----------------*/
     /* FIN PAGE PROFILE */
