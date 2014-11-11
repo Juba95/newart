@@ -74,6 +74,7 @@
                         <div class="carousel-caption">
                             <h1>Tomi Slapette</h1>
                             <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                            <button class="md-trigger btn btn-default" data-modal="modal-1">{{ 'S\'inscrire'|upper }}</button>
                         </div>
                     </div>
                     <div class="item item-2">
@@ -82,6 +83,7 @@
                         <div class="carousel-caption">
                             <h1>Tomi Slapette</h1>
                             <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                            <button class="md-trigger btn btn-default" data-modal="modal-1">{{ 'S\'inscrire'|upper }}</button>
                         </div>
                     </div>
                     <div class="item item-3">
@@ -90,12 +92,48 @@
                         <div class="carousel-caption">
                             <h1>Tomi Slapette</h1>
                             <button type="button" class="btn btn-default">{{ 'decouvir l\'artiste'|upper }}</button>
+                            <button class="md-trigger btn btn-default" data-modal="modal-1">{{ 'S\'inscrire'|upper }}</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+        <h3>S'inscrire</h3>
+        <div>
+            <p class="text-center">Veuillez renseigner les champs suivants</p>
+            <form role="form">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Entrez votre adresse mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Entrez votre nom/pseudo</label>
+                    <input type="text" class="form-control" id="exampleInputText1" placeholder="Nom/Pseudo">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Entrez votre mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Je déclare avoir lu et accepté les conditions générales du site
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">S'inscrire</button>
+            </form>
+            <p>Merci de votre inscription</p>
+            <button class="md-close btn btn-default">Fermer cette fenêtre</button>
+        </div>
+    </div>
+</div>
+
+<div class="md-overlay"></div><!-- the overlay element -->
     {# END Slider #}
     {# Nav-Horizontal#}
     <div class="row nav-horizontal">
