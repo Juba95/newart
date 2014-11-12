@@ -275,6 +275,19 @@ a:hover{
     width: 8px; height: 8px;
 }
 
+/* Pop-Up */
+
+.btnSend{
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Gillsans;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
 /* What is NAE */
 .presnae{
     margin-top: 92px;
@@ -846,7 +859,7 @@ nav a.next {
 .iconloupe{
     padding-left: 0;
 }
-.dropdown button{
+.deroulant button{
     background-color: #1b2021;
     border: 1px solid #666666;
     border-radius: inherit;
@@ -859,7 +872,7 @@ nav a.next {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.dropdown .dropdown-menu{
+.deroulant .dropdown-menu{
     background-color: #1b2021;
     font-family: Gillsans;
     text-transform: uppercase;
@@ -1347,7 +1360,7 @@ nav a.next {
         width: 200px;
     }
 
-    .dropdown-menu{
+    .deroulant .dropdown-menu{
         margin-left: 35%;
     }
 
@@ -1356,7 +1369,7 @@ nav a.next {
         bottom: 100px;
     }
 
-    .dropdown{
+    .deroulant{
         text-align: center;
         margin-bottom: 20px;
     }

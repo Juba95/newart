@@ -63,10 +63,29 @@ perspective effects (not including the modals and the overlay).
 /* Content styles */
 .md-content {
 	color: #fff;
-	background: #e74c3c;
+	background: #262b2d;
 	position: relative;
 	border-radius: 3px;
+    border: 1px solid grey;
 	margin: 0 auto;
+}
+
+.md-content input{
+    background-color: #1b2021;
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #545757;
+    border-radius: inherit;
+    border: 1px solid #545757;
+    text-transform: uppercase;
+}
+
+.md-content .row{
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 .md-content h3 {
@@ -76,7 +95,7 @@ perspective effects (not including the modals and the overlay).
 	font-size: 2.4em;
 	font-weight: 300;
 	opacity: 0.8;
-	background: rgba(0,0,0,0.1);
+	background: #262b2d;
 	border-radius: 3px 3px 0 0;
 }
 
@@ -100,12 +119,6 @@ perspective effects (not including the modals and the overlay).
 
 .md-content > div ul li {
 	padding: 5px 0;
-}
-
-.md-content button {
-	display: block;
-	margin: 0 auto;
-	font-size: 0.8em;
 }
 
 /* Individual modal styles with animations/transitions */

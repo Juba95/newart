@@ -99,37 +99,103 @@
             </div>
         </div>
     </div>
+{# Pop-UP #}
 <div class="md-modal md-effect-1" id="modal-1">
     <div class="md-content">
-        <h3>S'inscrire</h3>
-        <div>
-            <p class="text-center">Veuillez renseigner les champs suivants</p>
-            <form role="form">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Entrez votre adresse mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                </div>
+        <h3>Inscription</h3>
 
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Entrez votre nom/pseudo</label>
-                    <input type="text" class="form-control" id="exampleInputText1" placeholder="Nom/Pseudo">
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputName"></label>
+                        <input type="text" class="form-control" id="exampleInputName" placeholder="Nom">
+                    </div>
+                </form>
+            </div>
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Entrez votre mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Je déclare avoir lu et accepté les conditions générales du site
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-default">S'inscrire</button>
-            </form>
-            <p>Merci de votre inscription</p>
-            <button class="md-close btn btn-default">Fermer cette fenêtre</button>
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputLastName"></label>
+                        <input type="text" class="form-control" id="exampleInputLastName" placeholder="Prenom">
+                    </div>
+                </form>
+            </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputBirthDate"></label>
+                        <input type="text" class="form-control" id="exampleInputBirthDate" placeholder="Date de naissance JJ/MM/AAAA">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputPays"></label>
+                        <input type="text" class="form-control" id="exampleInputPays" placeholder="Pays">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputPseudo"></label>
+                        <input type="text" class="form-control" id="exampleInputPseudo" placeholder="Pseudo">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputMail"></label>
+                        <input type="mail" class="form-control" id="exampleInputPays" placeholder="Adresse Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputPasswod"></label>
+                        <input type="password" class="form-control" id="exampleInputPseudo" placeholder="Mot de passe">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputConfirmPassword"></label>
+                        <input type="mail" class="form-control" id="exampleConfirmPassword" placeholder="Confirmer le mot de passe">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Je déclare avoir lu et accepté les conditions générales du site
+            </label>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <button type="button" class="btn btn-default md-close btnSend center-block">S'inscrire</button>
+            </div>
+        </div>
+
     </div>
 </div>
 
