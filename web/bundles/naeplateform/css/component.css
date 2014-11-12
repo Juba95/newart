@@ -5,6 +5,52 @@ Styles for the html/body for special modal where we want 3d effects
 Note that we need a container wrapping all content on the page for the 
 perspective effects (not including the modals and the overlay).
 */
+
+/* Onglet */
+
+.onglet{
+    border-bottom: 1px solid #a1a2a2;
+}
+
+.onglet a{
+    font-family: Gillsans;
+    font-size: 1.2em;
+    color: #a1a2a2;
+}
+
+.onglet a:hover{
+    color: white;
+}
+
+.onglet .active{
+    background-color: #1b2021;
+}
+
+/* Pays */
+
+.pays button{
+    background-color: #1b2021;
+    border: 1px solid #666666;
+    border-radius: inherit;
+    color: white;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pays .dropdown-menu{
+    background-color: #1b2021;
+    font-family: Gillsans;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pays{
+    text-align: center;
+}
 .md-perspective,
 .md-perspective body {
 	height: 100%;
@@ -23,7 +69,6 @@ perspective effects (not including the modals and the overlay).
 	top: 50%;
 	left: 50%;
 	width: 50%;
-	max-width: 630px;
 	min-width: 320px;
 	height: auto;
 	z-index: 2000;
