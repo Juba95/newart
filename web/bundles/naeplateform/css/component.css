@@ -26,10 +26,6 @@ perspective effects (not including the modals and the overlay).
     background-color: #1b2021;
 }
 
-.cvg{
-    margin: 0;
-}
-
 /* Pays */
 
 .pays button{
@@ -72,7 +68,7 @@ perspective effects (not including the modals and the overlay).
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 630px;
+	width: 50%;
 	min-width: 320px;
 	height: auto;
 	z-index: 2000;
