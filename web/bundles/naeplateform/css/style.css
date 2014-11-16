@@ -503,7 +503,9 @@ a:hover{
 .logo-footer:hover{
     opacity: 1;
 }
-
+.icone-social-footer .list-inline {
+    margin-left: -58px;
+}
 .icone-fb-footer, .icone-t-footer, .icone-insta-footer {
     height: 29px; width: 29px;
     position: absolute;
@@ -526,7 +528,7 @@ a:hover{
     background: url(../images/icons/social/instagram.png);
 }
 .tousdroitreserves {
-    margin-top: 90px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 .footer h6 {
