@@ -58,8 +58,8 @@ a:hover{
     left: 164px;
     opacity: 0.5;
 }
-.menu #box-nav {
-    padding-bottom: 56px;
+.menu #box-nav
+    padding-bottom: 81px;
 }
 .menu #box-nav-bottom{
     border-top: 1px solid #4c5153;
@@ -190,10 +190,10 @@ a:hover{
     height: 100%;
     opacity: 0.5;
 }
-.item{
+.slider .item{
     background: #333;
     text-align:center;
-    height: 567px !important;
+    height: 592px !important;
 }
 .logo-nae{
     background: url(../images/logo.png) no-repeat;
@@ -331,6 +331,11 @@ a:hover{
 }
 
 /* News */
+
+
+.imgactu{
+    border-radius: 3px;
+}
 
 /* date-separator*/
 .date-separator {
@@ -503,9 +508,11 @@ a:hover{
 .logo-footer:hover{
     opacity: 1;
 }
+
 .icone-social-footer .list-inline {
-    margin-left: -58px;
+    margin-left: -40px !important;
 }
+
 .icone-fb-footer, .icone-t-footer, .icone-insta-footer {
     height: 29px; width: 29px;
     position: absolute;
@@ -528,7 +535,7 @@ a:hover{
     background: url(../images/icons/social/instagram.png);
 }
 .tousdroitreserves {
-    margin-top: 40px;
+    margin-top: 90px;
     margin-bottom: 20px;
 }
 .footer h6 {
@@ -536,7 +543,7 @@ a:hover{
     color: #666;
     font-size: 14px;
 }
-*/
+/*
 /* CSS Profil Page */
 /*-----------------*/
 
@@ -560,8 +567,13 @@ a:hover{
     margin-top: 75px;
     padding-left: 10%;
     padding-right: 10%;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    border-bottom: 1px solid #4e5254;
+    border-top: 1px solid #4e5254;
+}
+
+.contactProfile p{
+    font-size: 11px;
+    letter-spacing: 2px;
 }
 
 /* Container-Profile */
@@ -570,9 +582,17 @@ a:hover{
     padding-right: 10%;
 }
 
+.containerProfile img{
+    height: 170px;
+}
+
 .containerProfile h1{
     margin-bottom: 50px;
     margin-top: 100px;
+}
+
+.containerProfile p{
+    font-size: 19px;
 }
 
 div.container-social{
@@ -588,8 +608,8 @@ div.container-social{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.4em;
-    font-family: Gillsans;
-    color: #5f6061;
+    font-family: 'gill-sans-light';
+    color: #646565;
 }
 .dateProfile{
     font-size: 1.2em;
@@ -900,6 +920,7 @@ nav a.next {
     font-size: 2em;
     color: white;
     background-color: #262b2d;
+    outline:0 none;
     border: none;
 }
 .iconloupe{
@@ -1087,6 +1108,9 @@ nav a.next {
     .menu ul.nav-left{
         display: none;
     }
+    .menu .nav-logo{
+        left: 220px;
+    }
     .menu .ico-nav-left{
         margin-bottom: 25px;
         margin-left: 30px;
@@ -1138,7 +1162,9 @@ nav a.next {
     .slider button {
         bottom: 90px;
     }
-
+    .slider .item{
+        height: 380px !important;
+    }
     /* nav horizontal*/
     .nav-horizontal {
       margin-left: 0px;
@@ -1214,6 +1240,17 @@ nav a.next {
     .newsletter p{
         margin-bottom: 50px;
     }
+
+    /* footer */
+    .footer {
+        margin-top: 40px;
+    }
+    .nav-horizontal img {
+        width: 25% !important;
+    }
+    .nav-horizontal h4 {
+        font-size: 6    px;
+    }
     /*-----------------*/
     /* FIN Homepage */
     /*-----------------*/
@@ -1288,6 +1325,9 @@ nav a.next {
     .item img {
         margin-left: 0px;
     }
+    .slider .item{
+        height: 450px !important;
+    }
     .galeriedesktop{
         display: none;
     }
@@ -1356,6 +1396,11 @@ nav a.next {
     /*newsletter*/
     .newsletter p{
         margin-left: 100px;margin-right: 50px;margin-bottom: 50px;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 90px;
     }
     /*-----------------*/
     /* FIN HOMEPAGE */
