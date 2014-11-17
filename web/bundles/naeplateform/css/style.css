@@ -58,8 +58,8 @@ a:hover{
     left: 164px;
     opacity: 0.5;
 }
-.menu #box-nav {
-    padding-bottom: 56px;
+.menu #box-nav
+    padding-bottom: 81px;
 }
 .menu #box-nav-bottom{
     border-top: 1px solid #4c5153;
@@ -190,10 +190,10 @@ a:hover{
     height: 100%;
     opacity: 0.5;
 }
-.item{
+.slider .item{
     background: #333;
     text-align:center;
-    height: 567px !important;
+    height: 592px !important;
 }
 .logo-nae{
     background: url(../images/logo.png) no-repeat;
@@ -503,9 +503,11 @@ a:hover{
 .logo-footer:hover{
     opacity: 1;
 }
+
 .icone-social-footer .list-inline {
-    margin-left: -58px;
+    margin-left: -40px !important;
 }
+
 .icone-fb-footer, .icone-t-footer, .icone-insta-footer {
     height: 29px; width: 29px;
     position: absolute;
@@ -528,7 +530,7 @@ a:hover{
     background: url(../images/icons/social/instagram.png);
 }
 .tousdroitreserves {
-    margin-top: 40px;
+    margin-top: 90px;
     margin-bottom: 20px;
 }
 .footer h6 {
@@ -1087,6 +1089,9 @@ nav a.next {
     .menu ul.nav-left{
         display: none;
     }
+    .menu .nav-logo{
+        left: 220px;
+    }
     .menu .ico-nav-left{
         margin-bottom: 25px;
         margin-left: 30px;
@@ -1138,7 +1143,9 @@ nav a.next {
     .slider button {
         bottom: 90px;
     }
-
+    .slider .item{
+        height: 380px !important;
+    }
     /* nav horizontal*/
     .nav-horizontal {
       margin-left: 0px;
@@ -1214,6 +1221,17 @@ nav a.next {
     .newsletter p{
         margin-bottom: 50px;
     }
+
+    /* footer */
+    .footer {
+        margin-top: 40px;
+    }
+    .nav-horizontal img {
+        width: 25% !important;
+    }
+    .nav-horizontal h4 {
+        font-size: 6    px;
+    }
     /*-----------------*/
     /* FIN Homepage */
     /*-----------------*/
@@ -1288,6 +1306,9 @@ nav a.next {
     .item img {
         margin-left: 0px;
     }
+    .slider .item{
+        height: 450px !important;
+    }
     .galeriedesktop{
         display: none;
     }
@@ -1356,6 +1377,11 @@ nav a.next {
     /*newsletter*/
     .newsletter p{
         margin-left: 100px;margin-right: 50px;margin-bottom: 50px;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 90px;
     }
     /*-----------------*/
     /* FIN HOMEPAGE */
