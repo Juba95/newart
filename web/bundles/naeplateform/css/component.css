@@ -55,6 +55,21 @@ perspective effects (not including the modals and the overlay).
 .pays{
     text-align: center;
 }
+
+.inscription{
+    position: absolute;
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+.inscription button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-transform: inherit;
+}
+
 .md-perspective,
 .md-perspective body {
 	height: 100%;
