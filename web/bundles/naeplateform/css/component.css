@@ -55,6 +55,21 @@ perspective effects (not including the modals and the overlay).
 .pays{
     text-align: center;
 }
+
+.inscription{
+    position: absolute;
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+.inscription button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-transform: inherit;
+}
+
 .md-perspective,
 .md-perspective body {
 	height: 100%;
@@ -121,7 +136,7 @@ perspective effects (not including the modals and the overlay).
 
 .md-content input{
     background-color: #1b2021;
-    height: 60px;
+    height: 45px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
@@ -133,8 +148,8 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content .row{
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-right: 0px;
 }
 
 .md-content h3 {
@@ -149,7 +164,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content > div {
-	padding: 15px 40px 30px;
+	padding: 0px 40px 5px;
 	margin: 0;
 	font-weight: 300;
 	font-size: 1.15em;
