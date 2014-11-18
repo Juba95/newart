@@ -991,6 +991,10 @@ nav a.next {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+
+.mobilebooks{
+    display: none;
+}
 /*-----------------*/
 /* FIN page Books */
 /*-----------------*/
@@ -1066,7 +1070,7 @@ nav a.next {
 
 /* Responsive  - @media - " à consommer avec modération :)" */
 
-@media screen and (max-width: 769px) /* Phone */
+@media screen and (max-width: 767px) /* Phone */
 {
     h1 {
         font-size: 2em !important;
@@ -1266,6 +1270,22 @@ nav a.next {
     /*-----------------*/
     /* FIN PAGE PROFILE */
     /*-----------------*/
+
+    /*-----------------*/
+    /* PAGE PROFILE */
+    /*------------------*/
+    .mobilebooks{
+        display: block;
+    }
+
+    .booksdesktop{
+        display: none;
+    }
+
+    .iconloupe{
+        float: right;
+        bottom: 100px;
+    }
 
 }
 

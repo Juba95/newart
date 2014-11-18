@@ -70,7 +70,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-7 col-md-offset-1">
+        <div class="col-md-7 col-md-offset-4">
             <div class="searchbooks">
                 <form>
                     <input id="recherche" type="text" placeholder="Effectuer une recherche" required>
@@ -81,19 +81,6 @@
             <form>
                 <input type="image" src="{{ asset('bundles/naeplateform/images/icons/loupe.png') }}" alt="Submit">
             </form>
-        </div>
-        <div class="col-md-3">
-            <div class="dropdown deroulant">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                    Trier par : les + vues
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Trier par : les + partagés</span></a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Trier par : les + récents</span></a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="white">Trier par : les + anciens</span></a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>
@@ -132,7 +119,7 @@
             </div>
         </div>
 
-
+<div class="booksdesktop">
         <div class="col-md-8">
             <div class="row imagebooks">
 
@@ -152,8 +139,10 @@
             </div>
         </div>
     </div>
+    </div>
 </div>
 
+<div class="booksdesktop">
 {# Images étage 1 sans le hover (responsive) #}
 <div class="container">
     <div class="row">
@@ -228,40 +217,6 @@
 </div>
 {# End Images étage 2 sans le hover (responsive) #}
 
-{#<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-            <div class="row">
-
-                <div class="col-md-3 contentbooks">
-
-                    <h2>Thierry Michau</h2>
-                    <h3>Artiste Peintre</h3>
-                    <p>Paris, France</p>
-
-                </div>
-                <div class="col-md-3 contentbooks">
-                    <h2>Thierry Michau</h2>
-                    <h3>Artiste Peintre</h3>
-                    <p>Paris, France</p>
-                </div>
-                <div class="col-md-3 contentbooks">
-                    <h2>Nico Vincent</h2>
-                    <h3>Photographe</h3>
-                    <p>Allemagne</p>
-
-                </div>
-                <div class="col-md-3 contentbooks">
-                    <h2>Werner Pans</h2>
-                    <h3>Artiste Peintre</h3>
-                    <p>Belgique</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>#}
-
 
 <div class="container">
     <div class="row">
@@ -309,12 +264,37 @@
         </div>
     </div>
 </div>
+
     {# End Images étage 3 sans le hover (responsive) #}
+</div>
+    {# Responsive #}
 
-        {# End Filtres latéral #}
+<div class="container mobilebooks">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-4">
 
-<script>
-    $('#recherche').click(function(){
-        $(this).css('border','none');
-    });
-</script>
+            <div class="row imagebooks">
+
+                <div class="col-xs-6">
+                    <a href=""><img src="{{ asset('bundles/naeplateform/images/books/1.jpg') }}" class="img-responsive"></a>
+                </div>
+                <div class="col-xs-6">
+                    <a href=""><img src="{{ asset('bundles/naeplateform/images/books/2.jpg') }}" class="img-responsive"></a>
+                </div>
+
+            </div>
+
+            <div class="row imagebooks">
+
+                <div class="col-xs-6">
+                    <a href=""><img src="{{ asset('bundles/naeplateform/images/books/3.jpg') }}" class="img-responsive"></a>
+                </div>
+                <div class="col-xs-6">
+                    <a href=""><img src="{{ asset('bundles/naeplateform/images/books/4.jpg') }} " class="img-responsive"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
