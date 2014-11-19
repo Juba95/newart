@@ -1127,6 +1127,34 @@ nav a.next {
     margin-top: 100px;
 }
 
+/*-------------*/
+/* Page Article */
+/*-------------*/
+
+.header_article{
+    color: #fff;
+    background: url(../images/article.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-bottom: 23px;
+    padding-top: 35px;
+}
+
+.article_content{
+    margin-top: 75px;
+}
+
+.article_content h3{
+    margin-top: 45px;
+}
+
+.article_content h4{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
 
 
 /* Responsive  - @media - " à consommer avec modération :)" */

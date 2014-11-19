@@ -31,3 +31,7 @@ nae_plateform_contact:
 nae_plateform_articles:
     path:     /articles/
     defaults: { _controller: NAEPlateformBundle:Expo:articles }
+
+nae_plateform_article:
+    path:     /article/
+    defaults: { _controller: NAEPlateformBundle:Expo:article }
