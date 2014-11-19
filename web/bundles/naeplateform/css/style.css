@@ -564,9 +564,13 @@ a:hover{
     color: #666;
     font-size: 14px;
 }
-/*
+/*------------------*/
 /* CSS Profil Page */
 /*-----------------*/
+.portofolio{
+    margin-right: 15px;
+    margin-left: 15px;
+}
 
 .profile {
     color: #fff;
@@ -938,7 +942,7 @@ nav a.next {
 }
 .searchbooks input{
     font-family: 'DubielItalic', verdana;
-    font-size: 2em;
+    font-size: 30px;
     color: white;
     background-color: #262b2d;
     outline:0 none;
@@ -1087,6 +1091,42 @@ nav a.next {
 /*-----------------*/
 /* FIN - PAGE WHAT IS NAE */
 /*-----------------*/
+
+/*----------------*/
+/* PAGE ARTICLES */
+/*---------------*/
+
+
+.articles img{
+    width: 100%;
+}
+
+.articles p{
+    color: #666666;
+    font-family: gill-sans-light;
+    font-size: 20px;
+}
+
+.articles .date{
+    font-family: gill-sans-light;
+    font-size: 18px;
+    color: #666666;
+}
+
+.articles h3{
+    font-family: gill-sans-light;
+    font-size: 22px;
+}
+
+.columnarticles{
+    margin-left: -30px;
+    margin-right: 75px;
+}
+
+.articles-solo{
+    margin-top: 100px;
+}
+
 
 
 /* Responsive  - @media - " à consommer avec modération :)" */
@@ -1297,10 +1337,15 @@ nav a.next {
     /*------------------*/
     .mobilebooks{
         display: block;
+        margin-top: 50px;
     }
 
     .booksdesktop{
         display: none;
+    }
+
+    .imgbooksmobile{
+        width: 100%;
     }
 
     .iconloupe{
@@ -1308,6 +1353,22 @@ nav a.next {
         bottom: 100px;
     }
 
+    /*---------------*/
+    /* PAGE ARTICLES */
+    /*---------------*/
+
+    .columnarticles{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .article1{
+        margin-top: 75px;
+    }
+
+    .iconloupe{
+        bottom: 110px;
+    }
 }
 
 @media screen and (max-width: 992px) /* Point de changement de taille menu horizontale */
@@ -1473,6 +1534,7 @@ nav a.next {
         display: block;
     }
 
+
     .imagebooksnohover div{
         padding: 1px;
     }
@@ -1508,6 +1570,19 @@ nav a.next {
     /*-----------------*/
     /* FIN PAGE BOOKS*/
     /*-----------------*/
+
+    /*---------------*/
+    /* PAGE ARTICLES */
+    /*---------------*/
+
+    .columnarticles{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .article1{
+        margin-top: 75px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */
