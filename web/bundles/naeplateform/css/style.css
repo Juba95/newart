@@ -58,9 +58,10 @@ a:hover{
     left: 164px;
     opacity: 0.5;
 }
+
 .menu #box-nav{
     border-bottom: 0.7px solid #4c5153;;
-    padding-bottom: 47px;
+    padding-bottom: 81px;
 }
 .menu #box-nav-bottom{
     border-top: 1px solid #4c5153;
@@ -211,7 +212,7 @@ a:hover{
 .slider .item{
     background: #333;
     text-align:center;
-
+    height: 592px !important;
 }
 .logo-nae{
     background: url(../images/logo.png) no-repeat;
@@ -938,6 +939,7 @@ nav a.next {
     font-size: 2em;
     color: white;
     background-color: #262b2d;
+    outline:0 none;
     border: none;
 }
 .iconloupe{
@@ -1007,6 +1009,10 @@ nav a.next {
     margin-bottom: 15px;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.mobilebooks{
+    display: none;
 }
 /*-----------------*/
 /* FIN page Books */
@@ -1083,7 +1089,7 @@ nav a.next {
 
 /* Responsive  - @media - " à consommer avec modération :)" */
 
-@media screen and (max-width: 769px) /* Phone */
+@media screen and (max-width: 767px) /* Phone */
 {
     h1 {
         font-size: 2em !important;
@@ -1283,6 +1289,22 @@ nav a.next {
     /*-----------------*/
     /* FIN PAGE PROFILE */
     /*-----------------*/
+
+    /*-----------------*/
+    /* PAGE PROFILE */
+    /*------------------*/
+    .mobilebooks{
+        display: block;
+    }
+
+    .booksdesktop{
+        display: none;
+    }
+
+    .iconloupe{
+        float: right;
+        bottom: 100px;
+    }
 
 }
 
