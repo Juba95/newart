@@ -38,4 +38,14 @@ class ExpoController extends Controller
     {
         return $this->render('NAEPlateformBundle:Expo:contact.html.twig');
     }
+
+    public function articlesAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:articles.html.twig');
+    }
+
+    public function articleAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:article.html.twig');
+    }
 }
