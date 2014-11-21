@@ -1,5 +1,5 @@
-@import 'http://localhost/newart/web/bundles/NAE/css/fonts.css';
-
+@import '../css/fonts.css';
+    
 body {
     background-color: #262b2d;
     color: white;
