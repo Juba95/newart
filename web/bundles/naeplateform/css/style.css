@@ -1,5 +1,5 @@
 @import '../css/fonts.css';
-    
+
 body {
     background-color: #262b2d;
     color: white;
@@ -68,7 +68,6 @@ h1{
     background: #333;
     text-align:center;
     height: 592px !important;
->>>>>>> dev3
 }
 .slider .item img {
     width: 100%;
@@ -480,7 +479,6 @@ hr{
 	margin-top: 75px;
 }
 
-
 .secondarynews {
     margin-top: 125px;
 }
@@ -717,9 +715,9 @@ nav a.next {
 
 /* ARTISTE */
 
-.artiste{
-	margin-top: 150px;
-
+.artiste {
+    margin-top: 150px;
+}
 /*-----------------*/
 /* FIN - PAGE WHAT IS NAE */
 /*-----------------*/
@@ -1088,16 +1086,17 @@ nav a.next {
   	background-opacity: 0.5;
 }
 
-.oeuvrejour{
-	background: url("../images/1.jpg");
-	background-attachment: fixed; 
+.oeuvrejour {
+    background: url("../images/1.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
-SS}
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-opacity: 0.5;
+}
+
 @media (min-width: 768px) and (max-width: 1000px) /* Tablet */
 {
 
