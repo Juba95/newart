@@ -932,17 +932,17 @@ nav a.next {
 }
 .books h1{
     font-family: 'DubielItalic', verdana;
-    font-size: 3.8em;
+    font-size: 45px;
     color: #666666;
 }
 .searchbooks{
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #666666;
     margin-bottom: 50px;
 }
 .searchbooks input{
     font-family: 'DubielItalic', verdana;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     background-color: #262b2d;
     outline:0 none;
@@ -970,14 +970,18 @@ nav a.next {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
+.presentation a:hover{
+    color: black;
+}
 .dropdown2 button{
-    width:250px;
+    width:150px;
     text-align: left;
     border: inherit;
     border-bottom: 1px solid #666666;
     border-top: 1px solid #666666;
     background-color: #262b2d;
-    font-size: 1.5em;
+    font-size: 15px;
 }
 .dropdown3 button{
     width: 250px;
@@ -985,7 +989,7 @@ nav a.next {
     border: inherit;
     border-bottom: 1px solid #666666;
     background-color: #262b2d;
-    font-size: 1.5em;
+    font-size: 15px;
 }
 .imagebooks{
     display: block;
@@ -1000,14 +1004,14 @@ nav a.next {
 .imagebooks div:hover{
     opacity: 1;
 }
+
 .white{
     color: white;
 }
+
 .white:hover{
     color: black;
 }
-
-
 /* Filtres + photos */
 .filtre p{
     font-family: 'gillsans', verdana;
@@ -1104,18 +1108,18 @@ nav a.next {
 .articles p{
     color: #666666;
     font-family: gill-sans-light;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .articles .date{
     font-family: gill-sans-light;
-    font-size: 18px;
+    font-size: 16px;
     color: #666666;
 }
 
 .articles h3{
     font-family: gill-sans-light;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .columnarticles{
@@ -1125,6 +1129,14 @@ nav a.next {
 
 .articles-solo{
     margin-top: 100px;
+}
+
+.padding-right{
+    padding-right: 27px;
+}
+
+.padding-left{
+    padding-left: 27px;
 }
 
 /*-------------*/
@@ -1146,6 +1158,10 @@ nav a.next {
     margin-top: 75px;
 }
 
+.article_content p{
+    font-size: 16px;
+}
+
 .article_content h3{
     margin-top: 25px;
 }
@@ -1164,19 +1180,19 @@ nav a.next {
     padding-bottom: 75px;
     padding-top: 100px;
     font-family: gill-sans-light;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .otherarticle .date{
     font-family: gill-sans-light;
-    font-size: 18px;
+    font-size: 16px;
     color: #666666;
 }
 
 .otherarticle p{
     color: #666666;
     font-family: gill-sans-light;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .dernieresphotos{
@@ -1187,7 +1203,7 @@ nav a.next {
     padding-bottom: 50px;
     padding-top: 100px;
     font-family: gill-sans-light;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .dernieresphotos img{
