@@ -1143,6 +1143,10 @@ nav a.next {
 /* Page Article */
 /*-------------*/
 
+.social_article{
+    bottom: 65px;
+}
+
 .header_article{
     color: #fff;
     background: url(../images/article.jpg) center no-repeat;
@@ -1163,7 +1167,7 @@ nav a.next {
 }
 
 .article_content h3{
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .article_content h4{
@@ -1180,7 +1184,7 @@ nav a.next {
     padding-bottom: 75px;
     padding-top: 100px;
     font-family: gill-sans-light;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .otherarticle .date{
