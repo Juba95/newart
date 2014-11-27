@@ -1,7 +1,8 @@
 NewArtExpo
 =================================================================================
 
-#TODO / Mercredi 15 Octobre 2014
+#Admin 
 
-	*Revoir le twig -> Integration de la Homepage terminé.
-	*Récupérer les utilisateurs de la BDD
+	*Installation de la partie Admin -> good
+	*Récupérer la BDD en générant les entités -> en cours
+	*
