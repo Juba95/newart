@@ -4,5 +4,6 @@ NewArtExpo
 #Admin 
 
 	*Installation de la partie Admin -> good
-	*Récupérer la BDD en générant les entités -> Good
-	*Création de la class Admin
+	*Generer les entités -> Good
+	*Création de la class Admin -> Good
+	*Afficher le contenue -> Good

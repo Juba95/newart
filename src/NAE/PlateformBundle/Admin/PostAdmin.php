@@ -14,9 +14,10 @@ class PostAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('title', 'text', array('label' => 'Post Title'))
-            ->add('author', 'entity', array('class' => 'NAE\PlateformBundle\Entity\User'))
+            ->add('title', 'text', array('label' => 'Textes'))
+            ->add('author', 'entity', array('class' => 'NAE\PlateformBundle\Entity\Post'))
             ->add('body') //if no type is specified, SonataAdminBundle tries to guess it
+            ->add('text')
         ;
     }
 
@@ -25,7 +26,9 @@ class PostAdmin extends Admin
     {
         $datagridMapper
             ->add('title')
-            ->add('author')
+            ->add('text')
+            ->add('createdAt')
+            ->add('updatedAt')
         ;
     }
 
@@ -34,8 +37,11 @@ class PostAdmin extends Admin
     {
         $listMapper
             ->addIdentifier('title')
-            ->add('slug')
-            ->add('author')
+            ->add('text')
+            ->add('id')
+//            ->add('id_user')
+            ->add('createdAt')
+            ->add('updatedAt')
         ;
     }
 }
