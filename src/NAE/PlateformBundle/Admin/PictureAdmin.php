@@ -8,7 +8,7 @@ use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
-class PostAdmin extends Admin
+class PictureAdmin extends Admin
 {
     // Fields to be shown on create/edit forms
     /**
@@ -17,18 +17,15 @@ class PostAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('title', 'entity', array('class'=>'NAE\PlateformBundle\Entity\Post'))
-            ->add('text');
+            ->add('name');
     }
 
     // Fields to be shown on filter forms
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
-            ->add('title')
-            ->add('text')
-            ->add('createdAt')
-            ->add('updatedAt')
+            ->add('name')
+            ->add('id')
         ;
     }
 
@@ -36,12 +33,8 @@ class PostAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('title')
-            ->add('text')
             ->add('id')
-//            ->add('id_user')
-            ->add('createdAt')
-            ->add('updatedAt')
-        ;
+            ->add('name')
+            ->add('description');
     }
 }

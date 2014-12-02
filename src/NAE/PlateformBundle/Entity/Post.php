@@ -164,4 +164,9 @@ class Post
     {
         return $this->user;
     }
+
+    public function __toString()
+    {
+        return $this->title.' '.$this->text;
+    }
 }
