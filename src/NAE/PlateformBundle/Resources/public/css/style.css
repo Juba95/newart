@@ -1,10 +1,10 @@
-<<<<<<< Updated upstream
 @import './fonts.css';
 /* Full Page */
 body {
     background-color: #262b2d;
     color: white;
 }
+
 p{
     font-family: 'gill-sans-light';
     font-size: 19px;
@@ -770,10 +770,24 @@ ul.social-buttons>li>a {
     color: black;
 }
 
-.image-portofolio{
-    width: 100%;
-    height: 450px;
+#portfolio{
+    width: 960px;
+    margin: 0 auto;
 }
+.masonry {
+    max-width: 640px;
+    counter-reset: item;
+}
+
+.item {
+    width:  200px;
+    height: 200px;
+    float: left;
+}
+
+.item.w2 { width:  120px; }
+.item.w3 { width:  180px; }
+.item.w4 { width:  240px; }
 
 .grilleportofolio{
     padding-left: 79px;
@@ -1802,202 +1816,3 @@ nav a.next {
 
 /* END Responsive */
 
-=======
-@import 'http://localhost/newart/web/bundles/NAE/css/fonts.css';
-
-body {
-    background-color: #262b2d;
-    color: white;
-}
-
-h1, .content{
-	text-align: center;
-}
-
-h1{
-	font-family: DubielItalic;
-	color: #c9c4bd;
-}
-
-.titlestyle{
-	font-family: Gillsans;
-	text-transform: uppercase;
-	color: white;
-}
-
-
-
-/* HEADER */
-.logo {
-    background: url(../images/logo.png);
-    position: absolute;
-    z-index: 3;
-    height: 52px;
-    width: 102px;
-    margin-top: 77px;
-    margin-left: 53%;
-}
-.monheader {
-    margin-left: -40px;
-    margin-right: 0px;
-    height: auto;
-}
-.mynav {
-    background-color: #1b2021;
-    height: 580px;
-    border-right: solid 1px #434749;
-    position: relative;
-    z-index: 2;
-}
-.slider {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.slider .item img {
-    width: 100%;
-    height: 567px;
-}
-
-.nav2 {
-    height: 76px;
-    background-color: #1b2021;
-    margin-top: 567px;
-    text-align: center;
-}
-
-.navartiste, .navboutique, .navexpovirtuel, .navcoupcoeur {
-    border-right: solid 1px #434749;
-    border-bottom: solid 1px #434749;
-    min-height: 76px;
-    background-color: #1b2021;
-
-}
-
-/* WHAT IS NAE */
-
-h2, .content, .undercontent{
-	font-family: Gillsans;
-}
-
-.undercontent{
-	font-size: 0.9em;
-	color: #f1ece6;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-hr{
-	width: 65px;
-	margin: auto;
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
-
-/* PRALLAX */
-
-.parallax{
-	background: url("../images/3.jpg");
-	background-attachment: fixed; 
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-}
-
-.button{
-	margin-top: 75px;
-	margin-bottom: 75px;
-
-}
-
-/* NEWS */
-
-.datenews{
-	font-size: 0.9em;
-	color: #c9c4bd;
-}
-
-.newstitle{
-	margin-top: 75px;
-}
-
-.secondarynews{
-	margin-top: 125px;
-}
-
-.newslink{
-	margin-top: 25px;
-	font-family: Gillsans;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 3px;
-}
-
-.newslink a:hover{
-	text-decoration: none;
-	color: white;
-}
-
-.newsbutton{
-	margin-top: 75px;
-}
-
-.newsbutton button{
-	font-size: 1.3em;
-}
-
-/* ARTISTE */
-
-.artiste{
-	margin-top: 150px;
-}
-
-.artistejour{
-	background: url("../images/3.jpg");
-	background-attachment: fixed; 
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
-}
-
-.oeuvrejour{
-	background: url("../images/1.jpg");
-	background-attachment: fixed; 
-    background-repeat: no-repeat;
-  	background-size: cover;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-opacity: 0.5;
-}
-
-.titleartiste{
-	letter-spacing: 3px;
-	text-transform: uppercase;
-	font-family: Gillsans;
-	font-size: 0.9em;
-}
-
-.nameartiste{
-	font-family: DubielItalic;
-	font-size: 2.8em;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.contentartiste{
-	text-align: left;
-	font-size: 0.9em;
-	font-family: Gillsans;
-}
-
-/* RECHERCHE */
-
-.search{
-	margin-top: 50px;
-}
->>>>>>> Stashed changes
