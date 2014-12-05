@@ -775,27 +775,7 @@ ul.social-buttons>li>a {
     width: 960px;
     margin: 0 auto;
 }
-.masonry {
-    max-width: 640px;
-    counter-reset: item;
-}
 
-.item {
-    width:  200px;
-    height: 200px;
-    float: left;
-}
-
-.item.w2 { width:  120px; }
-.item.w3 { width:  180px; }
-.item.w4 { width:  240px; }
-
-.grilleportofolio{
-    padding-left: 79px;
-}
-.portofolio div{
-    padding: 1px;
-}
 
 /*-- en Attendant la màj sur les balises "li" et "a" --*/
 
