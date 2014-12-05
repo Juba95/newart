@@ -35,3 +35,4 @@ nae_plateform_article:
 nae_plateform_cvg:
     path:     /cvg/
     defaults: { _controller: NAEPlateformBundle:Expo:cvg }
+
