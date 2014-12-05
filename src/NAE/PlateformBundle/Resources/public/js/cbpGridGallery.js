@@ -57,6 +57,13 @@
 		this.options = extend( {}, this.options );
   		extend( this.options, options );
   		this._init();
+	}
+
+	CBPGridGallery.prototype.options = {
+	};
+
+	CBPGridGallery.prototype._init = function() {
+		// main grid
 		this.grid = this.el.querySelector( 'section.grid-wrap > ul.grid' );
 		// main grid items
 		this.gridItems = [].slice.call( this.grid.querySelectorAll( 'li:not(.grid-sizer)' ) );

@@ -31,8 +31,3 @@ nae_plateform_articles:
 nae_plateform_article:
     path:     /article/
     defaults: { _controller: NAEPlateformBundle:Expo:article }
-
-<<<<<<< HEAD
-=======
-
->>>>>>> ce38a0e1906b0d69756e77455fbb8dfcbfd4cc25
