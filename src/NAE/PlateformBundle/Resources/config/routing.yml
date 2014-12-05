@@ -3,7 +3,7 @@
 Newart:
     path:     /
     defaults: { _controller: NAEPlateformBundle:Expo:index }
-    
+
 nae_plateform_profil:
     path:     /profil/
     defaults: { _controller: NAEPlateformBundle:Expo:profil }
@@ -32,3 +32,7 @@ nae_plateform_article:
     path:     /article/
     defaults: { _controller: NAEPlateformBundle:Expo:article }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ce38a0e1906b0d69756e77455fbb8dfcbfd4cc25

@@ -5,7 +5,7 @@
 namespace NAE\PlateformBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Form\Extension\HttpFoundation\reponse;
 
 class ExpoController extends Controller
 {

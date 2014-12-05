@@ -5,6 +5,7 @@ body {
     background-color: #262b2d;
     color: white;
 }
+
 p{
     font-family: 'gill-sans-light';
     font-size: 19px;
@@ -770,10 +771,24 @@ ul.social-buttons>li>a {
     color: black;
 }
 
-.image-portofolio{
-    width: 100%;
-    height: 450px;
+#portfolio{
+    width: 960px;
+    margin: 0 auto;
 }
+.masonry {
+    max-width: 640px;
+    counter-reset: item;
+}
+
+.item {
+    width:  200px;
+    height: 200px;
+    float: left;
+}
+
+.item.w2 { width:  120px; }
+.item.w3 { width:  180px; }
+.item.w4 { width:  240px; }
 
 .grilleportofolio{
     padding-left: 79px;
