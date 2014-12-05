@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # src/NAE/PlatformBundle/Resources/config/routing.yml
 
 Newart:
@@ -35,3 +36,42 @@ nae_plateform_article:
 nae_plateform_cvg:
     path:     /cvg/
     defaults: { _controller: NAEPlateformBundle:Expo:cvg }
+=======
+nae_plateform_homepage:
+    path:     /hello/
+    defaults: { _controller: NAEPlateformBundle:Default:index }
+    
+# src/NAE/PlatformBundle/Resources/config/routing.yml
+
+Newart:
+    path:     /
+    defaults: { _controller: NAEPlateformBundle:Expo:index }
+    
+nae_plateform_profil:
+    path:     /profil/
+    defaults: { _controller: NAEPlateformBundle:Expo:profil }
+
+nae_plateform_books:
+    path:     /books/
+    defaults: { _controller: NAEPlateformBundle:Expo:books }
+
+nae_plateform_expo:
+    path:     /expo/
+    defaults: { _controller: NAEPlateformBundle:Expo:expo }
+
+nae_plateform_nae:
+    path:     /nae/
+    defaults: { _controller: NAEPlateformBundle:Expo:nae }
+
+nae_plateform_contact:
+    path:     /contact/
+    defaults: { _controller: NAEPlateformBundle:Expo:contact }
+
+nae_plateform_articles:
+    path:     /articles/
+    defaults: { _controller: NAEPlateformBundle:Expo:articles }
+
+nae_plateform_article:
+    path:     /article/
+    defaults: { _controller: NAEPlateformBundle:Expo:article }
+>>>>>>> FETCH_HEAD
