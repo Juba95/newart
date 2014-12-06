@@ -2,7 +2,8 @@
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
 
-{# Header #}
+{# Header : Nav / Slider #}
+{# Nav-Left #}
 <header>
     <div class="menu">
         <div class="box-nav-top">
@@ -57,7 +58,9 @@
         </ul>
     </div>
 </header>
+
 {# End Header #}
+
 
 {# Title & Search fields#}
 <div class="container-fluid">
@@ -152,5 +155,27 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(function () {
+        $('.click-nav > ul').toggleClass('no-js js');
+        $('.click-nav .js ul').hide();
+        $('.click-nav .js').click(function(e) {
+            $('.click-nav .js ul').slideToggle(200);
+            $('.clicker').toggleClass('active');
+            e.stopPropagation();
+        });
+        $(document).click(function() {
+            if ($('.click-nav .js ul').is(':visible')) {
+                $('.click-nav .js ul', this).slideUp();
+                $('.clicker').removeClass('active');
+            }
+        });
+    });
+</script>
+
 {# footer #}
 {{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
+
+
+>>>>>>> fa743e5e79d05baec9a8f0dd450f633a091f68ae

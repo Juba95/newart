@@ -29,4 +29,7 @@ class NAEPlateformExtension extends Extension
         $loader->load('admin.yml');
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fa743e5e79d05baec9a8f0dd450f633a091f68ae

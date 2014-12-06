@@ -49,4 +49,10 @@ class ExpoController extends Controller
         return $this->render('NAEPlateformBundle:Expo:article.html.twig');
     }
 
+
+    public function cvgAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:cvg.html.twig');
+    }
+
 }
