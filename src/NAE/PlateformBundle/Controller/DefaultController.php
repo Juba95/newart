@@ -10,5 +10,5 @@ class DefaultController extends Controller
     {
         return $this->render('NAEPlateformBundle:Expo:index.html.twig');
     }
-}
 
+}
