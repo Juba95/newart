@@ -2,125 +2,10 @@
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
 
-{# Header : Nav / Slider #}
 {# Nav-Left #}
-<header>
-    {# Nav-left desktop #}
-    <div class="menu menu-desktop">
-        <div class="box-nav-top">
-            <img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">
-            <img class="ico-nav nav-logo" src="{{ asset('bundles/naeplateform/images/logo.png') }}">
-        </div>
-        <ul class="nav-left">
-            <div id="box-nav">
-                <li id="about">
-                    <a>
-                        QU'EST CE QUE NAE ?
-                    </a>
-                </li>
-                <li id="find">
-                    <a>
-                        RECHERCHE
-                    </a>
-                </li>
-                <li id="profil">
-                    <a>
-                        MON PROFIL
-                    </a>
-                </li>
-                <li id="books">
-                    <a>
-                        LISTE DES BOOKS
-                    </a>
-                </li>
-                <li id="expo">
-                    <a>
-                        EXPO VIRTUELLE
-                    </a>
-                </li>
-                <li id="shop">
-                    <a>
-                        LA BOUTIQUE
-                    </a>
-                </li>
-                <li id="contact">
-                    <a>
-                        CONTACT
-                    </a>
-                </li>
-            </div>
-            <div id="box-nav-bottom">
-                <li id="share">
-                    <a>
-                        PARTAGER
-                    </a>
-                </li>
-            </div>
-        </ul>
-    </div>
-
-    {# Nav left mobile/tablet #}
-    <div class="menu menu-mobile click-nav">
-        <ul class="no-js">
-            <li>
-                <div class="box-nav-top">
-                    <a href="#" class="clicker"><img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}"></a>
-                    <img class="ico-nav nav-logo" src="{{ asset('bundles/naeplateform/images/logo.png') }}">
-                </div>
-                <ul class="nav-left">
-                    <div id="box-nav">
-                        <li id="about">
-                            <a>
-                                QU'EST CE QUE NAE ?
-                            </a>
-                        </li>
-                        <li id="find">
-                            <a>
-                                RECHERCHE
-                            </a>
-                        </li>
-                        <li id="profil">
-                            <a>
-                                MON PROFIL
-                            </a>
-                        </li>
-                        <li id="books">
-                            <a>
-                                LISTE DES BOOKS
-                            </a>
-                        </li>
-                        <li id="expo">
-                            <a>
-                                EXPO VIRTUELLE
-                            </a>
-                        </li>
-                        <li id="shop">
-                            <a>
-                                LA BOUTIQUE
-                            </a>
-                        </li>
-                        <li id="contact">
-                            <a>
-                                CONTACT
-                            </a>
-                        </li>
-                    </div>
-                    <div id="box-nav-bottom">
-                        <li id="share">
-                            <a>
-                                PARTAGER
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</header>
+{{ include("NAEPlateformBundle:Expo:nav.html.twig") }}
 {# END Nav-Left #}
-    {# Slider #}
 
-{# Title & Search fields#}
 <div class="container">
     <div class="row">
         <div class="col-md-11 col-md-offset-1 books">
@@ -359,21 +244,4 @@
     </div>
 </div>
 
-<script>
-    $(function () {
-        $('.click-nav > ul').toggleClass('no-js js');
-        $('.click-nav .js ul').hide();
-        $('.click-nav .js').click(function(e) {
-            $('.click-nav .js ul').slideToggle(200);
-            $('.clicker').toggleClass('active');
-            e.stopPropagation();
-        });
-        $(document).click(function() {
-            if ($('.click-nav .js ul').is(':visible')) {
-                $('.click-nav .js ul', this).slideUp();
-                $('.clicker').removeClass('active');
-            }
-        });
-    });
-</script>
 

@@ -2,64 +2,10 @@
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
 
-{# Header : Nav / Slider #}
 {# Nav-Left #}
-<header>
-    <div class="menu">
-        <div class="box-nav-top">
-            <img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}">
-            <img class="ico-nav nav-logo" src="{{ asset('bundles/naeplateform/images/logo.png') }}">
-        </div>
-        <ul class="nav-left">
-            <div id="box-nav">
-                <li id="about">
-                    <a>
-                        QU'EST CE QUE NAE ?
-                    </a>
-                </li>
-                <li id="find">
-                    <a>
-                        RECHERCHE
-                    </a>
-                </li>
-                <li id="profil">
-                    <a>
-                        MON PROFIL
-                    </a>
-                </li>
-                <li id="books">
-                    <a>
-                        LISTE DES BOOKS
-                    </a>
-                </li>
-                <li id="expo">
-                    <a>
-                        EXPO VIRTUELLE
-                    </a>
-                </li>
-                <li id="shop">
-                    <a>
-                        LA BOUTIQUE
-                    </a>
-                </li>
-                <li id="contact">
-                    <a>
-                        CONTACT
-                    </a>
-                </li>
-            </div>
-            <div id="box-nav-bottom">
-                <li id="share">
-                    <a>
-                        PARTAGER
-                    </a>
-                </li>
-            </div>
-        </ul>
-    </div>
-</header>
+{{ include("NAEPlateformBundle:Expo:nav.html.twig") }}
 {# END Nav-Left #}
-    {# Slider #}
+
 <div class="container-fluid profile">
     <div class="container">
         <div class="row">
@@ -190,16 +136,6 @@
             <div class="containerProfile portofolio">
                 <h1 class="text-center">{{ 'El Cor\n'|nl2br }}<span class="titlestyle"> {{ 'portofolio'|upper }}</span></h1>
                 <div class="barre center-block"></div>
-                <div class="row col-md-4 col-md-offset-4">
-                    <ul class="datesPortofolio">
-                        <li class="activeDate"><h4>Tout</h4></li>
-                        <li><h4>2015</h4></li>
-                        <li><h4>2014</h4></li>
-                        <li><h4>2013</h4></li>
-                        <li><h4>2012</h4></li>
-                        <li><h4>2011</h4></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
