@@ -61,7 +61,7 @@ perspective effects (not including the modals and the overlay).
     position: absolute;
     z-index: 3;
     margin-top: 10px;
-    margin-left: 80%;
+    right: 10px;
 }
 
 .inscription button{
