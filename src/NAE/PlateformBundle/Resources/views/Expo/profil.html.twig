@@ -1,6 +1,7 @@
 {# header #}
 {{ include("NAEPlateformBundle:Expo:header.html.twig") }}
 
+
 {# Header : Nav / Slider #}
 {# Nav-Left #}
 <header>
@@ -58,39 +59,38 @@
     </div>
 </header>
 {# END Nav-Left #}
-{# Header Profile #}
+    {# Slider #}
 <div class="container-fluid profile">
     <div class="container">
         <div class="row">
             <div class="col-md-11 col-md-offset-1">
-                    {# artist    image #}
-                    <img src="{{ asset('bundles/naeplateform/images/img-profil.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
-                    {# artist name #}
-                    <h1 class="name text-center"> André Le Corre </h1>
-                    <h2 class="surname text-center">El Cor</h2>
-                    <div class="contactProfile">
-                        {# location #}
-                        <p class="text-center"><span class="fa fa-map-marker"></span> PARIS, FRANCE</p>
-                    </div>
+                {# artist    image #}
+                <img src="{{ asset('bundles/naeplateform/images/img-profil.jpg') }}" alt="André Le Corre" class="img-circle img-responsive center-block">
+                {# artist name #}
+                <h1 class="name text-center"> André Le Corre </h1>
+                <h2 class="surname text-center">El Cor</h2>
+                <div class="contactProfile">
+                    {# location #}
+                    <p class="text-center"><span class="fa fa-map-marker"></span> PARIS, FRANCE</p>
+                </div>
             </div>
 
-                <div class="row">
-                    <div class="col-md-11 col-md-offset-1">
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5 col-sm-8 col-sm-offset-4">
-                                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                                    <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
-                                    </li>
-                                </ul>
-                                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                                    <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
-                                    </li>
-                                </ul>
-                                <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
-                                    <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5 col-sm-8 col-sm-offset-4">
+                            <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                                <li><a href="#" target="_blank"><span class="fa fa-twitter"></span></a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                                <li><a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline social-buttons text-center col-lg-1 col-md-1 col-sm-2 col-xs-4">
+                                <li><a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -98,10 +98,11 @@
         </div>
     </div>
 </div>
+</div>
 
 
 <div class="container col-md-11 col-md-offset-1">
-       {# Section Biography #}
+    {# Section Biography #}
     <section id="biography" class="containerProfile">
 
         <h1 class="text-center"><span class="titlestyle">{{ 'Biographie'|upper }}</span></h1>
@@ -126,7 +127,7 @@
         </p>
     </section>
 </div>
-        {# section last work #}
+{# section last work #}
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-11 col-md-offset-1">
@@ -157,7 +158,7 @@
         <div class="col-md-11 col-md-offset-1">
             <div class="containerProfile">
                 <div class="borderactus"></div>
-            <h5 class="actusTitle">{{ 'Actualités :' | upper }}</h5>
+                <h5 class="actusTitle">{{ 'Actualités :' | upper }}</h5>
                 <div class="row">
 
                     <div class="col-md-6">
@@ -188,56 +189,80 @@
         <div class="col-md-11 col-md-offset-1">
             <div class="containerProfile portofolio">
                 <h1 class="text-center">{{ 'El Cor\n'|nl2br }}<span class="titlestyle"> {{ 'portofolio'|upper }}</span></h1>
-                    <div class="barre center-block"></div>
-                        <div class="row col-md-4 col-md-offset-4">
-                            <ul class="datesPortofolio">
-                                <li class="activeDate"><h4>Tout</h4></li>
-                                <li><h4>2015</h4></li>
-                                <li><h4>2014</h4></li>
-                                <li><h4>2013</h4></li>
-                                <li><h4>2012</h4></li>
-                                <li><h4>2011</h4></li>
-                            </ul>
-                        </div>
+                <div class="barre center-block"></div>
+                <div class="row col-md-4 col-md-offset-4">
+                    <ul class="datesPortofolio">
+                        <li class="activeDate"><h4>Tout</h4></li>
+                        <li><h4>2015</h4></li>
+                        <li><h4>2014</h4></li>
+                        <li><h4>2013</h4></li>
+                        <li><h4>2012</h4></li>
+                        <li><h4>2011</h4></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="grilleportofolio">
-            <div class="row portofolio">
+            <div id="grid-gallery" class="grid-gallery">
+                <section class="grid-wrap">
+                    <ul class="grid">
+                        <li class="grid-sizer"></li><!-- for Masonry column width -->
+                        <li>
+                            <figure>
+                                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="image-portofolio img-responsive">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="image-portofolio img-responsive">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="" class="image-portofolio img-responsive">
+                            </figure>
+                        </li>
+                    </ul>
+                </section><!-- // grid-wrap -->
+                <section class="slideshow">
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="image-portofolio img-responsive">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="image-portofolio img-responsive">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="image-portofolio img-responsive">
+                            </figure>
+                        </li>
 
-                <div class="col-md-4">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-1.jpg') }}" alt="" class="image-portofolio img-responsive">
-                </div>
-                <div class="col-md-4">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-2.jpg') }}" alt="" class="image-portofolio img-responsive">
-                </div>
-                <div class="col-md-4">
-                    <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-3.jpg') }}" alt="" class="image-portofolio img-responsive">
-                </div>
-
+                    </ul>
+                    <nav>
+                        <span class="fa-backward icon nav-prev"></span>
+                        <span class="icon nav-next"></span>
+                        <span class="icon nav-close"></span>
+                    </nav>
+                    <div class="info-keys icon">Navigation avec les touches de direction</div>
+                </section>
             </div>
         </div>
-
-
-    <div class="row">
-        <div class="grilleportofolio">
-        <div class="row portofolio">
-            <div class="col-md-8">
-                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-4.jpg') }}" alt="" class="image-portofolio img-responsive">
-            </div>
-
-            <div class="col-md-4">
-                <img src="{{ asset('bundles/naeplateform/images/gallery-profile/image-5.jpg') }}" alt="" class="image-portofolio img-responsive">
-            </div>
-        </div>
-        </div>
-    </div>
     </div>
 </div>
+
+
+
+
 
 <div class="container">
     <div class="row">
@@ -246,5 +271,24 @@
         </div>
     </div>
 </div>
+<script>
+    $(function () {
+        $('.click-nav > ul').toggleClass('no-js js');
+        $('.click-nav .js ul').hide();
+        $('.click-nav .js').click(function(e) {
+            $('.click-nav .js ul').slideToggle(200);
+            $('.clicker').toggleClass('active');
+            e.stopPropagation();
+        });
+        $(document).click(function() {
+            if ($('.click-nav .js ul').is(':visible')) {
+                $('.click-nav .js ul', this).slideUp();
+                $('.clicker').removeClass('active');
+            }
+        });
+    });
+</script>
+
 {# footer #}
+
 {{ include("NAEPlateformBundle:Expo:footer.html.twig") }}

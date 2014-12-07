@@ -1,13 +1,9 @@
-nae_plateform_homepage:
-    path:     /hello/
-    defaults: { _controller: NAEPlateformBundle:Default:index }
-    
 # src/NAE/PlatformBundle/Resources/config/routing.yml
 
 Newart:
     path:     /
     defaults: { _controller: NAEPlateformBundle:Expo:index }
-    
+
 nae_plateform_profil:
     path:     /profil/
     defaults: { _controller: NAEPlateformBundle:Expo:profil }
@@ -27,3 +23,17 @@ nae_plateform_nae:
 nae_plateform_contact:
     path:     /contact/
     defaults: { _controller: NAEPlateformBundle:Expo:contact }
+
+nae_plateform_articles:
+    path:     /articles/
+    defaults: { _controller: NAEPlateformBundle:Expo:articles }
+
+nae_plateform_article:
+    path:     /article/
+    defaults: { _controller: NAEPlateformBundle:Expo:article }
+
+nae_plateform_cvg:
+    path:     /cvg/
+    defaults: { _controller: NAEPlateformBundle:Expo:cvg }
+
+

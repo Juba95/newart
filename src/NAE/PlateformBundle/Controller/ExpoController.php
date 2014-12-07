@@ -5,7 +5,7 @@
 namespace NAE\PlateformBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Form\Extension\HttpFoundation\reponse;
 
 class ExpoController extends Controller
 {
@@ -38,4 +38,21 @@ class ExpoController extends Controller
     {
         return $this->render('NAEPlateformBundle:Expo:contact.html.twig');
     }
+
+    public function articlesAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:articles.html.twig');
+    }
+
+    public function articleAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:article.html.twig');
+    }
+
+
+    public function cvgAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:cvg.html.twig');
+    }
+
 }

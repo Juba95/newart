@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="SfGuardGroup" table="sf_guard_group">
+    <unique-constraints>
+      <unique-constraint name="sf_guard_group_U_1" columns="name"/>
+    </unique-constraints>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="255" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="true"/>
+    <many-to-many field="user" target-entity="SfGuardUser" mapped-by="group"/>
+    <many-to-many field="permission" target-entity="SfGuardPermission" inversed-by="group">
+      <join-table name="sf_guard_group_permission">
+        <join-columns>
+          <join-column name="group_id" referenced-column-name="id"/>
+        </join-columns>
+        <inverse-join-columns>
+          <join-column name="permission_id" referenced-column-name="id"/>
+        </inverse-join-columns>
+      </join-table>
+    </many-to-many>
+  </entity>
+</doctrine-mapping>
