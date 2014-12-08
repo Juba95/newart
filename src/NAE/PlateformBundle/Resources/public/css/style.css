@@ -1234,6 +1234,7 @@ nav a.next {
         margin-left: 30px;
         height: 15px;
     }
+
     .menu-phone ul li {
         border-bottom: 1px solid #666666;
         margin-bottom: -15px;
@@ -1281,6 +1282,7 @@ nav a.next {
     .slider .item{
         height: 380px !important;
     }
+
     .motif {
         margin-left: 0;
     }
@@ -1454,6 +1456,8 @@ nav a.next {
         padding-right: 15px;
         margin-left: 100px;
     }
+
+
     /* slider */
     .item img {
         margin-left: 0px;
@@ -1622,6 +1626,7 @@ nav a.next {
         text-align: left;
         padding-right: 15px;
     }
+
     /* slider */
     .item img {
         margin-left: 0px;
@@ -1680,6 +1685,7 @@ nav a.next {
     /*-----------------*/
     /* HOMEPAGE */
     /*-----------------*/
+
     /* Menu */
     .menu:hover {
         width: 280px;
@@ -1708,6 +1714,7 @@ nav a.next {
     /* FIN PAGE PROFILE */
     /*-----------------*/
 }
+
 @media (min-width: 1450px) /* Extra-Large desktop */
 {
     /*slider*/
