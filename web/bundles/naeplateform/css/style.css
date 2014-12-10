@@ -768,20 +768,16 @@ ul.social-buttons>li>a {
     background-color: #f5f5f5;
     border-radius: 3px;
     font-size: 'gillsans', verdana';
-    text-transform: uppercase;
+text-transform: uppercase;
 }
 .activeDate h4{
     color: black;
 }
-
 #portfolio{
     width: 960px;
     margin: 0 auto;
 }
-
-
 /*-- en Attendant la màj sur les balises "li" et "a" --*/
-
 .inlineOption{
     display: inline-block;
     padding-left: 20px;
@@ -796,7 +792,6 @@ ul.social-buttons>li>a {
 /*-------------------*/
 /*---- Fin profil -- */
 /*-------------------*/
-
 /*-----------------*/
 /*--- CSS EXPO ---*/
 /*-----------------*/
@@ -919,8 +914,6 @@ nav a.next {
 /*-----------------*/
 /*--- FIN CSS EXPO---*/
 /*-----------------*/
-
-
 /*---------------------*/
 /*--- PAGE BOOKS ------*/
 /*---------------------*/
@@ -1005,8 +998,6 @@ nav a.next {
 .white:hover{
     color: black;
 }
-
-
 /* Filtres + photos */
 .filtre p{
     font-family: 'gillsans', verdana;
@@ -1015,15 +1006,12 @@ nav a.next {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-
 .mobilebooks{
     display: none;
 }
 /*-----------------*/
 /* FIN page Books */
 /*-----------------*/
-
-
 /*-----------------*/
 /* PAGE WHAT IS NAE */
 /*-----------------*/
@@ -1051,7 +1039,6 @@ nav a.next {
     border-bottom: 1px solid grey;
     margin-top: 125px;
 }
-
 /* PAGE CONTACT */
 .topcontact {
     margin-top: 100px;
@@ -1090,46 +1077,36 @@ nav a.next {
 /*-----------------*/
 /* FIN - PAGE WHAT IS NAE */
 /*-----------------*/
-
 /*----------------*/
 /* PAGE ARTICLES */
 /*---------------*/
-
-
 .articles img{
     width: 100%;
 }
-
 .articles p{
     color: #666666;
     font-family: gill-sans-light;
     font-size: 20px;
 }
-
 .articles .date{
     font-family: gill-sans-light;
     font-size: 18px;
     color: #666666;
 }
-
 .articles h3{
     font-family: gill-sans-light;
     font-size: 22px;
 }
-
 .columnarticles{
     margin-left: -30px;
     margin-right: 75px;
 }
-
 .articles-solo{
     margin-top: 100px;
 }
-
 /*-------------*/
 /* Page Article */
 /*-------------*/
-
 .header_article{
     color: #fff;
     background: url(../images/article.jpg) center no-repeat;
@@ -1140,61 +1117,49 @@ nav a.next {
     padding-bottom: 23px;
     padding-top: 35px;
 }
-
 .article_content{
     margin-top: 75px;
 }
-
 .article_content h3{
     margin-top: 25px;
 }
-
 .article_content h4{
     margin-top: 45px;
     margin-bottom: 45px;
 }
-
 .otherarticle{
     margin-top: 150px;
     border-top: 1px solid #666666;
 }
-
 .otherarticle h2{
     padding-bottom: 75px;
     padding-top: 100px;
     font-family: gill-sans-light;
     font-size: 22px;
 }
-
 .otherarticle .date{
     font-family: gill-sans-light;
     font-size: 18px;
     color: #666666;
 }
-
 .otherarticle p{
     color: #666666;
     font-family: gill-sans-light;
     font-size: 20px;
 }
-
 .dernieresphotos{
     margin-left: 100px;
 }
-
 .dernieresphotos h2{
     padding-bottom: 50px;
     padding-top: 100px;
     font-family: gill-sans-light;
     font-size: 22px;
 }
-
 .dernieresphotos img{
     padding-bottom: 25px;
 }
-
 /* Responsive  - @media - " à consommer avec modération :)" */
-
 @media screen and (max-width: 767px) /* Phone */
 {
     h1 {
@@ -1206,7 +1171,6 @@ nav a.next {
     /*-----------------*/
     /* HOMEPAGE */
     /*-----------------*/
-
     /* Menu */
     .menu-phone{
         position: relative;
@@ -1290,12 +1254,10 @@ nav a.next {
         color: #fff;
         text-decoration: none;
     }
-
     /* logo */
     .logo {
         margin-left: 43%;
     }
-
     /* slider */
     .item img {
         margin-left: 0px;
@@ -1329,22 +1291,19 @@ nav a.next {
     }
     /* nav horizontal*/
     .nav-horizontal {
-      margin-left: 0px;
+        margin-left: 0px;
     }
-
     /* NAE */
     .presnae {
         margin-top: 50px !important;
         padding-left: 10px;
         padding-right: 10px;
     }
-
     /* parallax */
     .parallax {
         padding: 100px 0px 100px 20px;
         margin-top: -70px;
     }
-
     /* news */
     .newsarticle {
         margin: 90px 20px 0px 15px;
@@ -1360,7 +1319,7 @@ nav a.next {
         margin: -75px 80px 0px 80px;
     }
     .date-separator h4 {
-       padding: 37px 0px 37px 0px;
+        padding: 37px 0px 37px 0px;
     }
     .article-news-3, .article-suite, .last-article-news {
         margin-top: 45px;
@@ -1372,32 +1331,26 @@ nav a.next {
         font-size: 0.8em;
         margin-left: -15px;
     }
-
     /*artiste/oeuvredujour*/
     .artisteandoeuvre {
         margin-top: 20px;
         margin-left: -15px;
-
     }
     .artisteandoeuvre .intro-artisteandoeuvre {
         margin-left: 20px;
         margin-right: 20px;
         font-size: 16px;
     }
-
     .artiste h4, .oeuvredujour h4 {
         font-size: 13px;
     }
-
     .artiste h2, .oeuvredujour h2 {
         font-size: 30px;
     }
-
     .artiste p, .oeuvredujour p {
         padding-right: 18px;
         text-align: justify;
     }
-
     /* newsletter */
     .newsletter {
         margin-left: 0px;
@@ -1405,7 +1358,6 @@ nav a.next {
     .newsletter p{
         margin-bottom: 50px;
     }
-
     /* footer */
     .footer {
         margin-top: 40px;
@@ -1417,19 +1369,15 @@ nav a.next {
     /*-----------------*/
     /* FIN Homepage */
     /*-----------------*/
-
-
     /*-----------------*/
     /* PAGE PROFILE */
     /*-----------------*/
-
     .grilleportofolio{
         padding-left: 0;
     }
     /*-----------------*/
     /* FIN PAGE PROFILE */
     /*-----------------*/
-
     /*-----------------*/
     /* PAGE PROFILE */
     /*------------------*/
@@ -1437,46 +1385,36 @@ nav a.next {
         display: block;
         margin-top: 50px;
     }
-
     .booksdesktop{
         display: none;
     }
-
     .imgbooksmobile{
         width: 100%;
     }
-
     .iconloupe{
         float: right;
         bottom: 100px;
     }
-
     /*---------------*/
     /* PAGE ARTICLES */
     /*---------------*/
-
     .columnarticles{
         margin-left: 25px;
         margin-right: 25px;
     }
-
     .article1{
         margin-top: 75px;
     }
-
     .iconloupe{
         bottom: 110px;
     }
-
     /*--------*/
     /* ARTICLE */
     /*--------*/
-
     .article_content h3{
         margin-top: inherit;
     }
 }
-
 @media screen and (max-width: 992px) /* Point de changement de taille menu horizontale */
 {
     .presnae{
@@ -1488,20 +1426,15 @@ nav a.next {
     .submitrightdesktop{
         display: none;
     }
-
-
 }
-
 @media (min-width: 768px) and (max-width: 1000px) /* Tablet */
 {
-
     .titlestyle {
         font-size: 32px;
     }
     /*-----------------*/
     /* HOMEPAGE */
     /*-----------------*/
-
     /* Menu */
     .menu:hover {
         background-color: #262b2d;
@@ -1546,14 +1479,12 @@ nav a.next {
     .slider button {
         bottom: 90px;
     }
-
     /* NAE home */
     .pres-NAE-Home {
         padding-left: 100px;
         padding-right: 50px;
     }
-
-     /* news */
+    /* news */
     .news {
         margin-left: 90px;
     }
@@ -1580,7 +1511,6 @@ nav a.next {
         margin-top: 131px;
         margin-left: 90px;
     }
-
     /* oeuvre/artiste du jour*/
     .artisteandoeuvre .intro-artisteandoeuvre {
         margin-left: 50px;
@@ -1599,12 +1529,10 @@ nav a.next {
     .artiste p, .oeuvredujour p {
         padding-left: 20px;
     }
-
     /*newsletter*/
     .newsletter p{
         margin-left: 100px;margin-right: 50px;margin-bottom: 50px;
     }
-
     /* footer */
     .footer {
         margin-top: 90px;
@@ -1612,11 +1540,9 @@ nav a.next {
     /*-----------------*/
     /* FIN HOMEPAGE */
     /*-----------------*/
-
     /*-----------------*/
     /* PAGE PROFIL */
     /*-----------------*/
-
     /* image profile */
     .img-recent{
         height: 160px;
@@ -1626,24 +1552,18 @@ nav a.next {
     /*-----------------*/
     /* FIN PAGE PROFIL */
     /*-----------------*/
-
     /*-----------------*/
     /* PAGE BOOKS*/
     /*-----------------*/
-
     .imagebooks{
         display: none;
     }
-
     .imagebooksnohover{
         display: block;
     }
-
-
     .imagebooksnohover div{
         padding: 1px;
     }
-
     .dropdown2 button{
         width: 200px;
         text-align: left;
@@ -1653,21 +1573,17 @@ nav a.next {
         background-color: #262b2d;
         font-size: 1.3em;
     }
-
     .dropdown3 button{
         text-align: center;
         width: 200px;
     }
-
     .deroulant .dropdown-menu{
         margin-left: 35%;
     }
-
     .iconloupe{
         float: right;
         bottom: 100px;
     }
-
     .deroulant{
         text-align: center;
         margin-bottom: 20px;
@@ -1675,20 +1591,16 @@ nav a.next {
     /*-----------------*/
     /* FIN PAGE BOOKS*/
     /*-----------------*/
-
     /*---------------*/
     /* PAGE ARTICLES */
     /*---------------*/
-
     .columnarticles{
         margin-left: 25px;
         margin-right: 25px;
     }
-
     .article1{
         margin-top: 75px;
     }
-
     /*---------*/
     /* ARTICLE */
     /*---------*/
@@ -1696,13 +1608,11 @@ nav a.next {
         margin-top: inherit;
     }
 }
-
 @media (min-width: 992px) and (max-width: 1169px) /* Desktop */
 {
     /*-----------------*/
     /* HOMEPAGE */
     /*-----------------*/
-
     /* Menu */
     .menu:hover {
         background-color: #262b2d;
@@ -1716,7 +1626,6 @@ nav a.next {
         text-align: left;
         padding-right: 15px;
     }
-
 
     /* slider */
     .item img {
@@ -1736,7 +1645,6 @@ nav a.next {
     .slider button {
         bottom: 90px;
     }
-
     /* news */
     .newsarticle {
         margin: 64px 20px 0px 16px;
@@ -1756,15 +1664,12 @@ nav a.next {
         margin-left: 100px;
         margin-right: 100px;
     }
-
     /*-----------------*/
     /* FIN HOMEPAGE*/
     /*-----------------*/
-
     /*-----------------*/
     /* PAGE PROFILE*/
     /*-----------------*/
-
     /* image profile */
     .img-recent{
         height: 130px;
@@ -1775,25 +1680,20 @@ nav a.next {
     /* FIN PAGE PROFILE*/
     /*-----------------*/
 }
-
 @media (min-width: 1170px) /* Large desktop */
 {
     /*-----------------*/
     /* HOMEPAGE */
     /*-----------------*/
 
-
     /* Menu */
     .menu:hover {
         width: 280px;
     }
-
-
     /*newsletter*/
     .newsletter p{
         margin: 0px 260px 50px 355px;
     }
-
     /*footer */
     .icone-social-footer{
         padding-left: 30px !important;
@@ -1801,11 +1701,9 @@ nav a.next {
     /*-----------------*/
     /* FIN HOMEPAGE */
     /*-----------------*/
-
     /*-----------------*/
     /* PAGE PROFILE */
     /*-----------------*/
-
     /* image profile */
     .img-recent{
         height: 130px;
@@ -1831,5 +1729,4 @@ nav a.next {
         padding-left: 50px !important;
     }
 }
-
 /* END Responsive */

@@ -18,17 +18,17 @@
                     </a>
                 </li>
                 <li id="profil">
-                    <a>
+                    <a href="{{ path('nae_plateform_profil') }}">
                         MON PROFIL
                     </a>
                 </li>
                 <li id="books">
-                    <a>
+                    <a href="{{ path('nae_plateform_books') }}">
                         LISTE DES BOOKS
                     </a>
                 </li>
                 <li id="expo">
-                    <a>
+                    <a href="{{ path('nae_plateform_expo') }}">
                         EXPO VIRTUELLE
                     </a>
                 </li>
@@ -38,7 +38,7 @@
                     </a>
                 </li>
                 <li id="contact">
-                    <a>
+                    <a href="{{ path('nae_plateform_contact') }}">
                         CONTACT
                     </a>
                 </li>
@@ -51,7 +51,9 @@
                 </li>
             </div>
         </ul>
-    </div><div class="menu click-nav menu-phone visible-xs">
+    </div>
+
+    <div class="menu click-nav menu-phone visible-xs">
         <ul class="no-js">
             <li>
                 <a class="ico-nav-phone clicker" ><img class="ico-nav" src="{{ asset('bundles/naeplateform/images/icons/menu.png') }}"></a>

@@ -1,4 +1,6 @@
 services:
-#    nae_plateform.example:
-#        class: NAE\PlateformBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    NAE_plateformBundle.post.listenenr:
+        class: NAE\PlateformBundle\Listener\PostListener
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
