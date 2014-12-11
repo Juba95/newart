@@ -252,13 +252,13 @@ perspective effects (not including the modals and the overlay).
 }
 
 .grid figure {
-    padding: 15px;
+    padding: 1px;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }
 
 .grid li:hover figure {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .grid figcaption {
