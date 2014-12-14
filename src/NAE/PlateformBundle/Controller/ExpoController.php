@@ -47,9 +47,9 @@ class ExpoController extends Controller
     public function articleAction()
     {
         $repo = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
-        $articles = $repo->find();
+        $article= $repo->find(348);
         return $this->render('NAEPlateformBundle:Expo:article.html.twig', array(
-            'articles' => $articles,
+            'article' => $article,
         ));
     }
 
