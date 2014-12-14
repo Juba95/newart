@@ -7,7 +7,7 @@ namespace NAE\PlateformBundle\Listener;
 
 use NAE\PlateformBundle\Entity\Post;
 use Doctrine\ORM\Event\LifecycleEventArgs;
-
+use Symfony\Component\Validator\Constraints\DateTime;
 
 class PostListener
 {
@@ -34,7 +34,7 @@ class PostListener
 
         if($entity instanceof Post)
         {
-            $entity->setUpdatedAt(new DateTime());
+            $entity->setUpdatedAt(new \DateTime());
         }
     }
 }
