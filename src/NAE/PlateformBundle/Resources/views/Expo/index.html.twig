@@ -198,7 +198,7 @@
     {# Nav-Horizontal#}
     <div class="row nav-horizontal">
             <div class="col-md-4 col-sm-4  navexpovirtuel hidden-xs">
-                <a href="#">
+                <a href="{{ path('nae_plateform_expo') }}">
                     <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuelle.png') }}">
                     <h4 class="grey">{{ 'expo virtuel'|upper }}</h4>
                 </a>
@@ -240,7 +240,7 @@
     {# End What is NAE #}
     {# Parallax #}
     <div class="col-md-12 savoirplus parallax row">
-            <a href="#"><button type="button" class="btn btn-default center-block">En savoir +</button></a>
+            <a href="{{ path('nae_plateform_nae') }}"><button type="button" class="btn btn-default center-block">En savoir +</button></a>
     </div>
     {# End Parallax #}
     {# News #}
@@ -324,7 +324,6 @@
 
                 <p class="text-center"><a href="{{ path('nae_plateform_articles') }}"><button type="button" class="btn btn-default buttonred">Lire tous les billets</button></a><p>
 
-                <p class="text-center"><a href="href="{{ path('nae_plateform_articles') }}"><button type="button" class="btn btn-default buttonred">Lire tous les billets</button></a><p>
 
             </div>
         </div>
