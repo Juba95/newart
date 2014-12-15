@@ -1175,7 +1175,7 @@ nav a.next {
     .menu-phone{
         position: relative;
         width: 100%;
-        background-color: #262b2d;
+        background-color: #1b2021;
         border-right: none;
         border-bottom: 1px solid #666666;
         overflow: hidden;
@@ -1234,7 +1234,6 @@ nav a.next {
         margin-left: 30px;
         height: 15px;
     }
-
     .menu-phone ul li {
         border-bottom: 1px solid #666666;
         margin-bottom: -15px;
