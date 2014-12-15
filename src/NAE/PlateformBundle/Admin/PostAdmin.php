@@ -19,7 +19,7 @@ class PostAdmin extends Admin
         $formMapper
             //->add('title', 'entity', array('class'=>'NAE\PlateformBundle\Entity\Post'))
             ->add('title')
-            ->add('text', 'text');
+            ->add('text', 'textarea');
     }
 
     // Fields to be shown on filter forms -> cette fonction permet de gerer le filtre
