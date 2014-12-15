@@ -6,12 +6,12 @@
     "autoload": {
         "psr-0": { "": "src/", "SymfonyStandard": "app/" }
     },
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "~2.5",
-        "doctrine/orm": "~2.2,>=2.2.3",
         "doctrine/doctrine-bundle": "~1.2",
-        "twig/extensions": "~1.0",
+        "doctrine/orm": "~2.2,>=2.2.3",
         "symfony/assetic-bundle": "~2.3",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
@@ -22,8 +22,12 @@
         "sonata-project/doctrine-orm-admin-bundle": "~2.3",
         "symfony/finder": "~2.3",
         "symfony/dependency-injection": "~2.5",
-        "lexpress/sf-doctrine-guard-plugin": "~1.5"
-        
+        "lexpress/sf-doctrine-guard-plugin": "~1.5",
+        "wowo/wowo-newsletter-bundle": "dev-master",
+        "symfony/framework-standard-edition": "2.5.x-dev",
+        "wowo/wowo-newsletter-bundle": "dev-master"
+
+
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3",
