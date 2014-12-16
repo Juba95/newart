@@ -58,6 +58,11 @@ class ExpoController extends Controller
         return $this->render('NAEPlateformBundle:Expo:cvg.html.twig');
     }
 
+    public function newsletterAction()
+    {
+        return $this->render('NAEPlateformBundle:Expo:newsletter.html.twig');
+    }
+
 
     // Formulaire Contact
     public function contactAction()

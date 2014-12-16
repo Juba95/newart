@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new NAE\PlateformBundle\NAEPlateformBundle(),
             new Wowo\QueueBundle\WowoQueueBundle(),
             new Wowo\NewsletterBundle\WowoNewsletterBundle(),
+            new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
 
 
 

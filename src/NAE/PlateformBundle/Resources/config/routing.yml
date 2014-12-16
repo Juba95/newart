@@ -36,4 +36,6 @@ nae_plateform_cvg:
     path:     /cvg/
     defaults: { _controller: NAEPlateformBundle:Expo:cvg }
 
-
+nae_plateform_newsletter:
+    path:     /newsletter/
+    defaults: { _controller: NAEPlateformBundle:Expo:newsletter }

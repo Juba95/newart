@@ -25,7 +25,8 @@
         "lexpress/sf-doctrine-guard-plugin": "~1.5",
         "wowo/wowo-newsletter-bundle": "dev-master",
         "symfony/framework-standard-edition": "2.5.x-dev",
-        "wowo/wowo-newsletter-bundle": "dev-master"
+        "wowo/wowo-newsletter-bundle": "dev-master",
+        "stfalcon/tinymce-bundle": "dev-master"
 
 
     },
