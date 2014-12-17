@@ -198,7 +198,7 @@
     {# Nav-Horizontal#}
     <div class="row nav-horizontal">
             <div class="col-md-4 col-sm-4  navexpovirtuel hidden-xs">
-                <a href="#">
+                <a href="{{ path('nae_plateform_expo') }}">
                     <img src="{{ asset('bundles/naeplateform/images/icons/expovirtuelle.png') }}">
                     <h4 class="grey">{{ 'expo virtuel'|upper }}</h4>
                 </a>
@@ -240,7 +240,7 @@
     {# End What is NAE #}
     {# Parallax #}
     <div class="col-md-12 savoirplus parallax row">
-            <a href="#"><button type="button" class="btn btn-default center-block">En savoir +</button></a>
+            <a href="{{ path('nae_plateform_nae') }}"><button type="button" class="btn btn-default center-block">En savoir +</button></a>
     </div>
     {# End Parallax #}
     {# News #}
@@ -261,7 +261,7 @@
     <div class="row newsarticle hidden-xs">
             <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
                 <p>28/10/2014</p>
-                <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
+                <h2>{{ firstArticle.text }}</h2>
                 <img src="{{ asset('bundles/naeplateform/images/news/image1.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
                 <a href="#">Lire Plus</a>
             </div>
@@ -271,19 +271,19 @@
             </div>
             <div class="col-md-5 col-sm-5 article-suite">
                 <p>28/10/2014</p>
-                <h3>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h3>
+                <h3>{{ secondArticle.text }}</h3>
                 <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
                 <a href="#">Lire Plus</a>
             </div>
             <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 article-news-3">
                 <p>28/10/2014</p>
-                <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
+                <h2>{{ thirdArticle.text }}</h2>
                 <img src="{{ asset('bundles/naeplateform/images/news/image3.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
                 <a href="#">Lire Plus</a>
             </div>
             <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 last-article-news">
                 <p>11/02/2014</p>
-                <h3>Bientôt ! Un évenement signée NAE</h3>
+                <h3>{{ fourthArticle.text }}</h3>
                 <img src="{{ asset('bundles/naeplateform/images/news/image4.jpg') }}" alt="Image News 3" class="img-responsive imgactu">
                 <a href="#">Lire Plus</a>
             </div>
@@ -295,25 +295,25 @@
         </div>
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
             <p>28/10/2014</p>
-            <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
+            <h2>{{ firstArticle.text }}</h2>
             <img src="{{ asset('bundles/naeplateform/images/news/image1.jpg') }}" alt="Image News 1" class="img-responsive">
             <a href="#">Lire Plus</a>
         </div>
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 article-news-3">
             <p>28/10/2014</p>
-            <h2>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h2>
+            <h2>{{ secondArticle.text }}</h2>
             <img src="{{ asset('bundles/naeplateform/images/news/image3.jpg') }}" alt="Image News 1" class="img-responsive">
             <a href="#">Lire Plus</a>
         </div>
         <div class="col-md-5 col-sm-5 article-suite">
             <p>28/10/2014</p>
-            <h3>New Art Expo et MM6  présente “ÉTÉ D'AMOUR”, avec James Friedman (Throne of Blood)</h3>
+            <h3>{{ thirdArticle.text }}</h3>
             <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive">
             <a href="#">Lire Plus</a>
         </div>
         <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 last-article-news">
             <p>11/02/2014</p>
-            <h3>Bientôt ! Un évenement signée NAE</h3>
+            <h3>{{ fourthArticle.text }}</h3>
             <img src="{{ asset('bundles/naeplateform/images/news/image4.jpg') }}" alt="Image News 3" class="img-responsive">
             <a href="#">Lire Plus</a>
         </div>
@@ -333,20 +333,17 @@
     <div class="row artisteandoeuvre">
         <h1 class="text-center">{{ 'Aujourd\'hui'|upper }}</h1>
         <div class="barre center-block"></div>
-        <p class="text-center intro-artisteandoeuvre">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="text-center intro-artisteandoeuvre">{{ introToday.text }}</p>
         <div class="col-md-6 col-sm-6 artiste">
             <h4>{{ 'Artiste du jour'|upper }}</h4>
-            <h2>Pascal Cherchiario</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.</p>
+            <h2>{{ artistName.text }}</h2>
+            <p>{{ artistDescription.text }}</p>
         </div>
 
         <div class="col-md-6 col-sm-6 oeuvredujour">
             <h4>{{ 'Oeuvre du jour'|upper }}</h4>
-            <h2>Romuald Merceaux</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>{{ workName.text }}</h2>
+            <p>{{ workDescription.text }}</p>
         </div>
     </div>
 
@@ -378,5 +375,5 @@
                 </div>
             </div>
         </div>
-</body>
+</body
 {{ include("NAEPlateformBundle:Expo:footer.html.twig") }}
