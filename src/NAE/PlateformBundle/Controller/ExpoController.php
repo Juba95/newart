@@ -7,14 +7,13 @@ namespace NAE\PlateformBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\HttpFoundation\reponse;
 
-use NAE\PlateformBundle\Entity\Enquiry;
-use NAE\PlateformBundle\Form\EnquiryType;
+use Symfony\Component\HttpFoundation\Request;
 
 class ExpoController extends Controller
 {
     public function indexAction()
     {
-         return $this->render('NAEPlateformBundle:Expo:index.html.twig');
+        return $this->render('NAEPlateformBundle:Expo:index.html.twig');
     }
 
     public function profilAction()
@@ -38,7 +37,6 @@ class ExpoController extends Controller
     }
 
     /*public function contactAction()
-    {
         return $this->render('NAEPlateformBundle:Expo:contact.html.twig');
     }*/
 
@@ -58,29 +56,39 @@ class ExpoController extends Controller
         return $this->render('NAEPlateformBundle:Expo:cvg.html.twig');
     }
 
-
-    // Formulaire Contact
-    public function contactAction()
+    public function contactAction(Request $request)
     {
-        $enquiry = new Enquiry();
-        $form = $this->createForm(new EnquiryType(), $enquiry);
+        $form = $this->createForm(new ContactType());
 
-        $request = $this->getRequest();
-        if ($request->getMethod() == 'POST') {
-            $form->bindRequest($request);
+        if ($request->isMethod('POST')) {
+            $form->bind($request);
 
             if ($form->isValid()) {
-                // Perform some action, such as sending an email
+                $message = \Swift_Message::newInstance()
+                    ->setSubject($form->get('subject')->getData())
+                    ->setFrom($form->get('email')->getData())
+                    ->setTo('contact@example.com')
+                    ->setBody(
+                        $this->renderView(
+                            'NAEPlateformBundle:Mail:contact.html.twig',
+                            array(
+                                'ip' => $request->getClientIp(),
+                                'name' => $form->get('name')->getData(),
+                                'message' => $form->get('message')->getData()
+                            )
+                        )
+                    );
 
-                // Redirect - This is important to prevent users re-posting
-                // the form if they refresh the page
-                return $this->redirect($this->generateUrl('NAEPlateformBundle_contact'));
+                $this->get('mailer')->send($message);
+
+                $request->getSession()->getFlashBag()->add('success', 'Your email has been sent! Thanks!');
+
+                return $this->redirect($this->generateUrl('contact'));
             }
         }
 
-        return $this->render('NAEPlateformBundle:Expo:contact.html.twig', array(
+        return array(
             'form' => $form->createView()
-        ));
+        );
     }
-
 }
