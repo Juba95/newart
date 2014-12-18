@@ -1,0 +1,33 @@
+{% extends "::base.html.twig" %}
+
+{% form_theme form _self %}
+{% block _wowo_bundle_newsletterbundle_newslettertype_mailing_body_widget %}
+    {{ form_widget(form, { 'attr': {'class': 'tinymce'}}) }}
+{% endblock %}
+
+{% block field_row %}
+    <div class="form-row newsletter-form-row">
+        {{ form_label(form) }}
+        <div class="newsletter-error-and-widget">
+            {{ form_errors(form) }}
+            {{ form_widget(form, {'attr': {'class':'text'}} ) }}
+        </div>
+    </div>
+{% endblock field_row %}
+
+{% block body %}
+    {% if app.session.hasFlash('notice') %}
+        <div class="flash-notice">
+            {{ app.session.flash('notice') }}
+        </div>
+    {% endif %}
+    {% if app.session.hasFlash('error') %}
+        <div class="flash-error">
+            {{ app.session.flash('error') }}
+        </div>
+    {% endif %}
+    <form action="" method="post" {{ form_enctype(form) }} >
+        {{ form_widget(form) }}
+        <input type="submit" id="wowo_bundle_newsletterbundle_newslettertype_submit" value="{% trans %}Send mailing{% endtrans %}" class="{{ submitCssClass }}"/>
+    </form>
+{% endblock %}

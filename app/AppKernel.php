@@ -17,6 +17,10 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new NAE\PlateformBundle\NAEPlateformBundle(),
+            new Wowo\QueueBundle\WowoQueueBundle(),
+            new Wowo\NewsletterBundle\WowoNewsletterBundle(),
+            new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
+
 
 
             //Sonata

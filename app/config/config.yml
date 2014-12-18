@@ -3,6 +3,8 @@ imports:
     - { resource: security.yml }
     - { resource: @NAEPlateformBundle/Resources/config/admin.yml }
 
+
+
 framework:
     #esi:             ~
     translator:      { fallback: "%locale%" }
@@ -68,9 +70,12 @@ doctrine:
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
         # path:     "%database_path%"
 
+
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
+
+
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -94,3 +99,4 @@ sonata_block:
 sonata_admin:
     title:      Admin
     title_logo: bundles/naeplateform/images/logo.png
+
