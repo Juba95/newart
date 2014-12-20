@@ -60,7 +60,9 @@ class ExpoController extends Controller
 
     public function newsletterAction()
     {
-        return $this->render('NAEPlateformBundle:Expo:newsletter.html.twig');
+         // return $this->render('NAEPlateformBundle:Expo:newsletter.html.twig');
+        $reponse =$this->forward('WowoNewsletterBundle:DefaultController:createMailingAction()');
+        return $reponse;
     }
 
 
