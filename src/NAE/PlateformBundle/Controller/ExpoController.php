@@ -12,16 +12,11 @@ class ExpoController extends Controller
     public function indexAction()
     {
         $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
-
+        $articles  = $repoPost->findAll();
         // Qu'est-ce que NAE
         $intro    = $repoPost->find(9);
         $objectif = $repoPost->find(20);
 
-        // News
-        $firstArticle  = $repoPost->find(1);
-        $secondArticle = $repoPost->find(2);
-        $thirdArticle  = $repoPost->find(3);
-        $fourthArticle = $repoPost->find(4);
 
         // Today
         $introToday        = $repoPost->find(5);
@@ -34,15 +29,12 @@ class ExpoController extends Controller
          return $this->render('NAEPlateformBundle:Expo:index.html.twig', array(
              'intro' => $intro,
              'objectif' => $objectif,
-             'firstArticle' => $firstArticle,
-             'secondArticle' => $secondArticle,
-             'thirdArticle' => $thirdArticle,
-             'fourthArticle' => $fourthArticle,
              'introToday' => $introToday,
              'artistName' => $artistName,
              'artistDescription' => $artistDescription,
              'workName' => $workName,
              'workDescription' => $workDescription,
+             'articles' => $articles,
          ));
     }
 
@@ -141,17 +133,12 @@ class ExpoController extends Controller
         ));
     }
 
-    public function articleAction()
+    public function articleAction($id)
     {
         $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
 
-        $title = $repoPost->find(32);
-        $subtitlePartOne = $repoPost->find(61);
-        $namePartOne = $repoPost->find(62);
-        $contentPartOne = $repoPost->find(35);
-        $contentPartOneNext = $repoPost->find(60);
-        $namePartTwo = $repoPost->find(36);
-        $contentPartTwo = $repoPost->find(37);
+        $article = $repoPost->find($id);
+
 
         // article Star
         $aricleOne = $repoPost->find(38);
@@ -160,13 +147,7 @@ class ExpoController extends Controller
         $aricleTwoDescription = $repoPost->find(41);
 
         return $this->render('NAEPlateformBundle:Expo:article.html.twig', array(
-            'title' => $title,
-            'subtitlePartOne' => $subtitlePartOne,
-            'namePartOne' => $namePartOne,
-            'contentPartOne' => $contentPartOne,
-            'contentPartOneNext' => $contentPartOneNext,
-            'namePartTwo' => $namePartTwo,
-            'contentPartTwo' => $contentPartTwo,
+            'article' => $article,
             'aricleOne' => $aricleOne,
             'aricleOneDescription' => $aricleOneDescription,
             'aricleTwo' => $aricleTwo,
