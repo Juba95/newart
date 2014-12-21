@@ -12,13 +12,3 @@ services:
         calls:
             - [ setTranslationDomain, [NAEPlateformBundle]]
 
-    sonata.admin.picture:
-            class: NAE\PlateformBundle\Admin\PictureAdmin
-            tags:
-                - { name: sonata.admin, manager_type: orm, group: "Contenu", label: "photos" }
-            arguments:
-                - ~
-                - NAE\PlateformBundle\Entity\Picture
-                - ~
-            calls:
-                - [ setTranslationDomain, [NAEPlateformBundle]]

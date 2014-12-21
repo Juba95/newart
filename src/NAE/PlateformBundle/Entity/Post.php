@@ -5,7 +5,8 @@ namespace NAE\PlateformBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Post
+ * @ORM\Entity
+ * @ORM\Table(name="Post")
  */
 class Post
 {

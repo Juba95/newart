@@ -20,7 +20,7 @@ class PostAdmin extends Admin
             ->with('General')
             //->add('title', 'entity', array('class'=>'NAE\PlateformBundle\Entity\Post'))
             ->add('title')
-            ->add('text','textarea', array('attr'=>array('class'=>'ckeditor')));
+            ->add('text','textarea');
     }
 
     // Fields to be shown on filter forms -> cette fonction permet de gerer le filtre
