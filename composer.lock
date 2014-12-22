@@ -4,7 +4,11 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
+    "hash": "5488c83f98006bdd1eb5ac0ff178e4ff",
+=======
     "hash": "d96f0f09f65707c29e93d0d7b773b122",
+>>>>>>> 8c5168b43473bcccdd6564c15648559924a2fad6
     "packages": [
         {
             "name": "cocur/slugify",
@@ -1082,6 +1086,18 @@
         },
         {
             "name": "kriswallsmith/assetic",
+<<<<<<< HEAD
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/assetic.git",
+                "reference": "b20efe38845d20458702f97f3ff625d80805897b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/b20efe38845d20458702f97f3ff625d80805897b",
+                "reference": "b20efe38845d20458702f97f3ff625d80805897b",
+=======
             "version": "dev-master",
             "source": {
                 "type": "git",
@@ -1092,6 +1108,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/af518b325b4d9865c275a5b6528e499444366754",
                 "reference": "af518b325b4d9865c275a5b6528e499444366754",
+>>>>>>> 8c5168b43473bcccdd6564c15648559924a2fad6
                 "shasum": ""
             },
             "require": {
@@ -1152,7 +1169,11 @@
                 "compression",
                 "minification"
             ],
+<<<<<<< HEAD
+            "time": "2014-12-12 05:04:05"
+=======
             "time": "2014-12-12 04:46:48"
+>>>>>>> 8c5168b43473bcccdd6564c15648559924a2fad6
         },
         {
             "name": "lexpress/sf-doctrine-guard-plugin",

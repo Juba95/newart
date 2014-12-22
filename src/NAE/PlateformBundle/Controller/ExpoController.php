@@ -7,14 +7,13 @@ namespace NAE\PlateformBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\HttpFoundation\reponse;
 
-use NAE\PlateformBundle\Entity\Enquiry;
-use NAE\PlateformBundle\Form\EnquiryType;
+use Symfony\Component\HttpFoundation\Request;
 
 class ExpoController extends Controller
 {
     public function indexAction()
     {
-         return $this->render('NAEPlateformBundle:Expo:index.html.twig');
+        return $this->render('NAEPlateformBundle:Expo:index.html.twig');
     }
 
     public function profilAction()
@@ -38,7 +37,6 @@ class ExpoController extends Controller
     }
 
     /*public function contactAction()
-    {
         return $this->render('NAEPlateformBundle:Expo:contact.html.twig');
     }*/
 
@@ -58,36 +56,5 @@ class ExpoController extends Controller
         return $this->render('NAEPlateformBundle:Expo:cvg.html.twig');
     }
 
-    public function newsletterAction()
-    {
-         // return $this->render('NAEPlateformBundle:Expo:newsletter.html.twig');
-        $reponse =$this->forward('WowoNewsletterBundle:DefaultController:createMailingAction()');
-        return $reponse;
-    }
-
-
-    // Formulaire Contact
-    public function contactAction()
-    {
-        $enquiry = new Enquiry();
-        $form = $this->createForm(new EnquiryType(), $enquiry);
-
-        $request = $this->getRequest();
-        if ($request->getMethod() == 'POST') {
-            $form->bindRequest($request);
-
-            if ($form->isValid()) {
-                // Perform some action, such as sending an email
-
-                // Redirect - This is important to prevent users re-posting
-                // the form if they refresh the page
-                return $this->redirect($this->generateUrl('NAEPlateformBundle_contact'));
-            }
-        }
-
-        return $this->render('NAEPlateformBundle:Expo:contact.html.twig', array(
-            'form' => $form->createView()
-        ));
-    }
 
 }
