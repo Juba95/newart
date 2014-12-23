@@ -17,6 +17,11 @@ class NewsEntry
     /**
      * @var string
      */
+    private $title;
+
+    /**
+     * @var string
+     */
     private $text;
 
     /**
@@ -38,6 +43,28 @@ class NewsEntry
     public function getId()
     {
         return $this->id;
+    }
+    /**
+     * Set title
+     *
+     * @param string $title
+     * @return NewsEntry
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
     }
 
     /**

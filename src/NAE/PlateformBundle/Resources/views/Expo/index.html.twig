@@ -7,7 +7,6 @@
     {# END Nav-Left #}
     {# Slider #}
     <div class="logo"></div>
-
     <div class="inscription"><button class="md-trigger btn btn-default" data-modal="modal-1">{{ 'Se connecter / S\'inscrire' }}</button></div>
 
 <div class="col-md-11 col-md-offset-1 slider">
@@ -259,15 +258,15 @@
     </div>
     <div class="row newsarticle hidden-xs">
             {% set counter = 0 %}
-            {% for article in articles|slice(0,4) %}
+            {% for new in news %}
                 {% set counter = counter + 1 %}
 
                 {% if (counter == 1) %}
                     <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
-                        <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                        <h3>{{ article.title }} </h3>
+                        <p>{{ new.created_at|date('d/m/Y') }}</p>
+                        <h3>{{ new.title }} </h3>
                         <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
-                        <a href="{{ path('nae_plateform_article', { 'id': article.id }) }}">Lire Plus</a>
+                        <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                     </div>
                     <div class="col-md-1 col-sm-1 date-separator">
                         <h4 class="text-center">{{ "now"|date("m/Y") }}</h4>
@@ -276,33 +275,33 @@
                 {% endif %}
                 {% if counter == 2 %}
                     <div class="col-md-5 col-sm-5 article-suite">
-                        <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                        <h3>{{ article.title }} </h3>
+                        <p>{{ new.created_at|date('d/m/Y') }}</p>
+                        <h3>{{ new.title }} </h3>
                         <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
-                        <a href="{{ path('nae_plateform_article', { 'id': article.id }) }}">Lire Plus</a>
+                        <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                     </div>
                 {% endif %}
                 {% if counter == 3 %}
                     <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 article-news-3">
-                        <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                        <h2>{{ article.title }}</h2>
+                        <p>{{ new.created_at|date('d/m/Y') }}</p>
+                        <h2>{{ new.title }}</h2>
                         <img src="{{ asset('bundles/naeplateform/images/news/image3.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
-                        <a href="{{ path('nae_plateform_article', { 'id': article.id }) }}">Lire Plus</a>
+                        <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                     </div>
                 {% endif %}
                 {% if counter == 4 %}
                     <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 last-article-news">
-                        <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                        <h3>{{ article.title }} </h3>
+                        <p>{{ new.created_at|date('d/m/Y') }}</p>
+                        <h3>{{ new.title }} </h3>
                         <img src="{{ asset('bundles/naeplateform/images/news/image4.jpg') }}" alt="Image News 3" class="img-responsive imgactu">
-                        <a href="{{ path('nae_plateform_article', { 'id': article.id }) }}">Lire Plus</a>
+                        <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                     </div>
                 {% endif %}
             {% endfor %}
     </div>
     <div class="row newsarticle visible-xs">
         {% set counter = 0 %}
-        {% for article in articles|slice(0,4) %}
+        {% for new in news %}
             {% set counter = counter + 1 %}
 
             {% if (counter == 1) %}
@@ -311,34 +310,34 @@
                     <span class="trait-separator"></span>
                 </div>
                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
-                    <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                    <h3>{{ article.title }} </h3>
+                    <p>{{ new.created_at|date('d/m/Y') }}</p>
+                    <h3>{{ new.title }} </h3>
                     <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive">
-                    <a href="#">Lire Plus</a>
+                    <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                 </div>
             {% endif %}
             {% if counter == 2 %}
                 <div class="col-md-5 col-sm-5 article-suite">
-                    <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                    <h3>{{ article.title }} </h3>
+                    <p>{{ new.created_at|date('d/m/Y') }}</p>
+                    <h3>{{ new.title }} </h3>
                     <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive">
-                    <a href="#">Lire Plus</a>
+                    <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                 </div>
             {% endif %}
             {% if counter == 3 %}
                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 article-news-3">
-                    <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                    <h2>{{ article.title }} </h2>
+                    <p>{{ new.created_at|date('d/m/Y') }}</p>
+                    <h2>{{ new.title }} </h2>
                     <img src="{{ asset('bundles/naeplateform/images/news/image3.jpg') }}" alt="Image News 1" class="img-responsive">
-                    <a href="#">Lire Plus</a>
+                    <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                 </div>
             {% endif %}
             {% if counter == 4 %}
                 <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 last-article-news">
-                    <p>{{ article.createdAt|date('d/m/Y') }}</p>
-                    <h3>{{ article.title }} </h3>
+                    <p>{{ new.created_at|date('d/m/Y') }}</p>
+                    <h3>{{ new.title }} </h3>
                     <img src="{{ asset('bundles/naeplateform/images/news/image4.jpg') }}" alt="Image News 3" class="img-responsive">
-                    <a href="#">Lire Plus</a>
+                    <a href="{{ path('nae_plateform_article', { 'id': new.id }) }}">Lire Plus</a>
                 </div>
             {% endif %}
         {% endfor %}

@@ -12,7 +12,11 @@ class ExpoController extends Controller
     public function indexAction()
     {
         $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
-        $articles  = $repoPost->findAll();
+
+        // news == Article
+        $conn = $this->get('database_connection');
+        $news = $conn->fetchAll('SELECT * FROM news_entry ORDER BY created_at DESC LIMIT 4');
+
         // Qu'est-ce que NAE
         $intro    = $repoPost->find(9);
         $objectif = $repoPost->find(20);
@@ -27,6 +31,7 @@ class ExpoController extends Controller
 
 
          return $this->render('NAEPlateformBundle:Expo:index.html.twig', array(
+             'news' => $news,
              'intro' => $intro,
              'objectif' => $objectif,
              'introToday' => $introToday,
@@ -34,7 +39,6 @@ class ExpoController extends Controller
              'artistDescription' => $artistDescription,
              'workName' => $workName,
              'workDescription' => $workDescription,
-             'articles' => $articles,
          ));
     }
 

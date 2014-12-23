@@ -22,3 +22,14 @@ services:
                 - ~
             calls:
                 - [ setTranslationDomain, [NAEPlateformBundle]]
+
+    sonata.admin.news:
+            class: NAE\PlateformBundle\Admin\NewsAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, group: "Contenu", label: "News" }
+            arguments:
+                - ~
+                - NAE\PlateformBundle\Entity\NewsEntry
+                - ~
+            calls:
+                - [ setTranslationDomain, [NAEPlateformBundle]]

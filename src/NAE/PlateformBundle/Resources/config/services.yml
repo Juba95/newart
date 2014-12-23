@@ -4,3 +4,8 @@ services:
         tags:
             - { name: doctrine.event_listener, event: prePersist }
             - { name: doctrine.event_listener, event: preUpdate }
+    NAE_plateformBundle.news.listenenr:
+        class: NAE\PlateformBundle\Listener\NewsListener
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
