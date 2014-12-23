@@ -22,7 +22,6 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new NAE\PlateformBundle\NAEPlateformBundle(),
-            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
 
 
             //Sonata
