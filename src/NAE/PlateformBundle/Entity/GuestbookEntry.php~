@@ -1,0 +1,80 @@
+<?php
+
+namespace NAE\PlateformBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * GuestbookEntry
+ *
+ * @ORM\Table(name="guestbook_entry", indexes={@ORM\Index(name="IDX_A8BA6F71A76ED395", columns={"user_id"}), @ORM\Index(name="IDX_A8BA6F719588C067", columns={"signer_id"})})
+ * @ORM\Entity
+ */
+class GuestbookEntry
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="text", type="string", length=120, nullable=true)
+     */
+    private $text;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=120, nullable=false)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=120, nullable=false)
+     */
+    private $email;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=true)
+     */
+    private $createdAt;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="updated_at", type="datetime", nullable=true)
+     */
+    private $updatedAt;
+
+    /**
+     * @var \User
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="signer_id", referencedColumnName="id")
+     * })
+     */
+    private $signer;
+
+    /**
+     * @var \User
+     *
+     * @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * })
+     */
+    private $user;
+
+
+}
