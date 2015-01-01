@@ -789,6 +789,17 @@ text-transform: uppercase;
 .spacingBottomProfile{
     margin-bottom: 7%;
 }
+
+.item{
+    padding: 1px;
+}
+
+#masonry{
+    min-width: 100%;
+}
+
+/*.item { width: 100%; }
+.item.w2 { width: 100%; }*/
 /*-------------------*/
 /*---- Fin profil -- */
 /*-------------------*/
