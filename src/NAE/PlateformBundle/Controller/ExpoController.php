@@ -5,7 +5,9 @@
 namespace NAE\PlateformBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\HttpFoundation\reponse;
+use NAE\PlateformBundle\Entity\Enquiry;
+use NAE\PlateformBundle\Form\EnquiryType;
+
 
 class ExpoController extends Controller
 {
@@ -111,9 +113,29 @@ class ExpoController extends Controller
         ));
     }
 
+
+
     public function contactAction()
     {
-        return $this->render('NAEPlateformBundle:Expo:contact.html.twig');
+        $enquiry = new Enquiry();
+        $form = $this->createForm(new EnquiryType(), $enquiry);
+
+        $request = $this->getRequest();
+        if ($request->getMethod() == 'POST') {
+            $form->submit($request);
+
+            if ($form->isValid()) {
+                // Perform some action, such as sending an email
+
+                // Redirect - This is important to prevent users re-posting
+                // the form if they refresh the page
+                return $this->redirect($this->generateUrl('NAEPlateformBundle_contact'));
+            }
+        }
+
+        return $this->render('NAEPlateformBundle:Expo:contact.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
 
     public function articlesAction()

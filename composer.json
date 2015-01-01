@@ -22,7 +22,8 @@
         "sonata-project/doctrine-orm-admin-bundle": "~2.3",
         "symfony/finder": "~2.3",
         "symfony/dependency-injection": "~2.5",
-        "sonata-project/easy-extends-bundle": "~2.1"
+        "sonata-project/easy-extends-bundle": "~2.1",
+        "friendsofsymfony/advanced-encoder-bundle": "~1.0"
         
     },
     "require-dev": {

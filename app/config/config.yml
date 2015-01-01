@@ -95,3 +95,19 @@ sonata_admin:
     title_logo: bundles/naeplateform/images/logo.png
 
 
+fos_advanced_encoder:
+  encoders:
+    # default values for FOSUserBundle (Symfony2) # see http://symfony.com/doc/current/reference/configuration/security.html
+    default:
+      algorithm: sha512
+      iterations: 1
+      encode_as_base64: true
+    # legacy encoder used by sfGuard (symfony 1)
+    legacy:
+      algorithm: sha1
+      iterations: 1
+      encode_as_base64: false
+
+parameters:
+    security.encoder.digest.class: NAE\PlateformBundle\SecurityEncoder\MessageDigestPasswordEncoder
+

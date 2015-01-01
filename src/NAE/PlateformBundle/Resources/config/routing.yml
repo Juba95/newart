@@ -23,6 +23,8 @@ nae_plateform_nae:
 nae_plateform_contact:
     path:     /contact/
     defaults: { _controller: NAEPlateformBundle:Expo:contact }
+    requirements:
+            _method:  GET
 
 nae_plateform_articles:
     path:     /articles/

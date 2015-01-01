@@ -2014,7 +2014,7 @@ $.widget("ui.draggable", $.ui.mouse, {
 		this.cancelHelperRemoval = false;
 	},
 
-	// From now on bulk stuff - mainly helpers
+	// Form now on bulk stuff - mainly helpers
 
 	_trigger: function(type, event, ui) {
 		ui = ui || this._uiHash();
