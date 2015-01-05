@@ -27,7 +27,7 @@ NAE\PlateformBundle\Entity\SfGuardUser:
         email:
             type: string
             nullable: false
-            length: 256
+            length: 255
             fixed: false
             comment: ''
         algorithm:

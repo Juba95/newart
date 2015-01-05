@@ -19,6 +19,7 @@ class NewsEntry
      */
     private $title;
 
+
     /**
      * @var string
      */

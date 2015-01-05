@@ -63,15 +63,15 @@
             <div class="row columnarticles">
                 <div class="col-md-6 article1">
                     <p class="date">28 novembre 2014</p>
-                    <h3>{{ firstArticleName.text }}</h3>
-                    <p>{{ firstArticleDescript.text }}</p>
+                    <a href="{{ path('nae_plateform_article', { 'id': firstArticle.id }) }}"><h3>{{  firstArticle.title }} </h3></a>
+                    <p>{{ firstArticle.text | truncate(70) }}</p>
                     <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive imgactu">
                 </div>
 
                 <div class="col-md-6">
                     <p class="date">28 novembre 2014</p>
-                    <h3>{{ secondArticleName.text }}</h3>
-                    <p>{{ secondArticleDescript.text }}</p>
+                    <a href="{{ path('nae_plateform_article', { 'id': secondArticle.id }) }}"><h3>{{ secondArticle.title }} </h3></a>
+                    <p>{{ secondArticle.text | truncate(70) }}</p>
                     <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive">
                 </div>
             </div>
@@ -79,15 +79,15 @@
             <div class="row columnarticles">
                 <div class="col-md-6 articles-solo">
                     <p class="date">28 novembre 2014</p>
-                    <h3>{{ thirdArticleName.text }}</h3>
-                    <p>{{ thirdArticleDescript.text }}</p>
+                    <a href="{{ path('nae_plateform_article', { 'id': thirdArticle.id }) }}"><h3>{{ thirdArticle.title}} </h3></a>
+                    <p>{{ thirdArticle.text | truncate(70) }}</p>
                     <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive">
                 </div>
 
                 <div class="col-md-6 articles-solo">
                     <p class="date">28 novembre 2014</p>
-                    <h3>{{ fourthArticleName.text }}</h3>
-                    <p>{{ fourthArticleDescription.text }}</p>
+                    <a href="{{ path('nae_plateform_article', { 'id': fourthArticle.id }) }}"><h3>{{ fourthArticle.title }} </h3></a>
+                    <p>{{ fourthArticle.text | truncate(70) }}</p>
                     <img src="{{ asset('bundles/naeplateform/images/news/image2.jpg') }}" alt="Image News 1" class="img-responsive">
                 </div>
             </div>

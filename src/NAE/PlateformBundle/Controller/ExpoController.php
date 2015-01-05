@@ -114,34 +114,28 @@ class ExpoController extends Controller
 
     public function articlesAction()
     {
-        $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
+        $repoNewsEnry = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:NewsEntry');
 
         // Les Articles
-        $firstArticleName = $repoPost->find(25);
-        $firstArticleDescript = $repoPost->find(26);
-        $secondArticleName = $repoPost->find(27);
-        $secondArticleDescript = $repoPost->find(28);
-        $thirdArticleName = $repoPost->find(29);
-        $thirdArticleDescript = $repoPost->find(30);
-        $fourthArticleName = $repoPost->find(31);
-        $fourthArticleDescript = $repoPost->find(63);
+
+        $firstArticle = $repoNewsEnry->find(1);
+        $secondArticle = $repoNewsEnry->find(2);
+        $thirdArticle = $repoNewsEnry->find(3);
+        $fourthArticle = $repoNewsEnry->find(4);
         return $this->render('NAEPlateformBundle:Expo:articles.html.twig', array(
-            'firstArticleName' => $firstArticleName,
-            'firstArticleDescript' => $firstArticleDescript,
-            'secondArticleName' => $secondArticleName,
-            'secondArticleDescript' => $secondArticleDescript,
-            'thirdArticleName' => $thirdArticleName,
-            'thirdArticleDescript' => $thirdArticleDescript,
-            'fourthArticleName' => $fourthArticleName,
-            'fourthArticleDescription' => $fourthArticleDescript,
+            'firstArticle' => $firstArticle,
+            'secondArticle' => $secondArticle,
+            'thirdArticle' => $thirdArticle,
+            'fourthArticle' => $fourthArticle,
         ));
     }
 
     public function articleAction($id)
     {
+        $repoNewsEntry = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:NewsEntry');
         $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
 
-        $article = $repoPost->find($id);
+        $article = $repoNewsEntry->find($id);
 
 
         // article Star
