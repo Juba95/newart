@@ -1,0 +1,107 @@
+NAE\PlateformBundle\Entity\SfGuardUser:
+    type: entity
+    table: sf_guard_user
+    uniqueConstraints:
+        sf_guard_user_U_1:
+            columns:
+                - username
+        sf_guard_user_U_2:
+            columns:
+                - email
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: ''
+        email:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: ''
+        algorithm:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: ''
+            default: sha1
+        salt:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: ''
+        password:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: ''
+        createdAt:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: created_at
+        lastLogin:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: last_login
+        isActive:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '0'
+            column: is_active
+        isSuperAdmin:
+            type: boolean
+            nullable: false
+            comment: ''
+            default: '0'
+            column: is_super_admin
+    manyToMany:
+        group:
+            targetEntity: SfGuardGroup
+            cascade: {  }
+            mappedBy: null
+            inversedBy: user
+            joinTable:
+                name: sf_guard_user_group
+                joinColumns:
+                    -
+                        name: user_id
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    -
+                        name: group_id
+                        referencedColumnName: id
+            orderBy: null
+        permission:
+            targetEntity: SfGuardPermission
+            cascade: {  }
+            mappedBy: null
+            inversedBy: user
+            joinTable:
+                name: sf_guard_user_permission
+                joinColumns:
+                    -
+                        name: user_id
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    -
+                        name: permission_id
+                        referencedColumnName: id
+            orderBy: null
+    lifecycleCallbacks: {  }

@@ -18,9 +18,8 @@ class PostAdmin extends Admin
     {
         $formMapper
             ->with('General')
-            //->add('title', 'entity', array('class'=>'NAE\PlateformBundle\Entity\Post'))
-            ->add('title')
-            ->add('text','textarea');
+                ->add('title')
+                ->add('text', 'textarea', array('attr'=>array('class'=>'ckeditor')));
     }
 
     // Fields to be shown on filter forms -> cette fonction permet de gerer le filtre

@@ -111,3 +111,6 @@ fos_advanced_encoder:
 parameters:
     security.encoder.digest.class: NAE\PlateformBundle\SecurityEncoder\MessageDigestPasswordEncoder
 
+    templates:
+        layout:  NAEPlateformBundle::sonata_admin_base_layout.html.twig
+

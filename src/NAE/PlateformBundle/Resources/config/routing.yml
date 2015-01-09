@@ -31,7 +31,7 @@ nae_plateform_articles:
     defaults: { _controller: NAEPlateformBundle:Expo:articles }
 
 nae_plateform_article:
-    path:     /article/
+    path:     /article/{id}
     defaults: { _controller: NAEPlateformBundle:Expo:article }
 
 nae_plateform_cvg:

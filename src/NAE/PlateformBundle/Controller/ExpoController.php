@@ -15,15 +15,14 @@ class ExpoController extends Controller
     {
         $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
 
+        // news == Article
+        $conn = $this->get('database_connection');
+        $news = $conn->fetchAll('SELECT * FROM news_entry ORDER BY created_at DESC LIMIT 4');
+
         // Qu'est-ce que NAE
         $intro    = $repoPost->find(9);
         $objectif = $repoPost->find(20);
 
-        // News
-        $firstArticle  = $repoPost->find(1);
-        $secondArticle = $repoPost->find(2);
-        $thirdArticle  = $repoPost->find(3);
-        $fourthArticle = $repoPost->find(4);
 
         // Today
         $introToday        = $repoPost->find(5);
@@ -34,12 +33,9 @@ class ExpoController extends Controller
 
 
          return $this->render('NAEPlateformBundle:Expo:index.html.twig', array(
+             'news' => $news,
              'intro' => $intro,
              'objectif' => $objectif,
-             'firstArticle' => $firstArticle,
-             'secondArticle' => $secondArticle,
-             'thirdArticle' => $thirdArticle,
-             'fourthArticle' => $fourthArticle,
              'introToday' => $introToday,
              'artistName' => $artistName,
              'artistDescription' => $artistDescription,
@@ -140,40 +136,29 @@ class ExpoController extends Controller
 
     public function articlesAction()
     {
-        $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
+        $repoNewsEnry = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:NewsEntry');
 
         // Les Articles
-        $firstArticleName = $repoPost->find(25);
-        $firstArticleDescript = $repoPost->find(26);
-        $secondArticleName = $repoPost->find(27);
-        $secondArticleDescript = $repoPost->find(28);
-        $thirdArticleName = $repoPost->find(29);
-        $thirdArticleDescript = $repoPost->find(30);
-        $fourthArticleName = $repoPost->find(31);
-        $fourthArticleDescript = $repoPost->find(63);
+
+        $firstArticle = $repoNewsEnry->find(1);
+        $secondArticle = $repoNewsEnry->find(2);
+        $thirdArticle = $repoNewsEnry->find(3);
+        $fourthArticle = $repoNewsEnry->find(4);
         return $this->render('NAEPlateformBundle:Expo:articles.html.twig', array(
-            'firstArticleName' => $firstArticleName,
-            'firstArticleDescript' => $firstArticleDescript,
-            'secondArticleName' => $secondArticleName,
-            'secondArticleDescript' => $secondArticleDescript,
-            'thirdArticleName' => $thirdArticleName,
-            'thirdArticleDescript' => $thirdArticleDescript,
-            'fourthArticleName' => $fourthArticleName,
-            'fourthArticleDescription' => $fourthArticleDescript,
+            'firstArticle' => $firstArticle,
+            'secondArticle' => $secondArticle,
+            'thirdArticle' => $thirdArticle,
+            'fourthArticle' => $fourthArticle,
         ));
     }
 
-    public function articleAction()
+    public function articleAction($id)
     {
+        $repoNewsEntry = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:NewsEntry');
         $repoPost = $this->getDoctrine()->getManager()->getRepository('NAEPlateformBundle:Post');
 
-        $title = $repoPost->find(32);
-        $subtitlePartOne = $repoPost->find(61);
-        $namePartOne = $repoPost->find(62);
-        $contentPartOne = $repoPost->find(35);
-        $contentPartOneNext = $repoPost->find(60);
-        $namePartTwo = $repoPost->find(36);
-        $contentPartTwo = $repoPost->find(37);
+        $article = $repoNewsEntry->find($id);
+
 
         // article Star
         $aricleOne = $repoPost->find(38);
@@ -182,13 +167,7 @@ class ExpoController extends Controller
         $aricleTwoDescription = $repoPost->find(41);
 
         return $this->render('NAEPlateformBundle:Expo:article.html.twig', array(
-            'title' => $title,
-            'subtitlePartOne' => $subtitlePartOne,
-            'namePartOne' => $namePartOne,
-            'contentPartOne' => $contentPartOne,
-            'contentPartOneNext' => $contentPartOneNext,
-            'namePartTwo' => $namePartTwo,
-            'contentPartTwo' => $contentPartTwo,
+            'article' => $article,
             'aricleOne' => $aricleOne,
             'aricleOneDescription' => $aricleOneDescription,
             'aricleTwo' => $aricleTwo,
