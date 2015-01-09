@@ -1,0 +1,53 @@
+Subscription:
+    type: entity
+    table: subscription
+    indexes:
+        IDX_A3C664D3A76ED395:
+            columns:
+                - user_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 64
+            fixed: false
+        amount:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+        startDate:
+            type: datetime
+            nullable: true
+            column: start_date
+        expirationDate:
+            type: datetime
+            nullable: true
+            column: expiration_date
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: true
+            column: updated_at
+    manyToOne:
+        user:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                user_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

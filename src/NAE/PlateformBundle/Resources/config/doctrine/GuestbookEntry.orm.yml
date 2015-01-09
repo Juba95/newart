@@ -1,0 +1,62 @@
+GuestbookEntry:
+    type: entity
+    table: guestbook_entry
+    indexes:
+        IDX_A8BA6F71A76ED395:
+            columns:
+                - user_id
+        IDX_A8BA6F719588C067:
+            columns:
+                - signer_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        text:
+            type: string
+            nullable: true
+            length: 120
+            fixed: false
+        nom:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 120
+            fixed: false
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: true
+            column: updated_at
+    manyToOne:
+        signer:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                signer_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        user:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                user_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

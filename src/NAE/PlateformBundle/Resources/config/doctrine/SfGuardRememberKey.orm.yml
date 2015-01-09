@@ -1,0 +1,39 @@
+SfGuardRememberKey:
+    type: entity
+    table: sf_guard_remember_key
+    uniqueConstraints:
+        UNIQ_1EEA28AA76ED395:
+            columns:
+                - user_id
+    id:
+        ipAddress:
+            type: string
+            nullable: false
+            length: 50
+            fixed: false
+            id: true
+            column: ip_address
+            generator:
+                strategy: IDENTITY
+    fields:
+        rememberKey:
+            type: string
+            nullable: true
+            length: 32
+            fixed: false
+            column: remember_key
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+    manyToOne:
+        user:
+            targetEntity: SfGuardUser
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                user_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

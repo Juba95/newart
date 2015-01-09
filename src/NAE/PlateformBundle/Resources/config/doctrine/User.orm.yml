@@ -1,0 +1,71 @@
+User:
+    type: entity
+    table: user
+    indexes:
+        IDX_8D93D6499B6B5FBA:
+            columns:
+                - account_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        coverPictureId:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: cover_picture_id
+        firstName:
+            type: string
+            nullable: true
+            length: 31
+            fixed: false
+            column: first_name
+        lastName:
+            type: string
+            nullable: true
+            length: 31
+            fixed: false
+            column: last_name
+        birthday:
+            type: date
+            nullable: true
+        category:
+            type: string
+            nullable: true
+            length: 31
+            fixed: false
+        biography:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        phone:
+            type: string
+            nullable: true
+            length: 15
+            fixed: false
+        country:
+            type: string
+            nullable: true
+            length: 2
+            fixed: false
+        featuringDate:
+            type: datetime
+            nullable: true
+            column: featuring_date
+    manyToOne:
+        account:
+            targetEntity: SfGuardUser
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                account_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

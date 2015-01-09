@@ -1,0 +1,62 @@
+Picture:
+    type: entity
+    table: picture
+    indexes:
+        IDX_16DB4F89A76ED395:
+            columns:
+                - user_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        name:
+            type: string
+            nullable: true
+            length: 63
+            fixed: false
+        description:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        price:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+        path:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        exposable:
+            type: boolean
+            nullable: true
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+        updatedAt:
+            type: datetime
+            nullable: true
+            column: updated_at
+        featuringDate:
+            type: datetime
+            nullable: true
+            column: featuring_date
+    manyToOne:
+        user:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                user_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
