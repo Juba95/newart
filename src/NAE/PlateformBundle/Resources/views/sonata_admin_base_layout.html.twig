@@ -2,5 +2,11 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset('bundles/naeplateform/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/naeplateform/js/jquery.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('bundles/naeplateform/js/ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.ckeditor').ckeditor();
+        });
+    </script>
 {% endblock %}

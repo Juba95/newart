@@ -3,71 +3,93 @@
 namespace NAE\PlateformBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Sonata\UserBundle\Entity\BaseUser;
 
 /**
  * SfGuardUser
  */
-class SfGuardUser
+class SfGuardUser extends BaseUser
 {
     /**
      * @var integer
      */
-    private $id;
+    protected $id;
 
     /**
      * @var string
      */
-    private $username;
+    protected $username;
 
     /**
      * @var string
      */
-    private $email;
+    protected $email;
 
     /**
      * @var string
      */
-    private $algorithm;
+    protected $algorithm;
 
     /**
      * @var string
      */
-    private $salt;
+    protected $salt;
 
     /**
      * @var string
      */
-    private $password;
+    protected $enabled;
+
+    /**
+     * @return string
+     */
+    public function getEnabled()
+    {
+        return $this->enabled;
+    }
+
+    /**
+     * @param string $enabled
+     */
+    public function setEnabled($enabled)
+    {
+        $this->enabled = $enabled;
+    }
+
+    /**
+     * @var string
+     */
+    protected $plainPassword;
 
     /**
      * @var \DateTime
      */
-    private $createdAt;
+    protected $createdAt;
 
     /**
      * @var \DateTime
      */
-    private $lastLogin;
+    protected $lastLogin;
 
     /**
      * @var boolean
      */
-    private $isActive;
+    protected $isActive;
 
     /**
      * @var boolean
      */
-    private $isSuperAdmin;
+    private $SuperAdmin;
 
     /**
      * @var \Doctrine\Common\Collections\Collection
      */
-    private $group;
+    protected $group;
 
     /**
      * @var \Doctrine\Common\Collections\Collection
      */
-    private $permission;
+    protected $permission;
 
     /**
      * Constructor
@@ -76,6 +98,10 @@ class SfGuardUser
     {
         $this->group = new \Doctrine\Common\Collections\ArrayCollection();
         $this->permission = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->salt = new BaseUser();
+        $this->locked = new BaseUser();
+        $this->expired = new BaseUser();
+        $this->credentialsExpired = new BaseUser();
     }
 
     /**
@@ -104,7 +130,7 @@ class SfGuardUser
     /**
      * Get username
      *
-     * @return string 
+     * @return string
      */
     public function getUsername()
     {
@@ -183,12 +209,12 @@ class SfGuardUser
     /**
      * Set password
      *
-     * @param string $password
+     * @param string $plainPassword
      * @return SfGuardUser
      */
-    public function setPassword($password)
+    public function setPlainPassword($plainPassword)
     {
-        $this->password = $password;
+        $this->plainPassword = $plainPassword;
 
         return $this;
     }
@@ -198,9 +224,9 @@ class SfGuardUser
      *
      * @return string 
      */
-    public function getPassword()
+    public function getPlainPassword()
     {
-        return $this->password;
+        return $this->plainPassword;
     }
 
     /**
@@ -209,22 +235,22 @@ class SfGuardUser
      * @param \DateTime $createdAt
      * @return SfGuardUser
      */
-    public function setCreatedAt($createdAt)
-    {
-        $this->createdAt = $createdAt;
-
-        return $this;
-    }
-
-    /**
-     * Get createdAt
-     *
-     * @return \DateTime 
-     */
-    public function getCreatedAt()
-    {
-        return $this->createdAt;
-    }
+//    public function setCreatedAt($createdAt)
+//    {
+//        $this->createdAt = $createdAt;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get createdAt
+//     *
+//     * @return \DateTime
+//     */
+//    public function getCreatedAt()
+//    {
+//        return $this->createdAt;
+//    }
 
     /**
      * Set lastLogin
@@ -232,22 +258,22 @@ class SfGuardUser
      * @param \DateTime $lastLogin
      * @return SfGuardUser
      */
-    public function setLastLogin($lastLogin)
-    {
-        $this->lastLogin = $lastLogin;
-
-        return $this;
-    }
-
-    /**
-     * Get lastLogin
-     *
-     * @return \DateTime 
-     */
-    public function getLastLogin()
-    {
-        return $this->lastLogin;
-    }
+//    public function setLastLogin($lastLogin)
+//    {
+//        $this->lastLogin = $lastLogin;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get lastLogin
+//     *
+//     * @return \DateTime
+//     */
+//    public function getLastLogin()
+//    {
+//        return $this->lastLogin;
+//    }
 
     /**
      * Set isActive
@@ -273,26 +299,26 @@ class SfGuardUser
     }
 
     /**
-     * Set isSuperAdmin
+     * Set superAdmin
      *
-     * @param boolean $isSuperAdmin
+     * @param boolean $superAdmin
      * @return SfGuardUser
      */
-    public function setIsSuperAdmin($isSuperAdmin)
+    public function setSuperAdmin($superAdmin)
     {
-        $this->isSuperAdmin = $isSuperAdmin;
+        $this->superAdmin = $superAdmin;
 
         return $this;
     }
 
     /**
-     * Get isSuperAdmin
+     * Get SuperAdmin
      *
      * @return boolean 
      */
-    public function getIsSuperAdmin()
+    public function getSuperAdmin()
     {
-        return $this->isSuperAdmin;
+        return $this->SuperAdmin;
     }
 
     /**
@@ -301,22 +327,22 @@ class SfGuardUser
      * @param \NAE\PlateformBundle\Entity\SfGuardGroup $group
      * @return SfGuardUser
      */
-    public function addGroup(\NAE\PlateformBundle\Entity\SfGuardGroup $group)
-    {
-        $this->group[] = $group;
-
-        return $this;
-    }
-
-    /**
-     * Remove group
-     *
-     * @param \NAE\PlateformBundle\Entity\SfGuardGroup $group
-     */
-    public function removeGroup(\NAE\PlateformBundle\Entity\SfGuardGroup $group)
-    {
-        $this->group->removeElement($group);
-    }
+//    public function addGroup(\NAE\PlateformBundle\Entity\SfGuardGroup $group)
+//    {
+//        $this->group[] = $group;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Remove group
+//     *
+//     * @param \NAE\PlateformBundle\Entity\SfGuardGroup $group
+//     */
+//    public function removeGroup(\NAE\PlateformBundle\Entity\SfGuardGroup $group)
+//    {
+//        $this->group->removeElement($group);
+//    }
 
     /**
      * Get group
@@ -359,5 +385,61 @@ class SfGuardUser
     public function getPermission()
     {
         return $this->permission;
+    }
+    /**
+     * @var string
+     */
+   protected $password;
+
+
+    /**
+     * Set password
+     *
+     * @param string $password
+     * @return SfGuardUser
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    /**
+     * Get password
+     *
+     * @return string 
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+    /**
+     * @var boolean
+     */
+    private $isSuperAdmin;
+
+
+    /**
+     * Set isSuperAdmin
+     *
+     * @param boolean $isSuperAdmin
+     * @return SfGuardUser
+     */
+    public function setIsSuperAdmin($isSuperAdmin)
+    {
+        $this->isSuperAdmin = $isSuperAdmin;
+
+        return $this;
+    }
+
+    /**
+     * Get isSuperAdmin
+     *
+     * @return boolean 
+     */
+    public function getIsSuperAdmin()
+    {
+        return $this->isSuperAdmin;
     }
 }

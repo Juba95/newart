@@ -22,7 +22,7 @@ class NewsAdmin extends Admin
     {
         $formMapper
             ->add('title', 'text')
-            ->add('text', 'textarea', array('attr' => array('class' => 'ckeditor')));
+            ->add('text', 'textarea', array('attr' => array('class' => 'ckeditor')) );
     }
 
     // Fields to be shown on filter forms
